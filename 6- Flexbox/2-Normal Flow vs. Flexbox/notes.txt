@@ -1,0 +1,71 @@
+
+
+                               NORMAL FLOW VS FLEXBOX 
+
+                                   * NORMAL FLOW 
+
+                                   * FLEXBOX
+
+                                   * NORMAL FLOW VS FLEXBOX
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                  
+                                 NORMAL FLOW VS FLEXBOX:
+
+       @> When FLEXBOX is applied to a container it takes control of the alignment of children
+
+                 > NARMAL FLOW : Spacing and alignment are determined by inherit properties of block and inline elements
+
+                 > FLEXBOX : FLEXBOX overrides default behavior of block and inline element with spacing & alignment controlled by FLEXBOX properties
+
+        ================= ADDED IMG -NORMAL FLOW VS FLEXBOX ======================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 
+                                    NORMAL FLOW : 
+
+                @> block and inline elements behave differently in NORMAL FLOW          
+
+
+      ==============ADDED IMG - importent - NORMAL FLOW ======================   
+
+
+.........................................................................................
+
+                                    ALIGNMENT :
+
+                @> applying text-align to a block-level parent will impact both block & inline children through different mechanismss
+
+                              { text-align : center } 
+
+                           ======= ADDED IMG-alignment ======        
+
+        (basicaly in using the alignment as on block-level element doesn't affect like applying HEIGHT so to overcome we bean to use as inherit method as it is act to the direct child -> now we can adjust the block-level element]                                           
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                      FLEXBOX :
+
+                @> FLEXBOX overrides display behavior of block & inline elements
+
+                           (       display : flex; (apply on parent)
+                              flex-direct : column;  ]  
+
+                              ===ADDED IMG-FLEXBOX====  
+      {  flex-direct : column; -> ALL THE INLINE AND BLOCK ELEMENT WILL TAKE FILL WIDTH OF THE PAGE }                  
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                NORMAL FLOW VS FLEXBOX :
+
+                             @> NORMAL FLOW : text-align:center;
+                  * In NORMAL flow text-align centered the image & links
+                  * Inheritance results i text centering inside the element                       
+                             @> FLEXBOX : text-align:center;
+                  * Even with space available , text-align no longer moves the image as it doesn't control alignment 
+                  * Inheritance results i text centering inside the element  
+
+                  ========ADDED IMG-NORMAL FLOW vs FLEXBOX=========  
+
+
+                 (
+      basicaly when we applying  text-align:center to image it won't move so either to use parent element or display flex ---- even it has draw back when comparing these , like using parent element to center the image will mover to center = but in flex it doesn't act as parent element 
+                  ]                   
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

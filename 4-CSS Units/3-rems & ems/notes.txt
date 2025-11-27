@@ -1,0 +1,114 @@
+
+
+                                  REMS & EMS :
+
+                            * WHAT ARE REMS & EMS
+
+                            * REMS & EMS DESIGN GUIDANCE 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                                  
+                              WHAT ARE REMS & EMS :
+                                   
+                  * Rekative to the ROOT elements FONT SIZE and are the key ingredient for creating responsive webpages
+
+                  {
+                    
+                    <!DOCTYPE html>
+    (ROOT element)- <html lang="en"> -> 16pfuytgx 
+                    
+
+                    a {
+                        font-size : 2rem;  -> 2 x 16px = 32px
+                        padding:0.5rem;    -> 0.5 x 16px = 8px
+                        margin-bottom:3rem;-> 3 x 16px = 48px 
+                    }
+
+                    ]
+
+.........................................................................................
+
+                                   REMS :
+
+                      * working with a base 10px for REM units makes it simpler when thinking about sizing elements!
+
+                      (
+
+                      html{
+                        font-size : 10px;
+                      } | we facing many problems to fixing 10px is medium to smaller , so we need other option...
+
+                      
+                      html{
+                        font-size:62.5%;
+                      } | 10 div by 16 => 0.625 -> 0.625x100(%)=62.5 ... this will scale if the user update their browser font-size
+
+
+                  @ medium 62.5% x 16px = 10px 
+
+                  @ very large 62.5% x 24px = 15px
+
+          .................ADDED IMG-REMS......................   
+
+                      ]      
+
+.........................................................................................
+
+                    EMS : (using EMS will make little visual difference] not as frequently used as REMS*
+
+              * A relative usit that is more context specific(closer to ROOT HTML , but not as mush as REM) compared to REMS
+
+
+                        (
+                          
+                           TYPOGRAPHY :
+
+            @ relative to the font-size of the parent : not relative to ROOT HTML
+
+                           * font-size
+
+                           * line-height
+
+                           * letter-spacing
+
+                          ]
+
+.........................................................................................
+
+
+             ( /* conclusion -> rems have more advantage THEN ems */ ]
+
+
+.........................................................................................
+
+                            (
+                              
+                          OTHER PROPERTIES :
+
+            @ Rekative to the font-size of the element it self
+
+                             * width
+
+                             * height
+
+                             * margin
+
+                             * padding 
+                              
+                              ]
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                             REMS & EMS DESIGN GUIDANCE : 
+                              
+
+                               REMS GUIDANCE :
+
+              * REMS are commonly used on font-size , margin and paddings to create fully responsive webpages  
+
+
+                               EMS GUIDANCE :
+
+              * EMS provide a higher level of precision for styling smaller componets as sizing is bassed on font-size of the element itself
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

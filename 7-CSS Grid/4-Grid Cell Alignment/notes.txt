@@ -1,0 +1,93 @@
+
+
+                               GRID CELL ALIGNMENT :
+
+                                  * JUSTIFY ITEMS
+
+                                  * ALIGN ITEMS
+
+                                  * GRID CELL ALIGNMENT DESIGN GUIDANCE     
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 
+                                  GRID CELL ALIGNMENT :
+
+        @> GRID ITEMS can be aligned inside grid cells if there is space available
+
+
+                        ====ADDED IMG-GRID CELL ALIGNMENT====
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+              JUSTIFY ITEMS : (NOT JUSTIFY-CONTENT] -> (it move's on row axis]
+
+          @> ALIGNs GRID ITEMS inside a grid cell along the row axis                            
+
+                   {
+
+                          * justify-items : start;
+                          * justify-items : end;
+                          * justify-items : center;
+                          * justify-items : stretch; -> default
+
+                   }
+
+
+
+[
+
+.grid-container {
+  font-size: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 40px;
+  justify-items: center; 
+}
+
+  ]
+
+                          ====ADDED IMG-JUSTIFY ITEMS====
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        ALIGN ITEMS : (need to have HEIGHT on container]
+
+                @> ALIGN grid items inside a grid cell along the (column axis]                   
+
+                  {
+                    * align-item : start;
+                    * align-item : end;
+                    * align-item : center;
+                    * align-item : stretch; -> default
+                  } 
+
+
+[
+
+.grid-container {
+  font-size: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: end; /*even we can use the justify-items and align-items on same container*/
+  align-items: center;
+  height: 500px;
+}
+
+
+]
+                           ====ADDED IMG-ALIGN ITEMS====
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                          GRID CELL ALIGNMENT DESIGN GUIDANCE :
+
+          @> It is common to use GRID alignment properties when one grid* itme is larger then another    {ADDED img related about alignment properties when one GRID item is larger then another]          
+
+          @> It is common to use GRID and FLEXBOX in parallel to achive more precise control of layout
+
+          
+                ====ADDED IMG-GRID CELL ALIGNMENT DESIGN GUIDANCE====
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+

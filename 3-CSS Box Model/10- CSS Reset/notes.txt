@@ -1,0 +1,58 @@
+
+                          #CSS-RESET:
+                              *Browser default properties
+                              *CSS global reset
+                              *Normalize CSS
+
+..........................................................................
+                         
+                         #Browser default properties:
+    *Browser have built-in css default rules that style HTML elements
+
+                   ******** added scren-shot ***********
+                        
+                        @body:
+                          *8px margin
+
+                        @h1:
+                          *21px margin - top & bottom 
+                          *32px font-size
+                          *700 font-weight
+
+                        @p:
+                          *16px margin - top & bottom 
+                          *16px font size
+                          *400 font-weight
+
+                        @<ol><ul>:
+                          *16px margin - top & bottom 
+                          *40px left padding
+
+..........................................................................
+
+                         #CSS global reset:
+                           *It is common to strip away the main default Browser styles to give us a blank canvas to work from...
+
+            @>GLOBAL RESET: {REMOVE EVERY** ALL DEFAULT MARGIN AND PADDING]
+                              
+                              *{
+                                  padding: 0%;
+                                  margin: 0%;
+                                  box-sizing: border-box;
+                                }
+
+                           @>ELEMENTS RESET:
+
+                               a{
+                                  text-decoration: none;
+                                }
+
+                        ul , ol {
+                                  list-style: none;
+                                } 
+..........................................................................
+
+                         #Normalize CSS:
+                           *Creates uniform default styles for HTML elements without removing all styles like a reset does...
+                            @large css file added to your project
+..........................................................................

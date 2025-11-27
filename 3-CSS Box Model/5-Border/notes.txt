@@ -1,0 +1,110 @@
+                            
+                    #BORDER:
+                      *What is border
+                      *Longhand & Shorthand border properties
+                      *Individual border properties
+                      *Border design guidance
+
+.......................................................................
+
+                  #What is border:
+                    *Creats a visible boundary around an HTML element and can enhance visual apperance and separation from other elements...
+
+.......................................................................
+                        
+                        #Longhand & Shorthand border properties:
+
+                        #=>Longhand border properties:
+                          *sets the Individual border properties & applies to all four border(WIDTH,STYLE,COLOR)
+
+              #WIDTH:
+                *Border thikness-( border-width : 5px; )
+                *DEFAULT-VALUE : Opx
+                #VALUES : px - commonly use...
+
+              #STYLE:
+                *Border line style - ( border-style : solid; )  
+                *DEFAULT-VALUE : none
+                #VALUES : [ dotted , dashed , solid , double]
+
+              #COLOR:
+                *Border color - ( border-color : red; )
+                *DEFAULT-VALUE : element color
+                #VALUES : red - { HEX - CODE ]
+
+                ex:
+
+                div {
+                      width: 500px;
+                      height: 500px;
+                      background-color: steelblue;
+                      border-width: 5px;
+                      border-style: dashed;
+                      border-color: rgb(237, 100, 116);
+                    }
+
+
+                      #Shorthand border properties:
+                         *sets all the border properties in one go & applies to all four border...
+
+      [ border : 5px solid red - very common : width style color ] 
+
+                     ex:
+                        {
+                          border: solid 5px blue;
+                        }
+                          
+   
+.......................................................................
+  
+                #Individual border properties:
+                    *SETS all the border properties in one go & applies to one border at a time(like Shorthand properties)
+
+                     ex:
+                      {
+                        
+                        *border-top : 6px solid purpul;
+                        *border-right : 10px dashed blue;
+                        *border-bottom : 1px dotted red;
+                        *border-left : 10px double green;
+                      
+                      ]
+                      
+
+.......................................................................
+
+      #Border design guidance:
+        *borders helps with grouping related content(like cards in web-page)
+        *Individual border helps separating sections(creating empty border between header and section in web page)
+        *borders can create outline buttons which are commonly used along-side solid filled buttons(creating button and gives a modifications-{outline button***])
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+        #it is common to add a border on a filled button which matches its background color when used along-side an outline button...
+
+           ex:
+             
+        *FILLED-BUTTON(border with the same background color added)
+        *OUTLINE-BUTTON(separat color in border and content in button-it like inside in empty sapce*)
+
+           ex:
+
+           .btn-filled{
+                      text-decoration: none;
+                      background-color: blueviolet;
+                      color: white;
+                      padding: 20px 40px;
+                      border: 10px solid blue;
+
+                      }
+
+            .btn-outline{
+                      text-decoration: none;
+                      background-color: rgb(244, 241, 247);
+                      color: rgb(13, 12, 12);
+                      padding: 20px 40px;
+                      border: 10px solid blue;
+
+                      }
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+.......................................................................                      

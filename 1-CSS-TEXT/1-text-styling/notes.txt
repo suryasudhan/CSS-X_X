@@ -1,0 +1,165 @@
+                   
+                   
+                                              #fonts[styling,spacing,family,color,size]
+                                                
+                                                      #text-styling
+                                                      *font-weight
+                                                      *text-decoration
+                                                      *font-style
+                                                      *text-transform
+                                                      *list-style
+
+
+                *font-weight:sets the thickess of text characters,
+
+                ex:
+                  [property:value]
+
+                        font-weight:bold;
+
+                        100,200,300,400,500,600,700,800,900:
+                          
+                          100 to 400:normal[default text]
+                          500 to 600:medium
+                          700 to 900:bold[default heading]
+
+                          #font-weight guidance:
+                            *heading should be in 500 to 900 and other text 300 to 400
+
+....................................................................................................
+
+                        #text-decoration:
+
+                          *sets decoration lines on text 
+
+                          [text-decoration:underline blue dotted]
+
+                          *even we can give colour 
+                          *and style value [double,dotted,wavy,solid,dashed]
+                          ex:
+
+                            h1{
+                              text-decoration: underline red; 
+                              text-decoration: overline wavy;
+                              text-decoration: line-through;
+                              text-decoration: none;
+                              }
+
+           #text-decoration guidance:
+              *always remove underline from anchor tags and very rarely use text-decoration
+....................................................................................................
+
+                              #font-style
+
+                                [font-style:italic]
+
+                                #value:italic,normal,oblique,oblique 10deg
+
+                                #font-style quidance:
+                                  *can sometimes be used to draw attention...
+
+....................................................................................................
+
+                                # text-transform:
+
+                                  [text-transform:uppercase]
+
+              values:none,uppercase,lowercase,capitalize(first letter of each word is caplitalised )
+
+            #text-transform quidance:
+            *stick with sentence case -first letter of word in a sentence is uppercase
+            *bloggers , edgybrands & studios will sometime use uppercase to create a larger impate and appear daring(full of uppercase only)
+              
+
+....................................................................................................
+
+                                        #list-style:
+                          
+                                  *sets the style of a list 
+
+                                  [list-style:disc;]
+
+                                  #values:none,disc,circle, square,decimal
+
+                #list-style quidance:
+                *always set list-style to none when they are used for structural purposes
+                           ex: navigation bar to list the content
+        
+....................................................................................................
+
+                            ✅font-family
+                        → Sets the typeface or font used in your text
+
+                        ex:
+
+                          font-family: 'Poppins', sans-serif;
+
+                        Always provide fallbacks:
+                          "Roboto", "Arial", sans-serif
+
+                     *Custom fonts can be loaded from Google Fonts, Adobe, or locally.
+
+....................................................................................................
+                                   ✅font-size
+                      → Sets the size of the text
+
+                            ex:
+
+                            font-size: 16px;
+
+                            Units: px, em, rem, %, vw, vh
+
+                            *rem is preferred for responsive design:
+
+                            ex:
+                            font-size: 1.2rem;
+
+....................................................................................................
+                          ✅ color
+                          → Sets the text color
+
+                          ex:
+
+                          color: #333; /* dark gray */
+
+                          Can use:
+
+                          *Named colors: red, blue, black
+
+                          HEX: #ff0000
+
+                          RGB: rgb(255, 0, 0)
+
+                          HSL: hsl(0, 100%, 50%)
+
+
+....................................................................................................
+                          ✅ letter-spacing
+                          → Adjusts the space between letters
+
+                          ex:letter-spacing: 0.5px;
+
+                          *Positive values = spread out letters
+
+                          *Negative values = squeeze letters tighter
+
+
+....................................................................................................
+                          ✅ word-spacing
+                          → Adjusts the space between words
+
+                          ex:
+                          word-spacing: 4px;
+                            
+
+                            *Useful when text feels too cramped or too loose
+
+
+                  💡 Extra Tips:
+                  *Use rem units instead of px for scalable typography.
+
+                  *Combine font-family, font-weight, and letter-spacing for strong visual branding.
+
+                  *Keep colors accessible — high contrast between background and text.
+
+....................................................................................................

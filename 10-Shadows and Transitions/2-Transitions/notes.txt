@@ -1,0 +1,83 @@
+
+
+                                    TRANSITIONS
+
+                                * TRANSITIONS
+
+                                * TIMING FUNCTIONS
+
+                                * TRANSITIONS DESIGN GUIDANCE 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                      TRANSITIONS
+
+          @> when an element moves between states(PSEUDO-CLASS] the changes occur immediately          
+
+          @> TRANSITIONS are used to create a smooth , gradual changes to an elements properties when it under goes a state changes
+
+{
+
+.card{
+  width: 500px;
+  height: 500px;
+  background-color: lightblue;
+}
+
+.card:hover{
+  background-color: lightcoral;
+  border-radius: 50%;
+}
+
+}
+
+.........................................................................................
+
+
+      ###(transition : background-color 0.5s ease-in]-{property , duration ,  timing function}###
+
+      { defined on initial state : defaults to all properties that are changing if not defined , required , defaults to ease properties if not defined]
+ 
+
+ {
+
+.card {
+  width: 500px;
+  height: 500px;
+  background-color: lightblue;
+  transition: background-color 20s , border-radius 3s;
+  border: 15px solid rgb(89, 13, 231);
+}
+
+.card:hover {
+  background-color: rgb(245, 18, 18);
+  border-radius: 50%;
+  border: 20px dashed rgb(25, 25, 23);
+}
+
+ }
+                              ====ADDED IMG-TRANSITIONS====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     
+                                  TIMING FUNCTIONS 
+
+          * EASE -> starts slowly , speeds up and then slows down->(default value]
+
+          * LINEAT -> consistent speed start to end 
+
+          * EASE-IN -> starts slowly and accelerates to the end 
+
+          * EASE-OUT -> starts quickly and slows down towards the end
+
+          * EASE-IN-OUT -> starts slowly , speeds up in the middle and slows down at the end
+
+
+                          ====ADDED IMG-TIMING FUNCTIONS====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                      
+                            TRANSITIONS DESIGN GUIDANCE
+
+          @> transition on [buttons] add subtle visual feedback
+
+          @> transitions can make [card] components "POP"                 
+
+                    ====ADDED IMG-TRANSITIONS DESIGN GUIDANCE====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                      

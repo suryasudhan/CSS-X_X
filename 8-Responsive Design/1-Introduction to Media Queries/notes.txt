@@ -1,0 +1,263 @@
+
+
+                              INTRO TO RESPONSIVE DESIGN
+
+                                * RESPONSIVE DESIGN
+
+                                * MEDIA QUERIES
+
+                                * RELATIVE UNITS 
+
+                                * FLUID LAYOUTS
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                  RESPONSIVE DESIGN :
+
+         @> webpages were originally designed only for desktop computers , as they were the only devise available to access the internet        
+
+         #> Today there are a variety of devises with different screen size so webpages need to adapt for a more functional user experience               
+
+              ( RESPONSIVE DESIGN IS POWERED BY THREE MAIN PILLARS
+
+                                  * RELATIVE UNITS
+
+                                  * FLUID LAYOUTS
+
+                                  * MEDIA QUERIES  ]
+
+
+                       ====ADDED IMG-RESPONSIVE DESIGN====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                   MEDIA QUERIES :
+
+             @> Applies styles to a webpages based on specific conditions
+
+             (@media(max-width:500px) - @media[at-rule] | mad-width[conditions]]                      
+                         
+                            @media(max-width:500px){
+                              h2{
+                                font-size:14px;
+                              }
+                            } -> WHEN PAGE IS LESS THEN 500PX APPLY THESE RULES
+
+     { using media queries these RATIO => 0px  -  500px  -  1000px  -  1500px ->  ] -{we use some golbal styles like colors and font ]
+
+
+     {
+
+h1 {
+  color: red;
+  font-size: 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media(max-width:1500px) {
+  h1 {
+    color: blue;
+    font-size: 60px;
+  }
+}
+
+@media(max-width:1000px) {
+  h1 {
+    color: orange;
+    font-size: 40px;
+  }
+}
+
+@media(max-width:500px) {
+  h1 {
+    color: aqua;
+    font-size: 20px;
+  }
+}
+
+     }
+
+
+                         ====ADDED IMG-MEDIA QUERIES====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                RELATIVE UNITS : (to over come from the media queries , like making more media queries on multiple code lines-screen RATIO]
+                        
+
+            @> elements scale proportionally based on parent container(percentages] size or scalable reference points(REMS]
+
+
+            {
+
+ # added img about the 90% , how it's work .... basicaly it reduce the size of the screen to display nice*(RESPONSIVE design)..
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+}
+
+            ]
+                        ====ADDED IMG-RELATIVE UNITS====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+                         REMS INSIDE MEDIA QUERIES conditions
+
+              @> The REM value INSIDE a medis queries conditions is (inside brackets] always based on the default browser font size(16px] --- ADDED img
+
+ {
+                                     #  CSS
+
+  html{
+  font-size : 62.5%; ->  16px X 62.5%  = 10px
+ }
+ 
+ h1{
+  font-size:4rem; -> 40px
+ }
+        / now h1 and p is 1rem - 10px - due to html-changing the font-size /
+ p{
+  font-size:2rem; -> 20px
+ }
+
+
+              # MEDIA QUERY conditions(changing px to rems on media querie]
+
+   @media(max-width:31.25rem){
+    /////
+   }     -> 1rem = 16px {default browser fontsize / 31.25rem x 16px = 500px]
+
+
+ ]            
+
+
+ .......................................................................................
+
+
+            @> rem values scale proportionally , adjusting both existing and new values based on the updated root font size           
+{
+  
+                             #CSS 
+
+html{
+  font-size: 62.5%; -> changing root of the font-size
+}            
+
+h1{
+  font-size: 10rem;
+  padding: 5rem;
+} -> { 62.5% x 16px = 10px NOW  1rem = 10px }
+
+
+                # media querie - (media querie is working based on default browser SIZE , 16px]
+
+ /  62.5 x 16px = 1000px  /
+@media(max-width:62.5rem){
+  html{
+    font-size : 50%; -> no we changed the root fontsize 50% by default browser fontsize
+  }
+}
+
+ -> 50% x 16px = 8  ,  1rem = 8px
+
+
+ #### EXISTING PROPERTIES USING REMS : all PROPERTIES using rems will automatically shrink to 80% of their orignal size ####
+
+
+                             >>>>> 8px / 10px = 80% <<<<<
+  
+  ]
+
+  ......................................................................................
+
+
+  @media(max-width:62.5%) {
+
+  html{
+    font-size: 50%;
+    /* 16px x 50% = 8px -> now no longer to be 10px , now 8px */
+    /* then pervious 10px to calculate the .review-text {font-size: 2rem;} is 40px ....now the inside the media queries 8px so .review-text {font-size: 2rem;} is 32px */
+  }
+}
+
+
+.........................................................................................
+
+##### NEW PROPERTIES INSIDE MEDIA QUERIES :  new properties added with rem will be based on new pixel value, not 10px #####
+
+@media(max-width:62.5rem){
+  html{
+    font-size : 50% ;
+  }
+
+  a{
+    padding : 2rem 4rem ; -> 50% x 16 = 8px not 10px so , now 2rem is 16 rem and 4rem is 32rem
+  }
+}
+ 
+.........................................................................................
+
+ @> when adding new rem values inside a media querie select values you would use for the base case and it will scale automatically 
+
+ {
+                             #CSS 
+
+html{
+  font-size: 62.5%; 
+}            
+
+h1{
+  font-size: 10rem;
+  padding: 5rem;
+} 
+
+                             #media querie
+
+@media(max-width:62.5rem){
+  html{
+    font-size : 50% ;
+  }
+
+  a{
+    padding : 2rem 4rem ; ->THING AS IF 1REMS = 10PX
+  }
+}
+
+
+          >>>don't worry about exact pixel values for each media querie , focus on what you would do on<<<                    
+
+  ]
+
+.........................................................................................
+
+  html{
+    font-size: 50%;
+ .review-card {
+  padding: 4rem; /* we don't need to thing the px value just we keep in mide is 10px so , in here media querie it can automaticaly modify into there RATIO */
+} ---> /* 4rem x 8px = 32px */
+
+}
+
+                ====ADDED IMG-REMS INSIDE MEDIA QUERIES conditions====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                   FLUID LAYOUTS :
+
+            @> using flexbox & css grid allow LAYOUTS to dinamically adjust in size and position easly                     
+                          
+
+                          {
+     # befor ->                       
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;}
+
+     # after ->
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;}                            
+                            ]
+
+                            
+                          ====ADDED IMG-FLUID LAYOUTS====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

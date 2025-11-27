@@ -1,0 +1,153 @@
+
+ 
+                                   TRANSFORM
+
+                            * TRANSFORM PROPERTY
+
+                            * TRANSFORMATION FUNCTIONS
+
+                            * POSITIONED ELEMENTS & TRANSLATE 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                                 
+                                  TRANSFORM PROPERTY
+
+             @> Applies visual TRANSFORMATIONs to an ELEMENTS like scaling , rotating , TRANSLATE and (skewing-applies a shear transformation (also known as a transvection) to distort an element on the 2D plane by tilting it along the x-axis and/or y-axis]                        
+
+                 [transform : scale(2,0.5); -> transformation function}
+
+                 VALUES : scale() , skew() , rotate() , translate()
+
+                          ====ADDED IMG-TRANSFORM PROPERTY====
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                             TRANSFORMATION FUNCTIONS
+
+    1 .  SCALE : resizes element HORIZONTALLY & VERTICALLY
+
+        (transform : scale(2,0.5); -> x-axis scale factor | y-axis scale factor}                       
+
+
+    2 .  SKEW : Distort element by slanting it HORIZONTALLY & VERTICALLY
+
+        (transform : skew(20deg,50deg); -> x-axis slant angle | y-angle slant angle}
+
+
+    3 .  ROTATE : rotates element around its center
+
+        (transform : rotate(45deg); -> angle}     
+  
+
+    4 .  TRANSLATE : moves element HORIZONTALLY & VERTICALLY from its position
+
+         (transform : translate(50% , -200px); -> x-axis transformation | y-axis transformation}
+
+.........................................................................................
+
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: salmon;
+  margin-left: 100px;
+  margin-top: 100px;
+  /* width : 1.2 X 200 = 240px | height : 1.5 X 200 = 300px  */
+  /* transform: scale(1.2 , 1.5); */
+}
+
+.card:hover{
+  transform: scale(1.2 , 1.5);
+}
+
+.........................................................................................
+
+.card:hover {
+  transform: skew(20deg, 20deg);
+}
+
+.........................................................................................
+
+.card:hover{
+  transform: rotate(45deg);
+}
+.........................................................................................
+
+.card:hover{
+  /* transform: translate(100px , 100px); */
+  transform: translate(-100px , -100px);
+}
+
+.........................................................................................
+
+
+                    ====ADDED IMG-TRANSFORMATION FUNCTIONS====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                         POSITIONED ELEMENTS & TRANSLATE
+
+           @> Using positioning and translate together provides precise control over element placement              
+
+.........................................................................................
+
+ RECAP : ABSOLUTE POSITIONING  
+
+               @> The element is removed from the normal document                                               
+                
+                            (position : absolute ;]
+
+          #> the slot removed --- the elements below move in as the "slot is no longer present  >>> in it's own "LAYER" & can move around   
+
+
+          @> when postioning an absolute postioned element the referance point is the root HTML element   
+
+          (it dosent act like the RELATIVE , when the ABSOLUTE is act accourding the with root element of HTML | offset propertity , nither like RELATIVE when come with AXCIES]
+
+.container {
+  position: relative;
+}
+
+.box-2 {
+  position: absolute;
+  top: 400px;
+  left: 500px;
+}
+
+          ### more commonly , the referance point is set by the nearest ancestor which a non-static postion ( like giving RELATIVE to the PARENT-element and then its dosent work based on the root element of HTML ] ###
+.........................................................................................
+
+
+.modal {
+  /* modal | position: absolute; now works based on BODY-tag of HTML */
+  width: 300px;
+  height: 300px;
+  background-color: lightgrey;
+  /* position: absolute; */
+  /* position: absolute , now when we move around the webpage it's move along to the scroll position , so we used to position : fixed ; */
+  position: fixed;/* now fixed into the center of the webpage */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* Now one question you may have at this point is why can't we just use (flexbox] ... flexbox is a great way to center elements HORIZONTALLY and VERTICALLY now the reason flexbox wouldn't be a good option here is because we want our modal window to appear above other content >>>by default when setting a positioned value on a element the borwser will automatically render this above other content <<< Also using a position valuee like fixed gives us access to the Z-INDEX property ....... so i could add a Z INDEX value of say 999 and this would ensure that this modal window always appearsabove the content >>> YOU JUST CAN'T ACHIVE THIS WIHT FLEXBOX <<<  | The ZINDEX property only becomes accessible when you're using (position value] - so for a case like this where we want a modal window to always above other content , (it's better practice to position it and use offset values and then use the transform property and translate function to perfectly center it in the middle of the page] ....... now of course flexbox is avaliable to use inside the container ,,,, for ex : if we perfectly wanted to center this content the heading and paragraph , which are children of the modal we could add display : flex and there properties :
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}  */
+
+                ( ====ADDED IMG-POSITIONED ELEMENTS & TRANSLATE====]
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                  TRANSFORM GUIDANCE
+
+        @> scale is often used when HOVEING(triggered by state change] over an image to create a dynamic visual effect                    
+
+        @> TRANSLATE is used on postioned modals to ACHIVE precise centering within their containers  
+
+        @> TRANSLATE is used on positioned alerts to achive precise alignment in the top right corner
+        
+                          ====ADDED IMG-TRANSFORM GUIDANCE====  
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

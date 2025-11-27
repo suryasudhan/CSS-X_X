@@ -1,0 +1,71 @@
+
+                             #MAIN CONTAINER:
+                               *Main wraprer container  
+                               *Auto value
+
+..........................................................................
+
+                              #Main wraprer container:
+            *its very common for a webpage* to have a wraprer which adds margin left & right as well as centers all the content...  
+
+             @to create a container , a suitable width is chosen to prevent content form excessively stretching on larger screen sizes
+
+            ******************** ADDED IMG ************************* 
+
+            #CENTERING THE CONTAINER:
+              *To center the container , calculate the remaining width and distribute the space to margin left and right equally...
+
+            ******************** ADDED IMG ************************* 
+
+  .container{
+              width: 800px;
+              background-color: lightskyblue;
+              /* added img related of 1240px screen */
+                /*1240 is my lapscren size,now ADDING needed width =800 and inbuilt screen szie = 1240(lap-ration) */
+              /* (1240 - 800) / 2 = 220 */
+              margin-left: 220px;
+              margin-right: 220px;
+            }
+..........................................................................
+
+                              #Auto value:
+          *A value that enables the browser to automatically determain a property's size...
+                         
+                          [ height : auto; ]
+
+                   @>IMAGE:
+                       *automatically applies to the other dimnsion when settings width or height to preserve aspect ratio
+                           
+                           EX:APPLIED BEHIND THE SCENES...
+                               
+                               .img{
+                                      width: 400px;
+                                      height: auto;
+                                    }
+
+
+                   @>MARGIN:
+                        *Automatically calculates the remaining space inside a parent and used to center a child container...
+
+                           EX:CENTERS CONTAINER...
+
+                          .container{
+                                      width: 1200px;
+                                      margin-left: auto;
+                                      margin-right: auto;
+                                    }           
+..........................................................................                               
+
+                             @AUTO:
+                                 Using the shorthand margin property is concise and more common...
+
+                            @=>shorthand property:
+
+                               ex: it applys both left anf right...
+
+                                  .container{
+                                    width : 12oopx;
+                                    margin : 0 auto;
+                                  }     
+
+..........................................................................                               

@@ -1,0 +1,66 @@
+
+                                PERCENTAGES :
+
+                          * WHAT ARE PERCENTAGES
+
+                          * PERCENTAGES DESIGN GUIDANCE
+
+                          * COMMON PERCENTAGES VALUES USSE CASES
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                             WHAT ARE PERCENTAGES:
+
+                * A units that is always relative to some other VALUES
+
+                +> relative to a parent : very common to use cases 
+
+                                    * width 
+
+                                    * height
+
+                                    * margin
+
+                                    * padding
+
+
+                +> relative to the element itself : very few elements to useage
+
+                                    * line-height
+
+    ..............ADDED IMG-PERCENTAGES ..............                                   
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                            PERCENTAGES DESIGN GUIDANCE : 
+
+               * PERCENTAGES are used to conjuction with max-width on main container so that the webpage is fully responsive...    
+
+
+            ..............ADDED IMG-PERCENTAGES GUIDANCE.............. (out come of the img => to prevent the problem we use to body of the container to be in PX and the child element tobe in PERCENTAGES% )  
+
+.........................................................................................
+
+             @> PERCENTAGES are used in conjuction with max-width on standalone images so that the webpage is fully responsive...
+
+              = INLINE ELEMENT [REMAINDER] : INLINE element will extend beyond the browser when it is narrower 
+
+                      (max-width : 1200px ; -> ADDED IMAGES]  
+
+.........................................................................................
+
+            @> its common to set images inside a [grid or flex] container to (100%] so it fills the cell and adapts responsively...    
+
+.........................................................................................
+
+            @> There are cases when you want to set a button width to [100%} so it fills its container and adapts responsively... 
+
+.........................................................................................
+
+            @> PERCENTAGES VALUES are used for fully rounded corners as pixels require manual calculation...
+
+             **************ADDED IMG - using A-TAG,differenc by using(PX , %}********************
+.........................................................................................
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                            COMMON PERCENTAGES VALUES USSE CASES :
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

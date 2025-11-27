@@ -1,0 +1,35 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 800px;
+  background-color: lightskyblue;
+  /* added img related of 1240px screen */
+    /*1240 is my lapscren size,now ADDING needed width =800 and inbuilt screen szie = 1240(lap-ration) */
+  /* (1240 - 800) / 2 = 220 */
+  margin-left: 220px;
+  margin-right: 220px;
+}
+
+/*  */
+
+.img{
+  width: 400px;
+  height: auto;
+}
+
+.container{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*  */
+
+.container{
+   width: 1200px;
+   margin: 0 auto;
+}

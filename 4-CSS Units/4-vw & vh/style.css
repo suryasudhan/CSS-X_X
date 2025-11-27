@@ -1,0 +1,12 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+
+div {
+  /* added img related secren width and height */
+  width: 60vw;  /*screen width(1280) x 60% = 786px*/
+  height: 40vh;  /*210 x 40% =84px*/
+  background-color: teal;
+}

@@ -1,0 +1,131 @@
+🎯 CSS TEXT STYLING – COMPLETE MASTER NOTES 1️⃣ font-weight → Sets the thickness of text characters
+
+🔹 Syntax: css Copy Edit font-weight: bold; 🔹 Value Range: 100 to 400 → Normal (default text)
+
+500 to 600 → Medium
+
+700 to 900 → Bold (default heading)
+
+📝 font-weight guidance: Heading should be in 500 to 900 and other text 300 to 400
+
+💡 Extra Tips: Use normal, bold, lighter, or bolder as quick keyword values.
+
+Avoid mixing too many font weights in one section — keeps it visually balanced.
+
+Pair font-weight with font-family wisely to maintain clean design.
+
+2️⃣ text-decoration → Adds visual lines and styles to text
+
+🔹 Syntax: css Copy Edit text-decoration: underline red dotted; 🔹 Parts: Line types → underline, overline, line-through, none
+
+Styles → solid, dotted, dashed, double, wavy
+
+Color → Any valid CSS color (e.g., red, #333)
+
+🔹 Example: css Copy Edit h1 { text-decoration: underline red; text-decoration: overline wavy; text-decoration: line-through; text-decoration: none; } 📝 text-decoration guidance: Always remove underline from anchor tags and very rarely use text-decoration
+
+💡 Extra Tips: Use a { text-decoration: none; } to remove default underlines from links.
+
+Combine with :hover for better interaction:
+
+css Copy Edit a:hover { text-decoration: underline; } Don’t over-decorate — it kills readability.
+
+3️⃣ font-style → Slants the text for emphasis
+
+🔹 Syntax: css Copy Edit font-style: italic; 🔹 Values: normal → Straight text
+
+italic → Leaning text (most used)
+
+oblique → Slanted like italic, but browser-generated
+
+oblique 10deg → Custom angle (modern browsers only)
+
+📝 font-style guidance: Can sometimes be used to draw attention...
+
+💡 Extra Tips: Perfect for quotes, citations, and small branding text.
+
+Avoid using on large paragraphs — it hurts readability.
+
+italic works best when the font supports it (some fonts don’t).
+
+4️⃣ text-transform → Controls text capitalization
+
+🔹 Syntax: css Copy Edit text-transform: uppercase; 🔹 Values: none → Default (no change)
+
+uppercase → ALL CAPS
+
+lowercase → all lowercase
+
+capitalize → First Letter Of Every Word Is Capitalized
+
+📝 text-transform guidance: Stick with sentence case – first letter of word in a sentence is uppercase
+
+Bloggers, edgy brands & studios will sometimes use uppercase to create a larger impact and appear daring (full of uppercase only)
+
+💡 Extra Tips: capitalize is great for form fields (like name, city, etc.)
+
+Use uppercase for titles, buttons, logos — not paragraphs.
+
+Don’t rely on this to "fix" bad casing in your content — it's for style, not spelling.
+
+5️⃣ list-style → Sets the bullet or numbering style of lists
+
+🔹 Syntax: css Copy Edit list-style: disc; 🔹 Values: none → Removes bullets/numbers
+
+disc → ● (default)
+
+circle → ○
+
+square → ■
+
+decimal → 1, 2, 3…
+
+📝 list-style guidance: Always set list-style to none when they are used for structural purposes Ex: navigation bar to list the content
+
+💡 Extra Tips: Useful with:
+
+css Copy Edit ul { list-style: none; padding: 0; } For custom bullets/icons:
+
+css Copy Edit ul li::before { content: "➤"; margin-right: 8px; color: blue; } Great for navbars, menus, and styled list components.
+
+6️⃣ Bonus: Fonts — Styling, Spacing, Family, Color, Size These properties are essential to fully control the appearance of your text.
+
+✅ font-family → Sets the typeface or font used in your text
+
+css Copy Edit font-family: 'Poppins', sans-serif; Always provide fallbacks: "Roboto", "Arial", sans-serif
+
+Custom fonts can be loaded from Google Fonts, Adobe, or locally.
+
+✅ font-size → Sets the size of the text
+
+css Copy Edit font-size: 16px; Units: px, em, rem, %, vw, vh
+
+rem is preferred for responsive design:
+
+css Copy Edit font-size: 1.2rem; ✅ color → Sets the text color
+
+css Copy Edit color: #333; /* dark gray */ Can use:
+
+Named colors: red, blue, black
+
+HEX: #ff0000
+
+RGB: rgb(255, 0, 0)
+
+HSL: hsl(0, 100%, 50%)
+
+✅ letter-spacing → Adjusts the space between letters
+
+css Copy Edit letter-spacing: 0.5px; Positive values = spread out letters
+
+Negative values = squeeze letters tighter
+
+✅ word-spacing → Adjusts the space between words
+
+css Copy Edit word-spacing: 4px; Useful when text feels too cramped or too loose
+
+💡 Extra Tips: Use rem units instead of px for scalable typography.
+
+Combine font-family, font-weight, and letter-spacing for strong visual branding.
+
+Keep colors accessible — high contrast between background and text.

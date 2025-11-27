@@ -1,0 +1,33 @@
+
+                        #CSS BOX MODEL INTRODUCTION
+                          *HTML element boxes
+                          *the CSS box model...
+
+           #THE BOX ITSELF :WIDTH & HEIGHT , BORDER , MARGIN
+...................................................................
+                    
+                    #HTML element boxes:
+                      *all HTML elements are treated as rectangular boxes 
+                  
+                      *each box has it own set of properties 
+                        ex:
+                          *h2 - take full WIDTH of the page
+                          *p - take full WIDTH of the page
+                          *a - it just take content ocuipe space 
+
+                     #ex:of the box model
+
+                        *space between boxes(like other tags h2 and p between them space ) 
+                        *space between content and border (inside the content it act as space between content and border)
+                        *border(out side of the content) 
+
+...................................................................
+
+ 
+  #THE CSS BOX MODEL:
+    *CONTENT - TEXT , IMAGE , LINKS , FORMS , ETC...
+    *PADDING - SPACE BETWEEN CONTENT AND BORDER & STILL PART OF THE ELEMENT
+    *BORDER - A LINE AROUND THE ELEMENT STILL PART OF THE ELEMENT
+    *MARGIN - SPACE OUTSIDE THE ELEMENT,SEPARATING IT FROM OTHER ELEMENTS  
+
+...................................................................

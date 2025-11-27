@@ -1,0 +1,111 @@
+
+                              
+                                 GRID ALIGNMENT 
+
+                                * JUSTIFY CONTENT
+
+                                * ALIGN CONTENT
+                                  
+                                * ITEMS vs CONTENT
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                  GRID ALIGNMENT :  
+
+             @> Entire GRID tracks can be aligned and distributed when there is extra space in the GRID container                     
+                              
+                      [GRID ITEMS + GRID ROWS + GRID COLUMN]  
+
+
+                        ====ADDED IMG-GRID ALIGNMENT====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        JUSTIFY CONTENT : -> (same as flexbox]
+
+                @> ALIGN Entire GRID COLUMNS along the (row axis] 
+
+                      [GRID ITEMS + GRID ROWS + GRID COLUMN]  
+
+                      {
+                        * justify-content : start ; -> default
+                        * justify-content : end ;
+                        * justify-content : center;
+                        * justify-content : space-between;
+                        * justify-content : space-around;
+                        * justify-content : space-evenly;
+                      }                 
+
+
+
+[
+
+
+.grid-container {
+  font-size: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(4 , 100px);
+  width: 800px;
+  height: 800px;
+  background-color: black;
+  justify-content: space-evenly;
+}
+
+
+]                      
+
+                        ====ADDED IMG-JUSTIFY CONTENT====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                          ALIGN CONTENT : -> (same as flexbox]
+
+                @> ALIGN Entire GRID rows along the (COLUMN axis]   
+
+                          {
+                            * align-content : start; -> default
+                            * align-content : end;
+                            * align-content : center;
+                            * align-content : space-between;
+                            * align-content : space-around;
+                            * align-content : space-evenly;
+                          }        
+
+
+{
+
+.grid-container {
+  font-size: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(4 , 100px);
+  width: 800px;
+  height: 800px;
+  background-color: black;
+
+  /* justify-content: end; */ -- noted difference by row and column --
+  align-content: end;
+}
+
+}
+                          ====ADDED IMG-ALIGN CONTENT====
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    
+              ITEMS vs CONTENT : (we both combain to use justify-item and align-item | justify-content and align-content]
+
+   => JUSTIFY ITEMS             |       ALIGN ITEMS
+
+    (*) align GRID ITEMS when grid cells have extra space
+
+    # ROW AXIS -> justify-items and align-items = [start , end , center , stretch]                               
+
+
+   => JUSTIFY CONTENT           |       ALIGN CONTENT
+
+   (*) aligns GRID tracks when the grid itself has extra space
+
+   # ROW AXIS -> justify-content and align-content = [start , end , center , space-around , space-evenly , space-between]
+   
+                          ====ADDED IMG-ITEMS vs CONTENT====
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                
+

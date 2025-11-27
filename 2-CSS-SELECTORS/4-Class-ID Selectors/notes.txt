@@ -1,0 +1,69 @@
+ 
+                      #class & id selectors
+                        *limitations with the type selectors
+                        *the id selectors
+                        *the class selectors
+
+...............................................................
+ 
+              #limitations with the type selectors
+                
+                *sometimes we want to applyspecific styles to a single elements
+                         (so, we use id and class)
+
+...............................................................
+
+                   #the id selectors
+                     *selects an element based on a unique id* attribute and can only be used once
+
+                       (we use the id selectors to use - # }
+                        
+                    ex:both are p-tag but in one using #id
+
+                         p{
+                            color: violet;
+                          }
+
+                          #red-text{
+                            color: blueviolet;
+                          }
+
+
+...............................................................
+
+                     #the class selectors
+                      *selects one or more elements based on a class attribute that can be used multiple times
+
+                (we use the class selectors by use - [.]-DOT }
+
+
+                      ex:
+
+                      p {
+                          color: brown;
+                          background-color: yellow;
+                        }
+
+                        #red-text {
+                          color: red;
+                          background-color: black;
+                        }
+
+                        .blue-text {
+                          color: blue;
+                          background-color: antiquewhite;
+                        }
+
+...............................................................
+
+                        #selectors guidance:
+
+                         *classes are often preferred over ID* because they offfer grater flexiblity and reusablity
+
+                         *it is common to use type selectors for golobal style and class selectors for more specific visual style
+                           ex:in a p-tag , we trageting seletive word by using <spna>-tag to modifiy*
+
+                         *classes for components are designed to be combined on a single HTML element for a modular approach to styling 
+                           ex:(buttons-using more buttons in webpage with diff-color}
+                              
+...............................................................                                                

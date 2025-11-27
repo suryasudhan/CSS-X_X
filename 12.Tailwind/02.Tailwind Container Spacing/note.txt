@@ -1,0 +1,11 @@
+    <!-- Margin -->
+    <!-- https://v3.tailwindcss.com/docs/margin#add-margin-to-a-single-side -->
+
+    <!-- Arbitray Spacing -->
+    <!-- in Aribitray we can customize the value by using px , rem ...etcc  -->
+
+    <!-- Padding -->
+    <!-- https://v3.tailwindcss.com/docs/scroll-padding -->
+
+    <!-- Space Between X and Space Between Y -->
+    <!-- https://v3.tailwindcss.com/docs/space  -->

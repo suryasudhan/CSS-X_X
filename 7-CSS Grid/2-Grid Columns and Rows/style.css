@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  font-size: 40px;
+  display: grid;
+  /* grid-template-columns: 100px 100px 100px;in this part we have 3 x 3 rows and columns but we have 8 items so , 1 items is missing but in grid layout it take the empty space around */
+  /* grid-template-rows:40px 100px 200px;if we don't set the height of rows - remaining of the items it takes default height */
+  grid-template-columns: 1fr , 1fr ,1fr ,1fr  repeat(4,1fr) ;/*we can use persentage too [25% 75%]*/
+  width: 400px;/*  grid-template-columns - it propotionly works based on the width of the container */
+  /* height: 1000px; */
+  grid-template-rows: 1fr 2fr 3fr 4fr; /*1 + 2 + 3 + 4 = 10 , 1000/10 = 200 */
+}
+
+.grid-item-1 {
+  background-color: red;
+}
+
+.grid-item-2 {
+  background-color: yellowgreen;
+}
+
+.grid-item-3 {
+  background-color: yellow;
+}
+
+.grid-item-4 {
+  background-color: rgb(108, 75, 75);
+}
+
+.grid-item-5 {
+  background-color: blue;
+}
+
+.grid-item-6 {
+  background-color: violet;
+}
+
+.grid-item-7 {
+  background-color: blueviolet;
+}
+
+.grid-item-8 {
+  background-color: orange;
+}

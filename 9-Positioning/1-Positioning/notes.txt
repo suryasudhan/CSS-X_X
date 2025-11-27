@@ -1,0 +1,204 @@
+
+
+                                     POSITIONING
+
+                                  * STATIC POSITIONING
+
+                                  * RELATIVE POSITIONING
+
+                                  * ABSOLUTE POSITIONING
+
+                                  * FIXED POSITIONING
+
+                                  * STICKY POSITIONING
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                    NORMAL FLOW :
+
+             @> elements occupy their own designated "SLOT" on the page which allows them to be surrounded by other elements                          
+
+                              ====ADDED IMG-NORMAL FLOW====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  
+                                POSITIONING PROPERTY
+
+             @> determines how an element is postioned on the page 
+
+                      (postion : static; -> static is DEFAULT VALUE] 
+
+          # VALUES : static , relative , absolute , fixed , sticky                       
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                                     
+                                STATIC POSITIONING    
+
+             @> The element follows the normal document flow 
+
+        (postion : static ; -> DEFAULT]     
+
+        {
+
+.box-1 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+.box-2 {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  position: static;
+}
+
+.box-3 {
+  height: 300px;
+  width: 300px;
+  background-color: blueviolet;
+}
+
+        }                                         
+
+                          ====ADDED IMG-STATIC POSITIONING====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                RELATIVE POSITIONING
+
+        @> The element follows the normal document flow but can be offset relative to itself 
+
+                             (position : relative ;]   
+
+                * element can move around relative to its original position            
+
+                * other elements remain in position as the slot of the relatively positioned element remains present 
+
+            * now seperated  BOX , in it's own ("layer"] & can move around    
+
+.........................................................................................
+
+
+                                   OFFSET PROPERTY
+
+                @> offset PROPERTYs are used to shift the element from its reference point    
+
+        (position : relative ;] -> position has a value other then static {so using offset PROPERTY would'nt work for regular elements , because by default regular elements have a position property of static - but the offset property does work when it has a non static value like relative and the other values]
+
+        when we coded the relative and then we assume the << reference point >>
+
+          OFFSET PROPERTY : (shift --- awayfrom the --- of the reference point]
+
+                                  * top    : px ;
+                                  * left   : px ;
+                                  * right  : px ;
+                                  * bottom : px ; 
+
+{ -> once we change to static , the relative dosent work!!!
+
+.box-1 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: relative;
+  /* activated the referance point ad writing the offset propertity*/
+  top: 30px;
+  left: 40px;
+}
+
+}
+                  ====ADDED IMG-RELATIVE POSITIONING & OFFSET PROPERTY====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                ABSOLUTE POSITIONING  
+
+               @> The element is removed from the normal document                                               
+                
+                            (position : absolute ;]
+
+          #> the slot removed --- the elements below move in as the "slot is no longer present  >>> in it's own "LAYER" & can move around   
+
+
+          @> when postioning an absolute postioned element the referance point is the root HTML element   
+
+          (it dosent act like the RELATIVE , when the ABSOLUTE is act accourding the with root element of HTML | offset propertity , nither like RELATIVE when come with AXCIES]
+
+
+          {
+
+.container {
+  position: relative;
+}
+
+.box-2 {
+  position: absolute;
+  top: 400px;
+  left: 500px;
+}
+
+
+          }
+
+          ### more commonly , the referance point is set by the nearest ancestor which a non-static postion ( like giving RELATIVE to the PARENT-element and then its dosent work based on the root element of HTML ] ###
+                        ====ADDED IMG-ABSOLUTE POSITIONING====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        FIXED POSITIONING & STICKY POSITIONING  
+
+
+                                   FIXED POSITIONING
+
+
+        RECAP -> ABSOLUTE POSITIONING = The element is removed from the normal document flow 
+
+              -> FIXED POSITIONING = Absolute postioning , but the element remains fixed relative to the viewport and is unaffected by acrolling               
+
+
+{
+
+.container {
+  width: 800px;
+  height: 1500px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.box-3 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+}
+
+.........................................................................................
+
+              STICKY POSITIONING ->(need activation to attain some scroll poins]
+
+              -> STICKY POSITIONING = the element is in normal flow until a certain scroll point when it when becomes FIXED
+
+{
+
+.box-3 {
+  position: sticky;
+  top: 50px;
+}
+
+}
+
+              ==== ADDED IMG-FIXED POSITIONING & STICKY POSITIONING  ====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                               POSITIONING GUIDANCE                              
+                        
+        @> ABSOLUTE postioning is more commonly used then RELATIVE(slot is removed , so no unexpected gaps in layout] because it removes elements from the document flow -{positioned relative to PARENT container]  
+
+        @> Absolute postioning should be used as a last resort for very sepcific cases as it makes responsive design more challenging - ex: * star added IMG   
+ 
+ 
+ 
+        @> FIXED postioning is used for elements that need to be absolute postioned but also need to remain visible when the user scroll - ex: chat box added IMG
+
+        @> sticky postioning is ideal for NAVBARS , As they stay at the top in normal flow and then become fixed when the user scrolls 
+
+                      ====ADDED IMG-POSITIONING GUIDANCE ====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                  
+                               

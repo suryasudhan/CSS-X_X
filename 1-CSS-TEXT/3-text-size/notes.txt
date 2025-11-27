@@ -1,0 +1,93 @@
+  
+                #text-size;
+
+                  *font-size
+                  *pixels as a unit
+                  *type-scale
+............................................................
+             
+              #font-size    
+
+               *sets the size of the text
+
+               [font-size:16px;]
+
+               #absolute-unit
+                *size is fixed and does not change in relation to parent elements
+                
+                 values:
+                      *px-commonly used
+                      *pt
+                      *in 
+                      *cm and mm 
+  
+               #relative-unit:
+                *size is based on the size of parent elements and ad justs proportionally to changes in the parent elements... 
+
+                  values:
+                    *%
+                    *em
+                    *rem
+                    *vh
+                    *vw  
+............................................................
+
+          #pixels:
+             *a single point of light on a digital display is pixel*
+
+         # A css pixel has a length of 1/96 inc(0.0104 inch)
+         
+
+         #font-size guidance:
+          *regular text should be 16px-32px and heading can be >60px...
+
+............................................................
+             
+             #type-scale:
+               *use a type-scale which provides a structured hierarchy of font-size to create visual consistenct and limits choices
+
+                    {
+                      
+                      62px - h1
+
+                      48px - h2
+
+                      40px - h3
+
+                      32px - h4 
+
+                      24px - h5
+
+                      20px - p 
+
+                      16px - A-(base value)
+            
+             1.2rem X 12px - small  
+
+            1.2 is multi by px(16,20,24...)  ]
+
+                  EX:{typescale.com]
+
+
+            {
+              
+            1rem = the base (normal text)
+
+            1.2rem = 20% bigger than the base
+
+            0.875rem = smaller than the base
+            
+            
+            | Ratio     | Style            | Example Sizes                   |
+| --------- | ---------------- | ------------------------------- |
+| **1.2**   | Minor Third      | 16px → 19.2px → 23px → 27.6px   |
+| **1.25**  | Major Third      | 16px → 20px → 25px → 31.25px    |
+| **1.333** | Perfect Fourth   | 16px → 21.3px → 28.4px → 37.9px |
+| **1.414** | Augmented Fourth | 16px → 22.6px → 32px → 45.2px   |
+
+          ]      
+
+............................................................
+
+        
+           

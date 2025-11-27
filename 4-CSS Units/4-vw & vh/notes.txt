@@ -1,0 +1,31 @@
+
+                                   VW & VH :
+
+                            * WHAT ARE VW & VH 
+
+                            * VW & VH DESIGN GUIDANCE
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                             
+                              WHAT ARE VW & VH :
+
+                              * VIEW HEIGHT(VH) & VIEW WIDTH(VW) are units that are a percentage of the browsers visible window
+
+            ..................ADDED IMG-VH & VW........................            
+
+(by ADDEDing vh and vw to the code give advantage like,when the screen will scrink or extend it propotional to the code too [even if screen scrink the code will be scrink | even if screen will strech the code will be strech too]]
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                              VW & VH DESIGN GUIDANCE:
+
+                * VH can be used on [hero section] in conjunction with min-height so content is always above the fold
+
+               ..................ADDED IMG-DUOLINGO............[ITS very rare to use fill vh=100% ,even if screen scrink the code will be scrink | even if screen will strech the code will be strech too].            
+
+.........................................................................................
+
+               * VH can be useful for creating responsive text when it is a main standalone element and not confined within a container 
+
+                 ..................ADDED IMG-even it reduce the[WIDTH and HEIGHT of the text too}
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                            

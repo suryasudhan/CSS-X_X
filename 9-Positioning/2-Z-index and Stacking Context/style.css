@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 800px;
+  height: 1500px;
+  background-color: lightpink;
+  margin-top: 100px;
+  margin-left: 100px;
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+
+/* z-index : remember the added img like it's higher the z-index value overlap the elements */
+/* if the z-index : -1 , useualy gooes behind the container , it's not completlly disappera */
+.box-1 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  z-index: 0;
+}
+
+.box-2 {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  /* margin-bottom: -80px;
+  margin-top: -50px; */
+  position: relative;
+  top: 120px;
+  /* default z-index is 0 , like no changes  */
+  z-index: 1;
+}
+
+.box-3 {
+  height: 300px;
+  width: 300px;
+  background-color: blueviolet;
+  position: relative;
+  /* applying the relative on both box 2 and  3 : the reason box-3 appears on top of the box-2 is just because of in our underluing HTML , box-3 comes last .... so, although it seems like adding a position value onto an element , that it appears on top of other elements ,we are still in fact in the same plane  */
+  z-index: 2;
+}
+
+.child-1 {
+  height: 50px;
+  width: 150px;
+  background-color: red;
+  position: relative;
+  z-index: 99;
+}
+
+
+.child-2 {
+  height: 50px;
+  width: 150px;
+  background-color: rgb(73, 166, 36);
+  position: relative;
+  bottom: 20px;
+}

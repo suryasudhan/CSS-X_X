@@ -1,0 +1,50 @@
+ 
+                   #grouping-selectors
+                     *grouping shared styles
+                     *grouping selectors & cascading
+
+...............................................................
+
+                    #grouping shared styles 
+                     *selectors can be comma separated to apply shared styles
+
+                       ex:
+
+                    h1,h2{
+                          background-color: aqua;
+                          color: rgb(217, 18, 217);
+                        }
+
+
+...............................................................
+
+                     #grouping selectors & cascading
+                       *we can use the css cascade to add new rules to pervious rules
+
+                       ex:
+
+                          h1{
+                              font-size: 62px;
+                              color: #495057;
+                            }
+                            h2{
+                              font-size: 48px;
+                              color: #495057;
+                            }
+
+
+          (now we using *grouping selectors & ascading*]   
+
+                        h1{
+                            font-size: 62px;
+                          }
+                          h2{
+                            font-size: 48px; 
+                          }
+
+                          h1,h2{
+                            color: #495057;
+                          }    
+        #color added to h1,h2 same in one tag and font-size we separated h1 and h2
+
+...............................................................

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BACKGROUNDS SHADOWS</title>
+    <style>
+      body {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Background Images -->
+    <!-- https://tailwindcss.com/docs/background-image -->
+    <!-- 
+     1 . h-screen - HRIGHT = 100% of the viewport height(the whole screen)...enen if nothing is inside , the div becomes a full screen
+
+     2 . w-full - WIDHT = 100% of the parent , which in this case is the <body> so basically , the div goes full width across the window 
+
+     3 . bg-blue-300 - this sets a fallback background color (light blue)..if the image fails to load , you won't get an ugly white hole
+
+     4 . bg-cover - means the background img will scale until it coves the ENTIRE div no empty gaps | but -parts of the image may get cropped to maintain aspect ratio-Think: “fit the frame, no white space, even if I gotta chop your edges.”
+
+     5 . bg-no-repeat - prevents the img from repeating like tiles...without this , if the img is small ,you'd get a minecraft-looking background
+
+     6 . bg-center - Aligns the img in the center of the div | so the cropping (caused by bg-cover) happens evenly on all sides 
+
+     7 . style=background-imgage:url(...) - this way to set the images
+     -->
+    <div
+      class="h-screen w-full bg-blue-300 bg-cover bg-no-repeat bg-center"
+      style="background-image: url(./wallpaperflare.com_wallpaper-4.jpg)"
+    ></div>
+
+    <!-- ............................................................................ -->
+
+    <!-- Shadows -->
+    <!-- https://tailwindcss.com/docs/drop-shadow -->
+    <!-- I know we didn't cover flexbox, but it's just for demo purposes -->
+    <div class="flex flex-wrap">
+      <div class="w-[400px] mt-10 ml-4 p-3 shadow-md">SHADOW-medium</div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-lg">SHADOW-large</div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-xl">SHADOW-xl</div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-2xl">SHADOW-2xl</div>
+
+      <!-- inner shadow -->
+      <!-- 🧠 black → use directly
+      ✔️ shadow-black/80 -->
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-inner shadow-black/80">
+        INNER-SHADOW
+      </div>
+    </div>
+
+    <!-- ............................................................................ -->
+
+    <!-- Shadow Colors -->
+    <!-- 🧠 any other color → must include a shade with OPACITY*....
+    ✔️ shadow-red-800/80
+    ✔️ shadow-blue-600/50
+    ✔️ shadow-green-400/70 -->
+    <div class="w-[400px] mt-10 ml-7 p-3 shadow-xl shadow-red-500/80">
+      SHADOW-color
+    </div>
+
+    <!-- ............................................................................ -->
+
+    <!-- Gradients -->
+    <!-- https://tailwindcss.com/docs/gradient-color-stops -->
+    <div
+      class="h-[120px] bg-gradient-to-r from-pink-200 to-red-500 m-10 flex justify-center items-center text-center  px-10"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita
+      optio laborum molestias blanditiis incidunt consequuntur. Repellendus,
+      corrupti nam. Assumenda saepe quod perspiciatis recusandae eligendi, error
+      dolorum voluptas reprehenderit ut?
+    </div>
+
+    <!-- using 3 color of gradient -->
+    <div
+      class="h-[120px] bg-gradient-to-r from-cyan-500 via-blue-600 to-real-600 mt-10   flex justify-center items-center text-center px-10 "
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+      libero minima soluta, quis sit dicta quam architecto, totam blanditiis
+      nihil enim facilis sint, excepturi reiciendis laborum tempora voluptates
+      earum officia.
+    </div>
+    <!-- ............................................................................ -->
+  </body>
+</html>

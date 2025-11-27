@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title></title>
+    <style>
+      body {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body class="p-10">
+    <!-- https://tailwindcss.com/docs/grid-template-rows -->
+    <!-- Grid cols and rows -->
+
+    <div class="w-100 grid grid-cols-3 grid-rows-4 gap-4">
+      <div class="p-10 bg-rose-100">01</div>
+      <div class="p-10 bg-rose-200">02</div>
+      <div class="p-10 bg-rose-300">03</div>
+      <div class="p-10 bg-rose-400">04</div>
+      <div class="p-10 bg-rose-500">05</div>
+      <div class="p-10 bg-rose-600">06</div>
+      <div class="p-10 bg-rose-700">07</div>
+      <div class="p-10 bg-rose-800">08</div>
+      <div class="p-10 bg-rose-900">09</div>
+    </div>
+
+    <!-- Col and row span -->
+    <div class="w-100 grid grid-cols-3 gap-4">
+      <div class="p-10 bg-green-100 col-span-2 row-span-2">01</div>
+      <div class="p-10 bg-green-200">02</div>
+      <div class="p-10 bg-green-300">03</div>
+      <div class="p-10 bg-green-400">04</div>
+      <div class="p-10 bg-green-500">05</div>
+      <div class="p-10 bg-green-500">06</div>
+    </div>
+    <br /><br /><br />
+    <div class="w-100 grid grid-cols-3 gap-4">
+
+    <div class="p-10 bg-blue-400 col-span-3">07</div>
+    <div class="p-10 bg-blue-500">08</div>
+    <div class="p-10 bg-blue-600 col-span-2">09</div>
+    </div>
+  </body>
+</html>

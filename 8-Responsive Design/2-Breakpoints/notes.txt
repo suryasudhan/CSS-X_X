@@ -1,0 +1,68 @@
+
+                                    BREAKPOINTS :
+
+                                * WHAT ARE BREAKPOINTS
+
+                                * SELECTING BREAKPOINTS
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                  WHAT ARE BREAKPOINTS :
+
+             @> A specific screen width where a webpage's layout changes        
+
+                           
+
+                        ====ADDING IMG-WHAT ARE BREAKPOINTS====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                    
+                                SELECTING BREAKPOINTS :
+
+              @> SELECTING BREAKPOINTS for specific devices is impractical as there are too many to cater for     -       [we don't design for specific devices like iphone xr and iphone x ]
+
+      @>> SELECTING BREAKPOINTS for screen -> MOBILE , TABLET , LAPTOP , BESKTOP -> hunders of different screen widths              
+
+
+     <#> Knowing the ranges(no universal] of common device screen sizes is helpful in thinking about BREAKPOINTS
+
+     [
+      
+      ------ 576px -> XS - phone protrait
+
+      ------ 768px -> SM - phone landscape
+
+      ------ 1024px -> MD - tablet
+
+      ------ 1280px -> LG - small laptop
+
+      ------ 1536px -> XL - large laptop 
+
+      ------ ABOVE 1536px -> 2XL - large screen
+      
+      }
+
+
+      <#> ultimately , SELECTING BREAKPOINTS should be design-led $ determined by observing where the layout naturally "BREAKS"
+
+
+      @> WHEN using max-width in media queries , there's no need to set maximum range because styles will be applied automatically
+
+      (
+        
+        ------ 600px -> max-width: 600px;
+
+        ------ 800px -> max-width: 800px; 
+
+        ------ 1100px -> max-width: 1100px;
+
+        ------ 1300px -> max-width: 1300px;
+
+        ------ 1600px -> max-width: 1600px;
+
+        ------ ABOVE 1600px -> styles not inside any media queries applied automatically
+
+        }
+
+
+                       ====ADDING IMG-SELECTING BREAKPOINTS====
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                                       

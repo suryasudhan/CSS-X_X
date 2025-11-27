@@ -1,0 +1,80 @@
+
+               #COLOR:
+                 *named colors
+                 *color system
+                 *color property
+                 *color palettes
+
+     color links-{
+
+                  *https://htmlcolorcodes.com/
+                  *https://yeun.github.io/open-color/
+                  *https://coolors.co/palettes/trending
+                  *https://maketintsandshades.com/(copy color from coolors and past it and its gave more options)
+                  *https://design.duolingo.com/identity/logos
+
+                 ]
+......................................................
+               
+               #NAMED COLOR:
+                *css includes 147 named colors that browsers pecognise
+                *but these shoud not be used as the are verylimited and not suitable for porfessional project
+
+          can we use-{https://htmlcolorcodes.com/]
+
+......................................................
+
+             #color-system
+              *a structured method for creating differnt colors using a set of primary colors and rules for mixing them 
+
+                ->usbtractive color system(commonly use in printing and painting)
+                ->additive color system(commonly use in electronic display)
+
+             #PIXAL:
+              *A PIXAL is made of RGB* lights with adjustable intensities
+
+             # RGB values range from {0-minimum intensitiy] to {225-maximum intensity]
+
+              *red -0 to 225
+              *green - 0 to 225
+              *blue - 0 to 225 
+
+
+            #RGB and HEXADECIMAL notation...
+             *color values can be represented in either RGB or HEXADECIMAL notation
+
+               rgb(152,116,249)
+
+              { #9874f9-HEXADECIMAL}       
+......................................................
+              
+              #color property:
+               *specifies the color of text
+
+               [color:#9874f9;]
+           
+           values;rgb,rgba,hsl,hex(most commonly use]
+
+           #color-property guidance:
+            *have at least 2 colors in your color palette , (a primary and gray color](ex:ions and componets some thing...)
+
+......................................................                 
+              
+          #color palettes
+            ->primary colors are used to highlight important parts of a page and tints and shades can be used to create contrast
+            ->gray colors are used with tints and shades often used for fonts*(ex:heading and text ,background...)
+
+          #adding a secondary color introduces varity and contrast often making designs more appaling 
+                  *primary
+                  *secondary
+                  *gray
+
+          =>primary,color are typically used on dominant elements such as( button ,background color,headinds & ...]
+          =>secondary colors are used to add variety{tertiary colors add further cariety]
+              {https://yeun.github.io/open-color/]
+          
+......................................................
+
+
+
+

@@ -1,0 +1,28 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+/* p{
+  color: violet;
+}
+
+#red-text{
+  color: blueviolet;
+} ....using id selector */
+
+p {
+  color: brown;
+  background-color: yellow;
+}
+
+#red-text {
+  color: red;
+  background-color: black;
+}
+
+.blue-text {
+  color: blue;
+  background-color: antiquewhite;
+}

@@ -1,0 +1,134 @@
+
+                      #MAX WIDTH:
+                          *Max Width Property
+                          *Max width on block & inline elements
+                          *Max width besign guidance
+
+..........................................................................
+                            
+                          #Max Width Property:
+                             *Ensures elements are responsive for different screen sizes...
+
+                @WIDTH: it fixed width , no any changes...
+
+                            [ width : 500px; ] 
+                            *sets a fixed width
+
+                @MAX-WIDTH: it fixed but if reducess screen its acts [if browser is srinsk* the content also srinsk] flows(fall out of box)
+
+                    [ max-width : 500px; ] 
+                      *sets an elements width that it won't exceed 
+
+                  ********* added screen short *********                 
+..........................................................................
+
+                    #Max width on block & inline elements:
+
+          *Max-width behaves differently depending on the display property of the HTML element... 
+
+                 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+               
+                          #Max width on block element....
+
+        @>Block elements :
+
+                ex: ( h1 , div ) - occupies full width of parent
+                    { width & height can be set ]
+
+        @>REGULAR INLINE ELEMENTS :
+
+                ex: ( a , span ) - only occupies width of their content 
+                    { width & height can not be set ]-[need to change to use = inline-block so can apply min/max width] 
+
+        @>REPLACED INLINE ELEMENTS :
+
+                ex: ( img , input ) - only occupies width of their content
+                    { width & height can be set ]
+
+                  ************* added img ****************
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::                         
+                        #Max width on block element....
+    *sets the maximum width an element can while it can still go narrower*
+    
+                ************* added img ****************
+
+            @> width : 1200px ; 
+                *block element width stays at 1200px when browser is wide
+                *block element exteneds beyoud browser 
+
+            @> max-width : 1200px;
+                *block element width stays at 1200px when browser is wide 
+                *and even in max-width block element reducess when browser is narrower
+
+                             EX:
+                    .container{
+                              max-width:  800px;
+                              height: 500px;
+                              background-color: hsl(207, 44%, 49%);
+                            }      
+
+                #Max-width on inline elements:
+
+                    *sets the maximum width an element can be while it won't go narrower  
+
+..........................................................................
+
+                          #Max width block element guidance:
+            *using max-width on a main container Ensures content does not go too wide on larger screen
+                        *advantage of using max-wide:
+            @container scales down with browser as not a fixed width[using normal width : 400px ]...
+
+..........................................................................                        
+                    #MAX-WIDTH ON INLINE ELEMENTS:
+        *sets the maximum width an element can be while it won't go narrower...  
+
+                ************* added img **************** 
+
+                    @> width : 1200px ; 
+                         *inline element width stays at 1200px when browser is wide
+                         *inline element exteneds beyoud browser when it is narrower             
+
+        @> max-width : 1200px;(dosen't change anythig it act as rugular WIDTH - when comes under INLINE ELEMENT]
+                         *inline element width stays at 1200px when browser is wide 
+                         *and even in max-width inline element exteneds beyoud browser when it is narrower
+
+                     EX: changes on inline element as it is as block-element when applying max-width
+
+           >>> (dosen't change anythig it act as rugular WIDTH - when comes under INLINE ELEMENT]-these img* code
+
+                        img{
+                            width: 800px;
+                            }
+
+                        img{
+                            max-width: 800px;
+                            } 
+
+                    {
+
+                TO OVER-COME THIS PROBLEM TO USE , width 100%...
+                        
+                    img{
+                        max-width: 800px;
+                        width: 100%;
+                        }
+                                            ]            
+..........................................................................
+
+                        #MAX-WIDTH INLINE ELEMENTS GUIDANCE:
+                          
+                            *using max-width on image creates a responsive layout 
+                            @>image width stays at 1000px when browser is wider...
+
+                           @>image scales down with browser as not a fixed width....{we will get this working later with % - TOPIC]
+..........................................................................
+ 
+
+                        #WIDTH SUMMARY:
+                          
+                          @ADD IMG screen-short
+
+..........................................................................

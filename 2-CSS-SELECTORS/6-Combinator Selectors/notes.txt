@@ -1,0 +1,121 @@
+                                                  #combinator seltctors:
+                                                    *descendant seltctors
+                                                    *direct descendant seltctors
+                                                    *adjacent siblling seltctors
+                                                    *center siblling seltctors
+
+
+
+             combinator seltctors:
+               *combines tow or more seltctors to taget elements dased on their positions relative to each other 
+
+      -> div p (descendant [child]-seltctor)-using more
+      -> div > p (direct descendant [child]-seltctor) 
+      -> h1 + p (adjacent sibling seltctor)
+      -> h1 ~ p (general sibling seltctor)
+
+............................................................
+             
+                 #descendant seltctors:
+
+                   *tagets all childern elements of a parent
+
+                   [ div p - need space between ]
+
+[
+          <body>
+              <div class="parent">
+                   <h1>hey now working some desecndant selector</h1>
+                              <p>now we using p-tag</p>
+                              <p>and to working some expriment</p>
+                          <div class="list">
+                                      <ul>
+                                        <li>today</li>
+                                        <li>is</li>
+                                        <li>lastday</li>
+                                      </ul>
+                              <p>now compled desecndant selector</p>
+                          </div>
+              </div>
+          </body>    
+
+}
+                 .parent p{
+                            color: yellowgreen;
+                            font-size: larger;
+                            text-decoration: underline;
+                          }
+
+            # 1st-div [act as parent]
+            # 2nd-p-tag [act as direct childern]
+            # 3rd-p-tag [act as grand-child(in between inside-div into DIV-TAG)]  
+
+            #IN CSS [parent p(1ST-PARENT 2ND-CHILD)]  
+
+............................................................
+    
+        #direct descendant seltctors:
+          *targets only direct childern elements of a parent
+
+              [ div > p (using right angle bracket)]
+
+
+                   <body>
+                      <div class="parent">
+                        <h1>hey now working some desecndant selector</h1>
+                        <p>now we using p-tag</p>
+                        <p>and to working some expriment</p>
+                        <div class="list">
+                          <ul>
+                            <li>today</li>
+                            <li>is</li>
+                            <li>lastday</li>
+                          </ul>
+                          <p>now compled desecndant selector</p>
+                        </div>
+                      </div>
+                    </body>
+
+
+                    .parent > p {
+                                color: yellowgreen;
+                                font-size: larger;
+                                text-decoration: underline;
+                              }
+                                                              
+                # it targets only direct childern elements of a parent not grand-child
+
+............................................................
+                   
+                   #adjacent siblling seltctors:
+                      *tagets an elements directly after anoter element both nested within the same parent
+
+
+            [ h1 + p {h1-is perceding sibling and p-is adjacent sibling})
+
+                    h1 + p {
+                          color: yellowgreen;
+                          font-size: larger;
+                          text-decoration: underline;
+                        }
+
+        #h1-is refrence point , in parent element nested with h1-tag and p-tag its apply for p-tag act as (adjacent sibling},like-1st-div[act as shared parent and another h1,p-tag is perceding sibling]
+
+............................................................
+
+
+              #center siblling seltctors
+                *targets multiple elements directly after anoter element both nested within the same parent
+
+                  [ h1 ~ p (~-tild symbol)]
+
+    #[ h1 ~ p (h1-perceding sibling and p-subsequent siblings)}
+       #it will select multiple sibling nested with same-parent  
+            
+
+                h1 ~ p {
+                          color: yellowgreen;
+                          font-size: larger;
+                          text-decoration: underline;
+                        }
+..................................................................      

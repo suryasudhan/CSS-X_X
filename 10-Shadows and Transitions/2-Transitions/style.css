@@ -1,0 +1,81 @@
+.card {
+  width: 500px;
+  height: 500px;
+  background-color: lightblue;
+  transition: background-color 20s, border-radius 3s;
+  border: 15px solid rgb(89, 13, 231);
+}
+
+.card:hover {
+  background-color: rgb(245, 18, 18);
+  border-radius: 50%;
+  border: 20px dashed rgb(25, 25, 23);
+}
+
+
+/* ..............timing function ................*/
+
+/* easy */
+.easy {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin-bottom: 10px;
+  transition: 2s ease;
+}
+
+.easy:hover {
+  border-radius: 50%;
+}
+
+/* linear */
+.linear {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin-bottom: 10px;
+  transition: 2s linear;
+}
+
+.linear:hover {
+  border-radius: 50%;
+}
+
+/* ease-in */
+.ease-in {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin-bottom: 10px;
+  transition: 2s ease-in;
+}
+
+.ease-in:hover {
+  border-radius: 50%;
+}
+
+/* ease-out */
+.ease-out {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin-bottom: 10px;
+  transition: 2s ease-out;
+}
+
+.ease-out:hover {
+  border-radius: 50%;
+}
+
+/* ease-in-out */
+.ease-in-out {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin-bottom: 10px;
+  transition: 2s ease-in-out;
+}
+
+.ease-in-out:hover {
+  border-radius: 50%;
+}

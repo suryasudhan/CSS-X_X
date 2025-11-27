@@ -1,0 +1,56 @@
+
+
+        
+                                         TAIL WIND
+
+                                  * WHAT IS TAILWIND
+
+                                  * WHY IS TAILWIND HELPFUL
+
+                                  * TAILWIND WALKTHROUGH
+
+                                  * TAILWIND HOMEPAGE PROJECT
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                    WHAT IS TAILWIND
+
+           @> A utility-first(core philosophy] css framework for creating custom, responsive(all devices] designs with pre-defined(systemised] , low-level(single properties] styles                          
+
+                          
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                WHY IS TAILWIND HELPFUL
+
+           @> overcomes limitations of traditional css frameworks & custom css byproviding more flexibility & customisation
+
+           # REUSABILTY & CONSISTENCY : resuabilty utilities and design setings , ensuring a consistent and easy-to-manage design
+
+           # REDUCING CONTEXT SWITCHING : styling directly in HTML , minimising the need to switch between HTML and CSS files           
+
+           # AVOIDING PRE-DESIGNED STYLES : low-level utilites , allowing for custom designs without needing to override pre-designs without needing to override pre-designed components
+
+           # SIMPLIFYING RESPONSIVE DESIGN : built-in responsive and mobile-first utilities make easy to create layouts that adapt seamlessly across different devices          
+
+                        ====ADDED IMG-WHY IS TAILWIND HELPFUL====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                 TAILWIND WALKTHROUGH
+
+                               #> WHAT WE WILL LEARN
+
+                               1 . installation
+
+                               2 . utility classes
+
+                               3 . components 
+
+                               4 . responsive
+                               
+                      ====ADDED IMG-TAILWIND WALKTHROUGH====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                              TAILWIND HOMEPAGE PROJECT
+
+                     ====ADDED IMG-TAILWIND HOMEPAGE PROJECT====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

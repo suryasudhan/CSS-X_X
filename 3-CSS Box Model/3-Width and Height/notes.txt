@@ -1,0 +1,107 @@
+
+                       #WIDTH & HEIGHT:
+                         *Default block & inline element dimensions
+                         *Width & height property
+                         *Width & height design guidance...
+
+              #CSS BOX MODEL:
+                *EACH RECTANGULAR BOX HAS HEIGHT AND WIDTH...
+..........................................................................
+
+                        #Default block & inline element dimensions:
+
+                        #BLOCK-LEVEL:
+                          *by Default block-level elements are just big enough to fit its contents verically and stretches full-width horizontally...
+          
+          # IN BLOCK ELEMENTS SPAN FULL WIDTH OF THE PAGE...
+          # HEIGHT IS THE SUM OF FONT-SIZE & SOME MARGIN...
+           
+                      ex:
+                      h1 {
+                            font-size: 32px;
+                            line-height: 1;
+                          }
+
+                          p {
+                            font-size: 20px;
+                            line-height: 3;
+                          }
+
+                         { #line-height:1 = to 10x* in webpage...]
+
+                         #DEFAULT INLINE-LEVEL ELEMENT DIMENSIONS:
+
+              #INLINE-LEVEL:
+                *by default inline-level elements are just big enough to fits its contents both verically and horizontally...
+
+                *height & width determind by font-size
+                *height & width determind by image size
+
+                  ex:(a-tag & img-tag)
+
+                     *it take of the width in (inline-level)
+                    
+..........................................................................
+
+                        #Width & height property:
+                          *The default box dimensions can be over-written by the width & height property...
+
+                      {
+                        
+                        [ property : value - width : 500px ]
+
+                        [ property : value - height : 100px ]
+
+                        ]
+                         
+                         *how they are used:
+                           *can over-ride default dimensions or set dimensions where none exist
+
+                           ex:IMG-TAG* and we can use DIV-TAG to compress the content*
+..........................................................................
+
+                        #Width & height design guidance:
+
+                        {
+                          
+                      INDIVIDUAL ELEMENTS:
+
+                        EX: (h1,p,ul,li)
+
+                        #HEIGHT:
+                          *usually do not set height but let it be automatically determind
+
+                        #WIDTH:
+                          *usually do not set width which will stretch to fill the parent content
+
+
+                      CONTAINER ELEMENTS:
+
+                        EX: (div , section)
+
+                        #HEIGHT:
+                          *usually do not set height but let it be automatically determind
+
+                        #WIDTH:
+                          *depending on the layout it can be common to set a width              
+                          
+                          ]
+#THIS APPROACH ENSURES FLEXIBILITY WHERE CONTENT BETTER ADAPATS TO DIFFERENT SCREEN SIZES...
+..........................................................................
+
+                     #INLINE-LEVEL SIZING GUIDANCE:
+                       *width and height can be set on some inline-elements but not others...
+
+          #CAN APPLY WIDTH & HEIGHT:
+            =>(img,input,select,textarea,button)
+            *setting height or width will adjust other dimensions automatically to preserve aspect ratio
+
+    { in img-tag we can APPLY (width:500px)-it adjust to the height automatically]
+  
+          #CAN'T APPLY WIDTH & HEIGHT:
+            =>(span,a,sub,sup)
+            *common to use padding to create space around anchor-text... 
+
+
+..........................................................................
+ 

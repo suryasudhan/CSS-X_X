@@ -1,0 +1,54 @@
+/* example - 1  */
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: salmon;
+  margin-left: 100px;
+  margin-top: 100px;
+  /* width : 1.2 X 200 = 240px | height : 1.5 X 200 = 300px  */
+  /* transform: scale(1.2 , 1.5); */
+}
+
+/* .card:hover {
+  transform: scale(1.2, 1.5);
+} */
+
+/* .card:hover {
+  transform: skew(20deg, 20deg);
+} */
+
+/* .card:hover{
+  transform: rotate(45deg);
+} */
+
+.card:hover {
+  /* transform: translate(100px , 100px); */
+  transform: translate(-100px, -100px);
+}
+
+
+/* example - 2 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.modal {
+  /* modal | position: absolute; now works based on BODY-tag of HTML */
+  width: 300px;
+  height: 300px;
+  background-color: lightgrey;
+  /* position: absolute; */
+  /* position: absolute , now when we move around the webpage it's move along to the scroll position , so we used to position : fixed ; */
+  position: fixed;/* now fixed into the center of the webpage */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  /* applying flex-properties */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+

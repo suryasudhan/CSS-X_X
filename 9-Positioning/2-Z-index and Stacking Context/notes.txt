@@ -1,0 +1,147 @@
+
+                              Z-INDEX & STACKING CONTEXT
+
+                                    * Z-INDEX
+
+                                    * STACKING CONTEXT
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                     NORMAL FLOW 
+
+              @> Most web layouts have elements in the same (2D] plane and not overlap---and then they having {x , y and no z axis]
+
+              @> elements can overlap in the same plane with the stacking order being determined by the order they appear in HTML
+
+
+{
+
+.box-1 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+.box-2 {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  margin-bottom: -80px; -> (overlap on box-3]
+  margin-top: -50px;
+}
+
+.box-3 {
+  height: 300px;
+  width: 300px;
+  background-color: blueviolet;
+}
+
+}
+                           ====ADDED IMG-NORMAL FLOW====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                      Z-INDEX
+                 
+              @> The Z-INDEX property controls the vertical stacking order of postioned elements
+
+                     {z-index : 2; -> value = stacking order]
+
+
+            #Z-index only works on postioned elements -> it basicaly works on stacking the elements based on z-index : value , when the value is higher it gives the preority to the element#
+
+
+.........................................................................................
+
+  ( RECAP : of RELATIVE POSITIONING
+
+                                   RELATIVE POSITIONING
+
+        @> The element follows the normal document flow but can be offset relative to itself 
+
+                             (position : relative ;]   
+
+                * element can move around relative to its original position            
+
+                * other elements remain in position as the slot of the relatively positioned element remains present 
+
+            * now seperated  BOX , in it's own ("layer"] & can move around    
+
+                     ]
+
+
+.........................................................................................
+
+
+{
+
+
+/* z-index : remember the added img like it's higher the z-index value overlap the elements */
+/* if the z-index : -1 , useualy gooes behind the container , it's not completlly disappera */
+
+.box-1 {
+  /* default z-index is 0 , like no changes  */
+  z-index: 0; 
+}
+
+.box-2 {
+  position: relative;
+  top: 50px;
+  z-index: 1; 
+}
+
+.box-3 {
+   /* applying the relative on both box 2 and  3 : the reason box-3 appears on top of the box-2 is just because of in our underluing HTML , box-3 comes last .... so, although it seems like adding a position value onto an element , that it appears on top of other elements ,we are still in fact in the same plane  */
+  position: relative;
+  z-index: 2;
+}
+
+}
+                             ====ADDED IMG-Z-INDEX====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                  STACKING CONTEXT
+
+         @> A positioned element with Z-INDEX creates a new stacking CONTEXT , where its children are stacked independently of other elements    
+
+.........................................................................................
+
+( focus on the Z-INDEX : 1 -> if expanding the element vertical , this element will now act as a container and now going to give it a child element in black | now the Z INDEX of the childis only relative within the parent ....so for example , if i gave this child a much larger Z-INDEX compared to what else is here , like a Z-INDEX of 10 ...>>> take a look on the right to see how this would appear on the webpage of stacked elements<<< | >>>the black element dosen't actually appear above the orange element<<< even thought it has much higher Z-INDEX value ... and that's because any child elements within a container that already has a Z-INDEX value , like the blue container , is only relavent to its parent...... so each of our elements , the red Z-INDEX of 0 , the blue Z-INDEX of 1 and the orange Z-INDEX of 2 , each have their own stacking CONTEXT ... which means that any child elements which have Z-INDEX values are only compared to inside the parent element ... it's kind of like the other elements in the other planes don't exist to the child element.... so even thought our black element,which has a Z-INDEX value of 10-is the highest Z INDEX value across all the planes , the value 10 is only considered within its parent ]
+
+.........................................................................................
+
+{
+
+
+.box-2 {
+  position: relative;
+  top: 120px;
+  z-index: 1;
+}
+
+.box-3 {
+  position: relative;
+  z-index: 2;
+}
+
+.child-1 {
+  height: 50px;
+  width: 150px;
+  background-color: red;
+  position: relative;
+  z-index: 99;
+}
+
+
+.child-2 {
+  height: 50px;
+  width: 150px;
+  background-color: rgb(73, 166, 36);
+  position: relative;
+  bottom: 20px;
+}
+
+}
+
+                        ====ADDED IMG-Z-STACKING CONTEXT====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+

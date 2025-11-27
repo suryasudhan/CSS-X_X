@@ -1,0 +1,60 @@
+    
+                          #FONT;
+                            *typeface
+                            *font-famliy
+                            *google-fonts
+
+............................................................
+
+                    #typeface:
+                        *characters with consistent visual characters
+
+                     typs:
+                         *serif(a classic used by brands to communicate)
+
+                         *sans-serif(a modern and clean feel used by brands to communicate simplicity and clatity)
+
+                         *monospace(a technical feel used by brands to communicate accuracy and percision)
+
+                         *cursive(a personal feel used to commect with people on a more emotional level)
+
+                         *display(a creative feel used by brands to communicate playfulness and rule-breaking[using like fun-brands***])   
+
+                    
+............................................................
+
+                  #font-famliy:
+                    *sets a prioritised list of font names (typeface) or font categories...
+
+                [font-famliy:'tohoma',sans-serif]
+
+                #fonts will only display your browser if they are installed in your machine 
+                  *it act as backup fonts - fisrt choice or fall-back [fonts]
+
+                 #font-famliy guidance: 
+                   *to paly it safe pice a popular sans-serif{very popular choice]font* 
+
+
+............................................................
+
+                        #google-fonts
+
+                          *fonts are available online and do not rely on the fonts installed on a individual user's device
+
+                       #2 ways to add fonts*
+
+                         *adding link from google
+                         *and adding local file to vscode
+
+                  *to add local , we must copy the file form local and creat a new folder on vscode 
+
+                   =>in css-file
+
+                    @font-face{
+                      font-famliy:( name a font you want];
+                      scr:url(./-file directory)
+                    }   
+
+                    #and , just add the font family name to the tag...
+                           
+............................................................

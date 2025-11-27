@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 1000px;
+  row-gap: 20px;
+  column-gap: 40px;
+
+}
+
+img {
+  width: 100%;
+}

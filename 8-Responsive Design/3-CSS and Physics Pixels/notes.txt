@@ -1,0 +1,57 @@
+
+                             CSS & PHYSICAL PIXELS 
+
+                             * WHAT IS A PIXEL
+
+                             * PHYSICAL PIXELS
+
+                             * CSS PIXELS
+
+                             * PIXELS IN DEV TOOLS VS DEVICES
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>             
+                               WHAT IS A PIXEL :
+
+            @> A single point of light on a digital display is = PIXEL
+
+            -> it make of red , green and blue light at different intensities to create different colours                                   
+
+{ the size of PIXEL is 196 of an inch , which is 0.0104 inches | but in real life , on an actual screen that is not the case .... which is why need to distinguish between PHYSICAL and CSS PIXEL)
+                      ====ADDED IMG-WHAT IS A PIXEL==== 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     
+                      PHYSICAL PIXELS : (PPI = PIXEL per inch]
+
+            @> A PIXEL does not have a fixed length and varies between screens                   
+
+                      ====ADDED IMG-PHYSICAL PIXELS====
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                    
+                        CSS PIXELS : (css PIXEL have fixed fixed]
+
+                @> A CSS PIXEL has a length of 1/96 inch(o.0104 inch)                    
+
+                       ====ADDED IMG-CSS PIXELS====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    
+                        PIXELS IN DEV TOOLS VS DEVICES :
+
+                @> PIXEL values in DEV tools are not the same as DEVICE PIXEL values       
+
+
+             => DEV TOOLS - CSS PIXEL | always 1/96=(0.0104)inch :: ex, pixel-7 about width-412px and height-915px 
+
+             => DEVICE - PHYSICAL PIXEL | physical pixel is 0.0024inch :: ex, pixel-7 about width-1080px and height-2400px   
+
+.........................................................................................
+
+            @> CSS pixel are scaled depending on screen resolutions 
+
+            {Our google pixel-7 has 416 pixels per inch , so from devtools to the physical device... in order for the browser to know how many physical pixels to allocate inside the device screen bassed on the CSS pixels...that's definded in our code , The pixel is scaled by the device pixel rotio, the DPR{DEVICE PIXEL RATIO} - in this case , it would be multipled by about three(3)-so what this means is if we have a font size set as 10-pixel in our CSS code | in our devtools(CSS) , that would have a fixed width of 10 times, one divide 96 of an inch(o.0104 inch)  , and then in the device to get that exact font size , the browser works out... We need to multiply the number of physical pixel in the device in order to achive that CSS font size   ]
+
+.........................................................................................
+
+              @> scaling across different device happens automatically
+
+           ( DEV TOOLS -> 0.014 inch | 3x* | PIXEL-7(416ppi) -> o.oo24 inch ]
+
+                    ====ADDED IMG-PIXELS IN DEV TOOLS VS DEVICES====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                    

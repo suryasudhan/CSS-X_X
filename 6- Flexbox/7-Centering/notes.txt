@@ -1,0 +1,275 @@
+
+
+                                  CENTERING :
+
+                        * CENTERING WITH FLEXBOX
+
+                        * HORIZONTAL CENTERING METHODS
+
+                        * VERICAL CENTERING METHODS
+
+                        * TRADITIONAL CENTERING METHODS VS FLEXBOX 
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                               CENTERING WITH FLEXBOX :
+
+                @> FLEXBOX offers a modern & flexible approach to CENTERING items (VERICALLY AND HORIZONTAL]     
+
+                =========ADDED IMG -  CENTERING WITH FLEXBOX ==========
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+              HORIZONTAL CENTERING METHODS : ther are (2 methd to achive content to center]      
+
+               1> BOX MODEL :
+
+      >> margin can be applied left and right to HORIZONTAL center child containers
+
+                    (margin:0 auto;] -> applied on child container only
+
+[
+                            .parent-container {
+                            background-color: rgb(0, 255, 255);
+                            }
+
+                            .child-container {
+                            background-color: aquamarine;
+                            height: 300px;
+                            width: 300px;
+                            margin: 0 auto;
+                            }
+
+]
+
+
+
+               2> FLEXBOX : -> applied on parent container
+
+      >> flex properties make it simple to HORIZONTALly center flex items
+
+                    (
+                      justify-content : center ; -> main axis in row
+                          align-items : center ; -> main axis in column
+                      ]              
+
+           [
+
+
+                            .parent-container {
+                            background-color: rgb(0, 255, 255);
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center; 
+                            }
+
+                            .child-container {
+                            background-color: aquamarine;
+                            height: 300px;
+                            width: 300px;
+                            }
+
+           ]
+
+               ========ADDED IMG -   HORIZONTAL CENTERING METHODS========
+
+.........................................................................................
+
+                  HORIZONTAL CENTERING CONTENT INSIDE A CONTAINER :
+
+              1> BOX MODEL :
+
+           >> using padding to create internal space left and right gives the illusion that content inside a container is centered...
+
+                    (padding:0 200px;] -> applied on child container   
+
+                    {
+
+
+                            .parent-container {
+                            background-color: rgb(0, 255, 255);
+                            }
+
+                            .child-container {
+                            background-color: aquamarine;
+                            height: 300px;
+                            width: 300px;
+                            margin: 0 auto;
+                            padding: 0 200px;
+
+                            }
+
+                    } 
+
+
+
+
+              2> FLEXBOX :
+
+            >> box model properties still apply on flex items , so padding can still be used to create internal HORIZONTAL space
+
+
+{
+
+                           .parent-container {
+                            background-color: rgb(0, 255, 255);
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center; 
+                            }
+
+                            .child-container {
+                            background-color: aquamarine;
+                            height: 300px;
+                            width: 300px;
+                            padding:0 200px;
+                            }
+
+} 
+                    (padding:0 200px;] -> applied on child container    
+
+         =====ADDED IMG- HORIZONTAL CENTERING CONTENT INSIDE A CONTAINER =====        
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                VERICAL CENTERING METHODS : (parent container has a set height! to accompolish this..]
+
+                  1> BOX MODEL :
+
+                  >> There is no easy way to VERICALLY CONTENT a child container inside a parent container with a set height 
+
+
+                  2> FLEXBOX :
+
+                  >> FLEXBOX properties make it simple to VERICALLY center flex items when the parent container has a set height | *container is centered*
+
+                         {
+                            align-items:center; -> main axis in row
+
+                            justify-content: center; -> main axis in column
+
+                            ]
+
+{
+
+                | it should to work when parent-container has have height |
+                    .parent-container {
+                    background-color: rgb(0, 255, 255);
+                    height: 800px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center; 
+                    justify-content:center ;
+                    }
+
+                    .child-container {
+                    background-color: aquamarine;
+                    height: 300px;
+                    width: 300px;
+                    }
+
+}
+
+
+.........................................................................................
+
+ 
+
+                VERICAL CENTERING CONTENT CONTENT INSIDE a container :(parent container has no set height]  
+
+
+                1> BOX MODEL :
+
+        >> padding can be applied to the top and bottom of the child container 
+
+           ( padding : 200px 200px;] -> applied on child container...
+
+            {
+
+                            .parent-container {
+                            background-color: rgb(0, 255, 255);
+                            }
+
+                            .child-container {
+                            background-color: aquamarine;
+                            height: 300px;
+                            width: 300px;
+                            margin: 0 auto;
+                            padding: 200px 200px;
+                            }
+
+            }
+
+
+
+                2> FLEXBOX :
+
+        >> parent container has no set height , box model properties still apply on flex items ,so padding can be used to create internal VERICAL space...
+
+                    ( padding : 200px 200px;] -> applied on flex item 
+
+
+                    {
+                            .parent-container {
+                            background-color: rgb(0, 255, 255);
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center; 
+                            justify-content:center ; 
+                            }
+
+                            .child-container {
+                            background-color: aquamarine;
+                            height: 300px;
+                            width: 300px;
+                            padding: 200px 200px;
+                            }
+
+                    }            
+
+                  ======ADDED IMG -   VERICAL CENTERING a container=====
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            TRADITIONAL CENTERING METHODS VS FLEXBOX : 
+
+              ======ADDED IMG -TRADITIONAL CENTERING METHODS VS FLEXBOX ======
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                              CENTERING GUIDANCE :
+
+            @>  HORIZONTALly CENTERING A CONTAINER - GUIDANCE >
+            
+            (BOX MODEL 
+                * margin is often used to establish a webpage's main container as it is a simple method for HORIZONTAL CENTERING 
+
+                * margin is often used to establish a webpage's main container as it is a simple method for HORIZONTAL CENTERING  
+                
+                
+             FLEXBOX 
+                * flex box properties make it simple to HORIZONTAL center regular content containers   ] 
+
+            @> HORIZONTALY CENTERING CONTENT INSIDE A CONTAINER - GUIDANCE >
+
+            (BOTH BOXMODEL & FLEXBOX 
+            
+                * padding is used to create equal internal space left and right around containers like cards & elements like anchor tags 
+                
+                * padding is used to create equal internal space left and right on flex container ]
+
+            @> VERICALLY CENTERING A CONTAINER
+
+            (BOXMODEL : no easy way to use...
+
+             FLEXBOX 
+
+               * FLEXBOX properties are often used to VERICALLY center UI* elements inside a flex container that has a set height 
+                ]  
+
+            @> VERICALLY CENTERING CONTENT INSIDE CONTAINER 
+            (BOXMODEL & FLEXBOX 
+            
+               * padding is used to create equal internal space top and bottom around containers like cards & elements like anchor tags
+               
+               * padding can also used to create equal internal space top and bottom on flex containers ]      
+                    =====ADDED IMG -  CENTERING GUIDANCE=====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

@@ -1,0 +1,195 @@
+
+
+                              GRID COLUMNS & ROWS :
+
+                          * GRID TEMPLATE COLUMNS & ROWS
+
+                          * FRACTIONAL UNIT
+
+                          * REPEAT FUNCTIONL
+
+                          * GRID COLUMNS & ROW DESIGN GUIDANCE
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                                  
+                             GRID TEMPLATE COLUMNS & ROWS :
+
+                    @> GRID itmes will appear in a single COLUMN by-default  
+                                   (display:grid;]     
+                                        
+                    @> height of the grid container is sum of grid itmes
+
+                    @> block elements extend full length
+
+                    @> sets the number of COLUMNs and width of each 
+        (grid-template-columns:100px 200px] -> column 1 and column 2 of the width
+
+                    @> sets the number of rows and height of each 
+    (grid-template-rows:50px 100px 200px 300px] -> row1 row2 row3 row4 of the height
+
+{
+
+
+.grid-container {
+  font-size: 40px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;/*in this part we have 3 x 3 rows and columns but we have 8 items so , 1 items is missing but in grid layout it take the empty space around*/
+  grid-template-rows:40px 100px 200px;/*if we don't set the height of rows - remaining of the items it takes default height*/
+}
+
+.grid-item-1 {
+  background-color: red;
+}
+
+.grid-item-2 {
+  background-color: yellowgreen;
+}
+
+.grid-item-3 {
+  background-color: yellow;
+}
+
+.grid-item-4 {
+  background-color: black;
+}
+
+.grid-item-5 {
+  background-color: blue;
+}
+
+.grid-item-6 {
+  background-color: violet;
+}
+
+.grid-item-7 {
+  background-color: blueviolet;
+}
+
+.grid-item-8 {
+  background-color: orange;
+}
+
+}
+
+                      ====ADDED IMG-GRID TEMPLATE COLUMNS & ROWS====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                          
+            FRACTIONAL UNIT : (very commony used in css grid] - (it based on width]
+
+                @> the fraction of aviable space in the grid container
+
+                       (grid-template-columns:1fr 3fr 4fr] 
+
+                {
+    total fractions = 1 + 3 + 4 = 8 , now we taking 1000px of width of the container (1000px / 8 = 125px) -> it split 8 of 125px columns.....and 1fr is 1-125px and 3fr is 3-125px and 4fr is 4-125px
+                }                        
+
+{
+
+
+.grid-container {
+  font-size: 40px;
+  display: grid;
+  grid-template-columns: 1fr 3fr ;/*we can use persentage too [25% 75%]*/
+  width: 400px;/*  grid-template-columns - it propotionly works based on the width of the container */
+}
+
+.grid-item-1 {
+  background-color: red;
+}
+
+.grid-item-2 {
+  background-color: yellowgreen;
+}
+
+.grid-item-3 {
+  background-color: yellow;
+}
+
+.grid-item-4 {
+  background-color: rgb(108, 75, 75);
+}
+
+.grid-item-5 {
+  background-color: blue;
+}
+
+.grid-item-6 {
+  background-color: violet;
+}
+
+.grid-item-7 {
+  background-color: blueviolet;
+}
+
+.grid-item-8 {
+  background-color: orange;
+}
+
+]
+
+.........................................................................................
+
+        FRACTIONAL UNIT  AND ROWS : (it based on heigh] ->{MOST OF THE WE DON'T USE grid-template-rows]
+
+             @> If height is set on a grid container , FR UNITS(expected) propotionally distribute space to the grid itmes
+
+    (grid-template-rows: 1fr 2fr 2fr;] -> total fractions = 1 + 2 + 2 = 5
+
+{it split into 5 rows and it divide by 1000px of heigh -> 1000px / 5 = 200px so , now the dividing of row is 200px} -> and now 1fr is 1-200px and 2fr is 2-200px and 2fr is 2-200px....                
+
+             @> If no heigh is set on a grid container , FR UNITs use the (unexpected) height of the grid itmes to set heigh & space on the grid container
+
+{
+
+.grid-container {
+  font-size: 40px;
+  display: grid;
+  grid-template-columns: 1fr 3fr ;
+  width: 400px;
+  height: 1000px; /*WITH HEIGHT*/
+  grid-template-rows: 1fr 2fr 3fr 4fr; /*1 + 2 + 3 + 4 = 10 , 1000/10 = 200 */
+}
+
+.grid-container {
+  font-size: 40px;
+  display: grid;
+  grid-template-columns: 1fr 3fr ;
+  width: 400px;
+  height: 1000px; /*WITHOUT HEIGHT*/
+  grid-template-rows: 1fr 2fr 3fr 4fr; /*1 + 2 + 3 + 4 = 10 , 1000/10 = 200 */
+
+}                    
+]
+                         ====ADDED IMG-FRACTIONAL UNIT====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+                                   REPEAT FUNCTIONL :
+
+                @> used to REPEAT rows OR column dimesion when they are recurring
+
+
+      (grid-template-column:repeat(4 , 1fr)] - {(4 , 1fr) -> NUMBER OF COLUMN OR ROW , SIZE VALUE}         
+
+
+{
+.grid-container {
+  font-size: 40px;
+  display: grid;
+  grid-template-columns: 1fr , 1fr ,1fr ,1fr insted of using this we can use this -> repeat(4,1fr) -> we can use repeat(4,200px);
+  width: 400px;
+  grid-template-rows: 1fr 2fr 3fr 4fr;
+}
+
+}
+                            ====ADDED IMG-REPEAT FUNCTIONL====                         
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        GRID COLUMNS & ROW DESIGN GUIDANCE :
+
+             @> columns are often set with FR units and the width of grid container is usually not set but extends width of the page 
+
+             @> THe number of rows are not usually set but are automaticaly defined by the number of grid itmes 
+
+             @> the heigh of the grid container is not usually set but defined by the sum of the heigh of the grid itmes
+
+                  ====ADDED IMG- GRID COLUMNS & ROW DESIGN GUIDANCE====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                          

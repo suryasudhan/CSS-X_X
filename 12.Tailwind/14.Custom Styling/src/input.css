@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+
+/* adding base */
+@layer base {
+  a {
+    @apply text-gray-600 underline;
+  }
+}
+
+
+/* adding components */
+@layer components {
+  .menu-button-1 {
+    @apply bg-rose-600 text-white p-3 
+  },
+  .menu-button-2{
+    @apply bg-rose-300 text-white p-3;
+  }
+}
+
+
+/* adding utilities */
+@layer utilities{
+.text-green-300{
+  color:blue;
+  background:teal;
+}
+}

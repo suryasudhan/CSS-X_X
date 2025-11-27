@@ -1,0 +1,17 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+
+h1{
+  font-size: 62px;
+}
+h2{
+  font-size: 48px; 
+}
+
+h1,h2{
+  color: #495057;
+}

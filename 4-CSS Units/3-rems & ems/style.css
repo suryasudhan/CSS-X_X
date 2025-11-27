@@ -1,0 +1,71 @@
+/*ROOT HTML*/
+html {
+  /* font-size: 10px; | default font-size=10px... , from here we can modify the size of the FONT based on the screen condition...*/
+  font-size: 62.5%;
+}
+
+
+/*REMS*/
+
+h1 {
+  font-size: 3rem;
+  /*48*/
+  margin-bottom: 2rem;
+  /*32*/
+}
+
+p {
+  font-size: 1.5rem;
+  /*24*/
+  margin-bottom: 1rem;
+  /*16*/
+}
+
+a {
+  padding: 2rem;
+  /*32*/
+  background-color: rgb(68, 120, 163);
+  display: inline-block;
+}
+
+/*EMS*/
+
+.feature-1 {
+  font-size: 10px;
+  /*now default font size is 10px so , in ems->apply parent to child*/
+}
+
+.feature-heading {
+  font-size: 2rem;
+  /*20px*/
+}
+
+.feature-paragraph {
+  font-size: 1em;
+  /*10px*/
+}
+
+.feature-buttom {
+  font-size: 0.5em;
+  /*5px*/
+  background-color: violet;
+}
+
+/* now we see the differenc btw [feature 1 , 2 -> font size]  */
+
+.feature-2 {
+  font-size: 20px;
+}
+
+/* conclusion -> rems have more advantage THEN ems */
+
+
+/* EMS using on height,weight,padding,margin */
+.a {
+  /* from prent to child | sharing font-size=20px to child by [em]  */
+  font-size: 20px; 
+  padding: 0.4em 0.8em;
+  border-radius: 0.4em;
+  background-color: yellowgreen;
+  display: inline-block;
+}

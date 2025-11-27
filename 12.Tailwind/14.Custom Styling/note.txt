@@ -1,0 +1,27 @@
+ -> npm install tailwindcss @tailwindcss/cli
+
+ -> create the seperate file for->{src/script.css}and add this one >>>[@import "tailwindcss";]<<<
+
+ -> add to terminal [npx @tailwindcss/cli -i ./src/script.css -o ./src/output.css --watch]
+
+ -> add to the HTML boiler plate ->->{src/index.html} [ <link href="../src/output.css" rel="stylesheet">]
+
+ -> add to the package json ->
+  {
+  "name": "tailwind-project",
+  "version": "1.0.0",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/script.css -o ./src/output.css --watch"
+  }
+}
+
+
+and the final stage : type the -> npm run dev and now open the live server
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+

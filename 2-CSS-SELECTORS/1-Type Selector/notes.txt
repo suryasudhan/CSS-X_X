@@ -1,0 +1,43 @@
+
+
+                    #type-selector 
+
+                     *css selector
+                     *type selector
+...............................................................
+                 
+                 #css selector
+                  *selector allow us to select html elements to allply rules
+
+                  ex:
+                  h1{
+                      background-color: beige;
+                      color: rgb(85, 85, 61);
+                    }
+
+                   #range of css selector...
+                     *there is a large of css selector that allow us to apply styles from broad styling to specific visual details 
+
+                     *# - basic selector(used a lot*)
+                     *ul > li - combinator selector
+                     *a:hover - peseudo-class selector
+                     *::before - peseudo-elements selector
+
+
+...............................................................
+ 
+
+                 #type-selector:
+                   *selects elements based on thier tag* names
+
+                   ex:( h1 }
+
+                    h1{
+                        background-color: beige;
+                        color: rgb(85, 85, 61);
+                      }
+
+                    #type-selector guidance:
+                      *it is useful for setting golbal styles to ensure consistency(golbal-apply everywhere)
+                      
+...............................................................

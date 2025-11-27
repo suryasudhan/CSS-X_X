@@ -1,0 +1,95 @@
+
+                                      ALIGN ITEMS 
+
+                              * ALIGN ITEMS PROPERTY
+
+                              * ALIGN ITEMS VALUES
+
+                              * ALIGN ITEMS & SHIFTING MAIN AXIS    
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 
+                                  ALIGN ITEMS : (set on flex PARENT-container]
+
+                            * Sets how flex ITEMS are positioned along the cross AXIS      
+
+                align-item : stretch ; -> sjust like(justify-content]
+
+                             =====ADDED IMG-ALIGN items=====
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
+                              ALIGN ITEMS PROPERTY : ( we can use both justify-content and align-items on CSS]
+
+                       @> When no height is set on the container its height is set by the height of the tallest flex-item
+
+                       {
+                        * align-item : stretch; (default VALUES)
+                        * align-item : flex-start;
+                        * align-item : flex-end;
+                        * align-item : center;
+                        * align-item : baseline;
+                       }       
+
+                        =====ADDED IMG-ALIGN items-no additional space=====
+
+.........................................................................................
+
+                               ALIGN ITEMS VALUES : (MAIN AXIS IS RIGHT , CROSS AXIS IS BOTTOM]
+
+                        @> When height is set on the container there is additional space for items to move
+
+                        {
+                        * align-item : stretch; (default VALUES)
+                        * align-item : flex-start;
+                        * align-item : flex-end;
+                        * align-item : center;
+                        * align-item : baseline;   
+                        }       
+
+                        =====ADDED IMG-ALIGN items-additional space=====
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+
+                  ALIGN ITEMS & SHIFTING MAIN AXIS :(no space out of the edges on the container] -> flex-direction: column; by using the AXIS is (bottom to right]
+
+            @> When no height is set on the container , it's height is sum of flex items height & justify content will have no impact   
+
+                        {
+                        * align-item : stretch; (default VALUES)
+                        * align-item : flex-start;
+                        * align-item : flex-end;
+                        * align-item : center;
+                        * align-item : baseline;  
+                        }
+
+                  =======ADDED IMG-ALIGN ITEMS & SHIFTING MAIN AXIS=======
+                  
+ ........................................................................................
+
+
+                       ALIGN ITEMS & SHIFTING the MAIN AXIS: (MAIN AXIS IS BOTTOM , CROSS AXIS IS RIGHT]
+
+                  @> When height is set on the container, there can be additional space so justify content will an impact
+
+                        {
+                        * align-item : stretch; (default VALUES)
+                        * align-item : flex-start;
+                        * align-item : flex-end;
+                        * align-item : center;
+                        * align-item : baseline;  
+                        }    
+
+                  =======ADDED IMG-ALIGN ITEMS & SHIFTING MAIN AXIS======= the AXIS should be in [bottom to right->]                         
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                         ALIGN ITEMS GUIDANCE :
+
+                        * Commonly used on navigation menus and footers
+
+                        * positioning items inside a components in a flex row
+
+                        * 
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                            
+
+

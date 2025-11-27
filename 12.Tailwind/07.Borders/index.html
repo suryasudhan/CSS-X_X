@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BORDERS</title>
+    <style>
+      body {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Border Width & Colors -->
+    <!-- https://tailwindcss.com/docs/border-width -->
+    <div class="border-2 border-green-300 m-10">
+      <div class="w-96 m-3 p-5 border">Border All Around</div>
+      <div class="w-96 m-3 p-5 border border-4">Border Width</div>
+      <div class="w-96 m-3 p-5 border-4 border-red-300">Colored Border</div>
+      <!-- difference between them X | Y -->
+      <div class="w-96 m-3 p-5 border-4 border-x-red-300">
+        Colored applied to X axies
+      </div>
+      <div class="w-96 m-3 p-5 border-y-4 border-red-500">
+        Colored applied to Y axies
+      </div>
+      <!--  -->
+      <div class="w-96 m-3 p-5 border-r-4 border-teal-500">Border Right</div>
+      <div class="w-96 m-3 p-5 border-l-4 border-teal-500">Border Left</div>
+      <div class="w-96 m-3 p-5 border-t-4 border-teal-500">Border Top</div>
+      <div class="w-96 m-3 p-5 border-b-4 border-teal-500">Border Bottom</div>
+    </div>
+
+    <!-- ............................................................................ -->
+
+    <!-- Border Radius -->
+    <!-- https://tailwindcss.com/docs/border-radius -->
+    <div class="border-2 border-green-200 m-10">
+      <div class="w-96 m-3 p-5 bg-teal-200 rounded">Border Rounded</div>
+      <div class="w-96 m-3 p-5 bg-teal-300 rounded-lg">Border Rounded lg</div>
+      <div class="w-96 m-3 p-5 bg-teal-400 rounded-xl">Border Rounded xl</div>
+      <div class="w-96 m-3 p-5 bg-teal-500 rounded-3xl">Border Rounded 3xl</div>
+      <div class="w-96 m-3 p-5 bg-teal-600 rounded">Border Rounded</div>
+      <div class="w-96 m-3 p-5 bg-teal-700 rounded-full">
+        Border Rounded FULL
+      </div>
+    </div>
+
+    <!-- ............................................................................ -->
+
+    <!-- Specific Sides -->
+     <div class="w-96 m-3 p-5 bg-rose-400 rounded-t-xl">Border Top Rounded</div>
+     <div class="w-96 m-3 p-5 bg-rose-500 rounded-b-xl">Border Bottom Rounded</div>
+     <div class="w-96 m-3 p-5 bg-rose-600 rounded-r-xl">Border right Rounded</div>
+     <div class="w-96 m-3 p-5 bg-rose-700 rounded-l-xl">Border left Rounded</div>
+
+
+    <!-- ............................................................................ -->
+  </body>
+</html>

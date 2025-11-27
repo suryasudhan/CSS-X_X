@@ -1,0 +1,21 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  background-color: gray;
+  margin-top: 200px;
+  margin-left: 200px;
+  box-shadow: 50px 50px 20px 30px burlywood ;
+/*
+  box-shadow: 50px 50px 0px 30px ; -> we provided both blur and spread values 
+
+  box-shadow: 50px 50px 30px ; ->  what if ? , we dosen't provided blur value and remaing the spread value automatically considing as a blur value 
+  
+  */
+
+
+}

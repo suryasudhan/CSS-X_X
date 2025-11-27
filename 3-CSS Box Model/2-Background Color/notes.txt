@@ -1,0 +1,34 @@
+
+                        #BACKGROUND-COLOR:
+                         *background color property
+                         *background color guidance
+                         *color vs background color
+
+
+..........................................................................
+
+            #background color property:
+              *sets the background color of an element and applies to the content and any padding...
+
+    #WHEN WE APPLY BACKGROUND-COLOR IT APPLY BOTH CONTENT AND PADDING ITSELF****
+..........................................................................
+
+                          #background color guidance:
+                           *sometimes used to set the background color of entire page 
+                           *commonly used to set the background-color of page section...  
+                           *commonly used in components(reusanle UI)
+
+..........................................................................
+
+                  #color vs background color:
+
+         #COLOR                      #BACKGROUND-COLOR 
+
+ *Applies to text elements           *Applies to the background of 
+                                       an element    
+
+         ex:                             ex:
+
+  color : #339af0;   background-color : #339af0;                        
+
+..........................................................................

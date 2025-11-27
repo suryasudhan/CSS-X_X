@@ -1,0 +1,46 @@
+            
+                  #The Universal selector:
+                    *Universal selector
+                    *Universal selector vs body-tag inheritance
+
+..................................................................
+                    
+                    #Universal selector:
+                      *Apply styles to all elements...
+
+                 ex:
+                    *{
+                      color: steelblue;
+                      border-top: 5px solid red;
+                    }     
+
+..................................................................
+          
+           #Universal selector vs body-tag inheritance
+
+            ex:body-tag inheritance   
+               body{
+                      color: steelblue;
+                      border-top: 5px solid red;
+                    }
+
+               #color property Apply all over the text 
+               #and boder-top is non-text property only Applyed on the body 
+
+            (      
+        #Universal selector:(removing default text styles}
+          *apply all property
+          *used to reset default styles     
+
+        #body-tag inheritance:(adding text styles}
+          *only apply text property
+          *used to set default text property across application...
+            ]
+
+..................................................................
+
+
+              #Universal selector guidance:
+                *primarily used for resetting default property and is not typlically used for Applying specific styles
+
+..................................................................                  

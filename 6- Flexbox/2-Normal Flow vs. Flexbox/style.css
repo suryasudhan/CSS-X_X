@@ -1,0 +1,38 @@
+.container{
+  background-color: slateblue;
+  text-align: center;/*to over come from block-level element  by using inherit as main DIV element*/
+  display: flex;
+  flex-direction: column;
+}
+
+a{
+  background-color: red;
+  /* height: 200px; height-dosen't work on block level element */
+  padding: 50px; /*now we facing overlaping problem - to avoid we use [display:inline-block]*/
+  display: inline-block;
+}
+
+h1{
+  background-color: aqua;
+  padding: 100px;
+}
+
+/* a{
+  text-align: center; dosen't work while on block-level element
+} */
+
+
+/* after added the   flex-direct : column; it take fiull width of the page so , we can apply the height and width aswell but in previous on normal flow we can't do that-> height and width we only do that paddig only */
+
+a{
+  height: 100px;
+  padding: 50px;
+}
+
+
+
+/* basicaly when we applying  text-align:center to image it won't move so either to use parent element or display flex ---- even it has draw back when comparing these , like using parent element to center the image will mover to center = but in flex it doesn't act as parent element  [ADDED IMG-NORMAL FLOW vs FLEXBOX]*/
+img{
+  width: 100px;/*even we modify the img TOO---ADDED IMG-NORMAL FLOW vs FLEXBOX*/
+ text-align: center; /*doesn't work on flex */
+}

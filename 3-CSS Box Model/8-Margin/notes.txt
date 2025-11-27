@@ -1,0 +1,44 @@
+
+                       #MARGIN:
+                         *What is margin 
+                         *Longhand & Shorthand margin properties
+                         *Margin design guidance
+
+........................................................................
+
+                         #What is margin :
+        *Margin is the space outside of an elements border creating distance between it and neighboring elements
+
+........................................................................
+
+                          #Longhand & Shorthand margin properties:
+                            
+                          
+                          @#Longhand margin properties:
+                            *ex:
+                               
+                              {
+                                margin-top: 5px;
+                                margin-right: 20px;
+                                margin-bottom: 5px;
+                                margin-left: 20px;
+                              }
+
+                          @#Shorthand margin properties:
+                            *sets the margin on all sides at once...
+
+                            ex:
+
+  =>ALL SIDES : ( margin : 20px; ) - common to use*
+  =>VERTICAL & HORIZONTAL : ( margin : 10px 20px; ) - common
+  =>TOP , HORIZONTAL & BOTTOM : ( margin : 10px 20px 5px; ) - uncommon
+  =>EACH SIDE : ( margin : 10px 40px 10px 40px; ) - kind of common*
+........................................................................
+
+                          #Margin design guidance:
+      *use margin to apply white-space between groups of elements...
+      *use margin to apply white-space between section(a lot of white-space between section)
+      *it is common to control spacing between elements with margin and other more modern techniques
+ 
+
+........................................................................

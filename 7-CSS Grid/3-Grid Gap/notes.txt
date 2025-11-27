@@ -1,0 +1,43 @@
+
+
+                                  GRID GAP :
+
+                        @> DEFAULT SPACING BETWEEN GRID ITEMS
+
+                        @> GAP PROPERTY
+
+                        @> GAP DESIGN GUIDANCE                  
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                    
+                        DEFAULT SPACING BETWEEN GRID ITEMS :
+
+              @> by DEFAULT , GRID ITEMS are placed next to each other with no SPACING BETWEEN them....          
+
+                ====ADDED IMG-DEFAULT SPACING BETWEEN GRID ITEMS====
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                
+                                  GAP PROPERTY :
+    
+           @> The GAP PROPERTY creates SPAC between GRID rows and columns
+
+                      (row-gap20px;  ,  column-gap:40px;]
+
+
+           @> we create a gap using another method -> (gap:40px; -> value for row and column gap]            
+
+                          ====ADDED IMG-GAP PROPERTY====
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                
+                                GAP DESIGN GUIDANCE :
+
+               @>  commonly used to spac GRID ITEMS in major sections
+
+               @>  commonly used for spacing in card layouts such as testimonials and features
+               
+                      ====ADDED IMG-GAP DESIGN GUIDANCE====
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

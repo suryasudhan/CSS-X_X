@@ -1,0 +1,29 @@
+
+                 #The-cascade
+                  
+                  *style priority
+                  *stylesheet priority
+...............................................................
+
+                        #style priority
+              #cascade-flows from one stage to the next
+                *styles declared later will take priority,when the selectors are the same*
+
+                ex:
+                  h1 {
+                      color: blue;
+                    }
+                    h1 {
+                      color: green;
+                    }           
+...............................................................
+                  #
+                  stylesheet priority
+            *styles declared later will take priority,when the selectors are the same*
+
+
+            #in 1st h1 color is blue but next is green in [h1-tag] and in final-output is green* beause of (green overrides blue*]
+
+          (#confilicting styles declared later takes priority}   
+
+...............................................................

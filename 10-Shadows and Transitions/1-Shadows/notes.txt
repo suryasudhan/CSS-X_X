@@ -1,0 +1,70 @@
+
+
+                                      SHADOWS
+
+                                * HOW SHADOWS WORK
+
+                                * SHADOWS PROPERTY
+
+                                * SHADOWS DESIGN GUIDANCE 
+
+                                * FLAT DESIGN VS SHADOWS
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    
+                                     HOW SHADOWS WORK
+
+                @> Moving light in the same plane as the table moves the SHADOW (HORIZONTAL AND VERTICALLY] on the floor  --- X offset | Y offset
+
+                @> Moving light up and down creates a blur resulting in edges that appear soft or sharp   ---  blur radius               
+
+                @> The size of the table impacts the size of the SHADOW  --- spread radius
+                              ====ADDED IMG-HOW SHADOWS WORK====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
+                                    SHADOWS PROPERTY
+
+                    [box-shadow : 10px -20px 5px 30px #6bb55c;}     
+
+              [x offset , y offset , blur radius , spread radius , color] 
+
+              # x offset , y offset -> required
+
+              # blur radius , spread radius , color -> optional              
+
+
+{
+
+ /*
+
+  box-shadow: 50px 50px 0px 30px ; -> we provided both blur and spread values 
+
+  box-shadow: 50px 50px 30px ; ->  what if ? , we dosen't provided blur value and remaing the spread value automatically considing as a blur value 
+  
+  */
+
+}
+                           ====ADDED IMG-SHADOWS PROPERTY====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     
+                               SHADOWS DESIGN GUIDANCE
+
+            @> shadows can be used to add depth and dimension to a DESIGN to create separation between UI-ELEMENTS               
+
+            @> shadows should be light , as darker shadows can create a harsh and unnatural appearance in the DESIGN
+
+            @> smaller shadows are ideal for enhancing smaller components like buttons and careds which add subtle depth
+
+            @> medium-sized shadows can be used for larger components , helping them stand out 
+
+            @> larger shadows are used when an ELEMENTS should appear to be floating above the rest of the DESIGN
+
+                       ====ADDED IMG-SHADOWS DESIGN GUIDANCE====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>       
+                                FLAT DESIGN VS SHADOWS
+
+            @> FLAT DESIGN uses broders and background colors to achive separation insted of SHADOW                    
+
+            @ shadows should not be used too often , as overuse can make a DESIGN look cluttered and overwhelming
+            
+                       ====ADDED IMG-FLAT DESIGN VS SHADOWS====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                     
+

@@ -1,0 +1,23 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+
+.box-2 {
+  width: 1000px;
+  /* max-height: 400px; inside the box the content is overflowing */
+  background-color: rgb(19, 65, 156);
+  /* overflow: auto; */
+  
+}
+
+.box-2{
+  /* min-height: 400px; */
+  /*paragraph tag is 560 and now min-height is 800px , now min-hight change to 400*/
+}
+
+.box-2{
+  max-height: 400px;
+  /*paragraph tag is 560 and now max-height is 400px , now the content is overflowing -> thats the major diff btw min and max - heights*/
+}

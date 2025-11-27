@@ -1,0 +1,53 @@
+
+
+/* a:link{
+  color: blue;
+  text-decoration: none;
+}
+a:visited{
+  color: tomato;
+}
+a:hover{
+  color: teal;
+}
+a:active{
+  color: steelblue;
+} */
+
+/* a{
+  color: aqua;
+} */
+
+/* a:link,a:visited{
+  color: blue;
+}
+a:hover,a:active{
+  color: red;
+} */
+
+/* ......................................................... */
+
+li:first-child {
+  color: yellow;
+}
+
+li:last-child {
+  color: blueviolet;
+}
+
+li:nth-child(4) {
+  color: cadetblue;
+}
+
+/* ///////////////////////////////////////////////////// */
+li:nth-child(5n+1){
+  color: red;
+}
+/*
+
+                    li:nth-child(2n + 1) {
+                      color: cadetblue;
+                    } 
+                .......(2n + 1)->(2x0 + 1)=apply 1 in color*
+
+*/

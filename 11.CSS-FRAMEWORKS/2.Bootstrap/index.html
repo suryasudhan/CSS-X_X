@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUTURE FULLSTACK</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- adding CDN-link to access the icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- over-RAIDING the custom CSS , so adding stylesheet here✌️ -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- hero section -->
+    <header>
+      <!-- adding [container] to the section -->
+      <!-- 1 . class="vh-100" , RELATIVE TO VIEWPOR...You can also use utilities to set the width and height relative to the viewport.
+              ### ADDED IMG ###
+  2 . BEFORE -> section with -> 516 X 291.17
+      AFTER  -> section with VH-100 -> 516 X 525.33
+      
+  3 . changing [vh-100 to vh-75] , now section with VH-75 -> 516 X 291.17...but now we using VH-100  -->
+
+      <!-- changing the content to verticaly and horizontaily 
+  
+      1 . activating the FLEX using [d-flex = display flex] and we use the [flex-column] [justify-content-center] [align-items-center] -->
+      <section
+        class="container vh-100 d-flex flex-column justify-content-center align-items-center"
+      >
+        <!-- centering the TEXT using [class="text-center"] -->
+        <h1 class="text-center">
+          Become a fullstack developer with the world's best online bootcamp
+          <i class="bi bi-laptop"></i>
+        </h1>
+        <p class="text-center">
+          Join the worl's best and most affordable fullstack development
+          bootcamp and master the skils to build real-world applications with
+          expert guidance , hands-on projects , and the latest industry tools
+        </p>
+        <!-- 1 . class="list-unstyled" , used for removing the list order from LIST
+           2 . class="btn btn-secondary" , used for buttons with colors 
+           3 . adding [d-flex and gap-3-create gap between them and gap-3 represt as 1rem*]-->
+        <ul class="list-unstyled d-flex gap-3">
+          <li><a href="#" class="btn btn-primary">Get started</a></li>
+          <li><a href="#" class="btn btn-secondary">Learn more</a></li>
+        </ul>
+      </section>
+    </header>
+
+    
+    <!-- main section -->
+    <main>
+      <!-- work section-->
+      <!-- adding [container] to the section -->
+      <!-- adding mb form css file -<[mb-12] -->
+      <section class="container mb-12">
+        <!-- adding [md-5]->margin bottom and value is 5 -->
+        <h2 class="text-center mb-5">How it Works</h2>
+        <!-- activating 12 slot of [row] and indicating of adding 3 column of [col]-->
+        <!-- using 3 column is equal to 4 bootstrap's columns | 6 column is equal to 2 bootstrap's columns | 12 column is equal to 12 bootstrap's -->
+        <!-- we can divide the col to [col-1,2,3,4...12]...is saying is that for each grid item , gives it 4 units from bootstrap's 12 unit system-->
+        <!-- justify-content-between = geting even content to center -->
+        <!-- adding css from css file [min-height-feature-img] -->
+        <div class="row justify-content-between">
+          <!-- Mobile first, next-responsive design is the goal | adding col-12 for a mobile working as single card taking 12 columns | adding MEDIUM as [md] 4 units of the 12 from bootstraps | adding SMALL as [sm] 3 units from 12 | adding LARGE as [lg] back to normal screen -->
+<!-- card 1 -->
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card">
+              <img
+                src="./undraw_nature-on-screen_5cbd.png"
+                class="card-img-top min-height-feature-img"
+                alt="nature on screen"
+              />
+              <div class="card-body">
+                <h3>High Quality</h3>
+                <p class="card-text">
+                  The bootcamp delivers high-quality , visually engaging videos
+                  , with animations , perfect for visual Learners
+                </p>
+              </div>
+            </div>
+          </div>
+
+<!-- card 2 -->
+         
+          <div class="col-12 col-md-4 col-lg-3">
+             <!-- adding margin-TOP and BOTTOM only between the CARD due to break the points [m-margin , y-top and bottom]  -> [my-5] -->
+            <!-- having problem at md so , we added medium screen to 0 [my-md-0] -->
+            <div class="card  my-5 my-md-0 ">
+              <img
+                src="./undraw_video-influencer_7ak0.png"
+                class="card-img-top min-height-feature-img"
+                alt="video influencer"
+              />
+              <div class="card-body">
+                <h3>Detailed</h3>
+                <p class="card-text">
+                  Every concept is taught in comprehensive detail , ensuring
+                  students understand thoroughly , with no confusion left behind
+                </p>
+              </div>
+            </div>
+          </div>
+
+<!-- card 3 -->
+ 
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card ">
+              <img
+                src="./undraw_video-upload_n7oz.png"
+                class="card-img-top min-height-feature-img"
+                alt="undraw" 
+              />
+              <div class="card-body">
+                <h3>Structrred</h3>
+                <p class="card-text">
+                  The course is structured to guide you through building a
+                  full-stack application , providing a clear , start-to-finish
+                  understanding
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- adding margin to the bottom - the value we can go up to is this 1 to 5 ,mb - which is 16 pixels times 3 , which is 48 pixels....added at SECTION top [mb-12] -->
+      </section>
+
+      <!-- frequently asked section-FAQ -->
+      <!-- adding [container] to the section -->
+      <!-- adding margin-botom -[mb-12] -->
+      <section class="mb-12">
+        <h2 class="text-center mb-5">FAQ</h2>
+        <!-- activate bootstrap grid layout -->
+        <!-- we want our single div to be center so , [justify-content-center]  -->
+        <div class="row justify-content-center">
+          <!-- using [col-8] , 8 units of bootstraps 12 units from its grid system -->
+          <div class="col-8">
+            <div class="accordion" id="accordionExample">
+              <!-- accordion item-1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Who is this bootcamp for?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    This bootcamp is designed for beginners with no prior coding
+                    experience and intermediate learning looking to master
+                    full-stack development
+                  </div>
+                </div>
+              </div>
+              <!-- accordion item-2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    What will i learn in this bootcamp?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    You will master the essentials of web development ,
+                    including HTML , CSS , and JavaScript , dive into backend
+                    technologies like NOde.js , Express and MongoDB , and learn
+                    tools like React and Postman to build and test full-stack
+                    application
+                  </div>
+                </div>
+              </div>
+              <!-- accordion item-3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    How is this bootcamp different from others?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Unlike other programs , we focus on detailed , high-quality
+                    content and a hands-on approach , guiding you through one
+                    cohesive full-stack projects
+                  </div>
+                </div>
+              </div>
+              <!-- adding extra accordion item-4 -->
+              <!-- we have to change the #collapseThree to collapseFour -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Do i need any prior knowledge to join?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    No prior knowledge is required-just a willingness to learn!
+                    We cover all concepts from the ground up to ensure you are
+                    set for success
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+    <!-- FOOTER PATH -->
+    <!-- applying background colour [bg-primary]  | adding text white [text-weight]  |  applying text center [text-center]-->
+    <!-- adding only padding set that both TOP AND BOTTOM [p-for padding , y-for top and bottom] | adding value is 2* -->
+    <footer class="bg-primary text-white text-center py-2">
+      @ 2025 Future Fullstack
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

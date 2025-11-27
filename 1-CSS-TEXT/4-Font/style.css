@@ -1,0 +1,18 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: bubble;
+  src: url(./Bitcount_Grid_Double/BitcountGridDouble-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
+}
+h1{
+  font-family: "Tomorrow", sans-serif;
+}
+
+p{
+  font-family: bubble;
+  font-weight:500;
+  font-size: 30px;
+}

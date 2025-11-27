@@ -1,0 +1,124 @@
+
+                          #DISPLAY:
+                            *How the box model applies to Block & inline elements
+                            *Display property
+                            *Inline-Block value
+                            *Display design guidance
+........................................................................
+
+                      #WHAT ARE BLOCK AND INLINE ELEMENTS:
+      *all HTML elements are by default either a block or inline elements
+
+              =>BLOCK-ELEMENTS:
+                *stats on a new line...
+                *take up full width of a page...
+                  EX: ( h1 , p , ul , li ) - tags*
+
+              =>INLINE-ELEMENTS:
+                *does not start on a new line...
+                *only occupies width of their content...(unless after a block element)
+                  EX: ( a , img , br , input ) - tags*
+
+
+            
+
+........................................................................
+
+           #How the box model applies to Block & inline elements:
+            
+
+                      #BLOCK ELEMENTS AND THE BOX MODEL:
+            *block elements follow the box model rules so applying any properties work as expected...  
+                           ex:
+                           div{
+                                width: 500px;
+                                height: 500px;
+                                background-color: lightcoral;
+                                padding: 50px;
+                                border: 10px solid black;
+                                margin: 100px;
+                              }
+
+                      #INLINE ELEMENTS AND THE BOX MODEL:
+            *inline elements do not follow the box model rules so applying some properties do not work as expected...
+
+             { 
+               
+               *width & height : cannot be set
+               *padding : applies but only pushes content away horizontal
+               *border : applies but only pushes content away horizontal
+               *margin : only applies horizontaly
+               
+               ]
+                           ex:
+          .inline-element{
+                        background-color: steelblue;
+                        width: 200px; it dosen't work on inline-element
+                        height: 200px; it dosen't work on inline-element 
+                        padding: 100px 100px; it moves little horizontaly
+                        border: 20px solid red; 
+                        margin: 100px 100px; acting horizontal way only...
+                      }    
+
+........................................................................
+
+                          #Display property:
+                            *Sets how the element is formatted and positioned 
+
+                  [ Display : block; ] - ( property : value )
+
+          VALUES : [ BLOCK , INLINE , INLINE-BLOCK , FLEX , GRID] 
+             
+                    @=>BLOCK - default value for block element
+                    @=>INLINE - default value for block element
+
+            
+........................................................................
+
+                          #Inline-Block value:
+                        
+
+                             @=>INLINE-BLOCK:
+                  *Combines features of block and inline elements
+
+                           [ display : inline-block; ]
+
+           ************ attached img scren-short *************** 
+
+                     ex:
+              .inline-element{
+                              background-color: steelblue;
+                              width: 200px;
+                              height: 200px; 
+                              padding: 100px 100px; 
+                              border: 20px solid red; 
+                              margin: 100px 100px;
+                              display: inline-block; ....
+                            }       
+
+........................................................................
+
+                          #Display design guidance:
+          *it is common to apply inline-block to inline element so they folw inline but all box properties can be appled 
+
+........................................................................
+
+                           #REPLACED INLINE ELEMENTS:
+         *inline-elements where the content is sourced externally and is not part of the HTML-markup
+
+            @>REGULAR INLINE ELEMENTS:
+                  *Does not start on a new line 
+                  *Only occupies width of their content
+                  *Width & Height can not be set  
+                  *Padding , border & margin do not applyes expected
+                  =>EX: ( a , span , sub , sup )-tags*
+
+            @>REPLACED INLINE ELEMENTS: even its inline we can apply {width,height,padding,border,margin = without using inline-block]
+                  *Does not start on a new line 
+                  *Only occupies width of their content
+                  *Width and Height can be set 
+                  *Padding , border & margin Applyas expected
+                  =>EX: ( img , input , select , textarea )-tags *   
+
+             *************** added scren-short *************            
+..........................................................................

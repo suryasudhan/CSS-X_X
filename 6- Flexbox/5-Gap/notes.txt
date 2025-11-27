@@ -1,0 +1,38 @@
+
+ 
+                                      GAP :
+
+                                * FLEXBOX & THE BOX MODEL
+
+                                * GAP PROPERTY
+                                        
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                            
+                             FLEXBOX & THE BOX MODEL :
+
+             @> BOX MODEL PROPERTY can still be used in a FLEXBOX layout to control spacing 
+
+                       ====ADDED IMG - FLEXBOX & THE BOX MODEL=====
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                            
+                                  GAP PROPERTY :
+
+                @> sets uniform spacing between flex items on the main axis
+
+                    [set on the flex - container not in flex - items]
+
+                                    (gap:24px;]                     
+
+                {insted of using multiple margin to axis we simply use the GAP}                 
+
+                       ======ADDED IMG - GAP PROPERTY=======     
+
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                            
+                               GAP GUIDANCE :
+
+               @> margin is used when you want different spacing values between flex items
+
+               @> GAP is used when you want you want uniform spacing values between flex items
+
+                        =====ADDED IMG - GAP GUIDANCE=====
+
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                            
+

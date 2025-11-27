@@ -1,0 +1,94 @@
+
+
+                                INTRODUCTION TO CSS GRID:
+
+                                * WHAT IS CSS GRID
+
+                                * CSS GRID TERMINOLOGY 
+
+                                * CSS GRID DESIGN GUIDANCE
+
+                                * CSS GRID VS FLEX-BOX
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                                  
+                                  WHAT IS CSS GRID :
+
+                 @> CSS GRID is a (two-dimensional] layout model making it simple to arrange items in [rows and columns]                  
+
+                        ====ADDED IMG- WHAT IS CSS GRID====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+                                CSS GRID TERMINOLOGY :
+
+    @> The GRID is divided into GRID cells by GRID lines by {column axis and row axis}
+
+                       @> CSS GRID has two main compnents 
+                                 {
+                                  *GRID container(parent)
+                                  *GRID items (children)
+                                 } 
+
+                  @> CSS GRID has two axis(can't change direction of the axis)  
+                                  {
+                                  *vertiacl axis is : column axis
+                                  *horizontal axis is : row axis
+                                  }
+
+                @> The GRID is divided into GRID cells by GRID lines  
+                
+              ( *left to right -> positive numbers on row axis
+                
+                * right to left -> negative numbers on row axis
+                
+                * left top to bottom -> positive numbers on column axis
+                
+                * right bottom to top -> negative numbers on column axis ]                      
+
+
+                    @> GRID lines define GRID tracks (rows & columns)
+
+    @>  GRID rows and columns cen have spacing between them (vertiacl gap & horizontal gap]  
+
+                        =====ADDED IMG-CSS GRID TERMINOLOGY====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+ 
+                                    DISPLAY GRID :
+
+      @> The DISPLAY property on a container element will activate GRID layout features on children element          
+
+                  (display:grid;] -> declared on grid container (parent)   
+
+
+                  [VALUES : bolck , inline , inline-bolck , flex , grid]  
+                                                       
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                
+                             CSS GRID DESIGN GUIDANCE :
+
+                  @> css grid can be used for complex TWO-DIMENSIONAL layout
+
+                  @> grid is also commonly used for major sections
+
+                  @> grid is also commonly used for UI elements with consistent spacing in  a one-dimensional row or column[could also use in flex box]           
+                
+                ====ADDED IMG-CSS GRID DESIGN GUIDANCE====                               
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+                                CSS GRID VS FLEX-BOX :
+
+               {
+                
+                FLEXBOX :
+
+                 (display:flex;) -> ONE-DIMENSIONAL [ROW OR COLUMN]
+
+        USE CASE : navigation bars , footers , components(button,callouts,inside cards) , forms
+
+                GRID    :
+
+                (display:grid;) -> TWO-DIMENSIONAL (ROW AND COLUMN)
+
+        USE CASE : complex 2D layouts , features , cards(one or two dimensional)                  
+                 
+                 ]                                             
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

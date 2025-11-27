@@ -1,0 +1,73 @@
+
+                        #BORDER RADIUS:
+                          *Border radius property
+                          *How Border radius works
+                          *Pills & Circle
+                          *Border radius design guidance
+
+........................................................................
+
+                #Border radius property:
+                  *Rounds the corners of an elements Border*
+
+                #SETS THE BORDER RADIUS VALUE
+              
+              [ Border-radius : 12px; ]-( property:value )
+
+            values : px , em , rem , % - [px-commonly used}
+
+
+........................................................................
+                         
+                #How Border radius works:
+                  *A quarter-Circle is placed in the corner of an element and the cut out Rounds the elements corner...
+
+                        ex:
+                         
+                      div{
+                            width: 500px;
+                            height: 500px;
+                            background-color: teal;
+                            border-radius: 20px;
+                          }
+
+........................................................................
+
+                #Pills & Circle:
+
+                =>Pills:💊
+                  *Fully rounded corners are created from rectangles by setting Border radius equal to half the elements height...
+
+                  *like-it give the shape of pill-shape...💊
+
+                  ex:
+
+                     div{
+                          width: 500px;
+                          height: 200px;
+                          background-color: teal;
+                          border-radius: 100px;
+                        }
+
+                 =>Circle:
+                    *circular elements are created from squares by setting border radius equal to half the elements height...  
+
+                     ex:
+
+                        div{
+                              width: 100px;
+                              height: 100px;
+                              background-color: teal;
+                              border-radius: 50px;
+                            } 
+
+........................................................................
+
+                   #Border radius design guidance:
+
+            *Fully rounded corners can be perceived as playful...
+   {it is important to have consistent rounded across all elements)
+
+
+
+........................................................................                          

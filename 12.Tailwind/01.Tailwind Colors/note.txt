@@ -1,0 +1,17 @@
+    <!-- 1 . colors with different shades -->
+    <!-- https://v3.tailwindcss.com/docs/customizing-colors-->
+    
+    <!-- 2 . Background Colors -->
+    <!-- https://v3.tailwindcss.com/docs/background-color -->
+
+
+    <!-- 3 . TExt Decoration -->
+    <!-- https://v3.tailwindcss.com/docs/text-decoration -->
+
+
+    <!-- 4 . Accent Colors -->
+    <!-- https://v3.tailwindcss.com/docs/accent-color#setting-the-accent-color -->
+
+
+    <!-- Arbitrary-values -->
+    <!-- https://v3.tailwindcss.com/docs/caret-color#arbitrary-values -->

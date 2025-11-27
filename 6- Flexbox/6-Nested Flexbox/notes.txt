@@ -1,0 +1,27 @@
+
+                               NESTED FLEXBOX :
+
+                            * NESTED FLEXBOX 
+
+                            * NESTED FLEXBOX GUIDANCE    
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                  NESTED FLEXBOX :
+
+          @> It is common to have a FLEXBOX layout inside another FLEXBOX layout
+
+          @> A FLEX item withing a FLEX container can also function as a FLEX container itself , allowig for multi-level FLEX layout
+
+                          =====ADDED ING - NESTED FLEXBOX=====           
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                               NESTED FLEXBOX GUIDANCE :   
+
+                      @> Commonly used on navigation menus and footers  
+
+                      @> Commonly used in sections and components           
+
+                      ======ADDED IMG -NESTED FLEXBOX GUIDANCE======
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

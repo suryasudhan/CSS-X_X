@@ -1,0 +1,45 @@
+ 
+
+                               ABSOLUTE & RELATIVE UNITS :
+
+                               * ABSOLUTE VS RELATIVE UNITS
+
+                               * IMPORTANCE OF RELATIVE UNITS
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+                            ABSOLUTE VS RELATIVE UNITS :
+
+                  @> RELATIVE uints are essential for responsive webpages so elements can dynamically adjust for different screen sizes !!!
+
+    +> ABSOLUTE UNITS :
+
+          * size is fixed and does not change in relation to parent elements
+
+            ( px-(STILL USED FOR SPECIFIC CASES) , {pt , in , cm , mm}-(uncommon-useage on real world*)]
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    +> RELATIVE UNITS :
+
+           * size is based on the size of a parent elements adjusts proportionaly to changes in the parent elements
+
+           ( % , em , rem , vh , vw }          
+
+            =>>>> common ways to used in RELATIVE UNITS : ( padding reduces , font-size reduces , main container widens} when adjust to screen size of parent to child => laptop to mobile  
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                                     
+                               SUMMARY CARD : CSS UNITS 
+
+                               PIXELS :
+
+                                 * Border Radius
+                                 * Border
+                                 * Letter Spacing
+                                 * Logo and Icons
+                                 * Max - Width
+                                 * Shadows
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

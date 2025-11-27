@@ -1,0 +1,84 @@
+
+                      #SPECIFICITY
+                        *the cascade & conflicting selectors
+                        *specificity
+                        *specificity calculations
+
+..................................................................
+                          
+                      #the cascade
+                        *styles declared later will take priority,when the selectors are the same*   
+
+                               [already we cover the topic* n!]      
+
+          #conflicting selectors:
+                *when styles are applied to the same elements using different type of selectors the outcome is determined by specificity
+
+                  ex:
+                    <h1 class="red-font">hyyy you n!</h1>
+
+                    .red-font{
+                              color: red;
+                            }
+
+                            h1{
+                              color: yellow;
+                            }
+
+    [we using different selectors(1-is tag and 2-is class)]   
+
+            
+..................................................................
+
+                          #specificity:
+                            *determines the priority of a css rile when multiple riles apply to the same element
+
+                    <div>
+                      <div class="textbox">
+                        <h1 id="heading" class="large">hyy we using specificity</h1>
+                      </div>
+                    </div>     
+
+
+                    #heading {
+                                color: blueviolet;
+                              }
+                              .textbox {
+                                color: violet;
+                              }
+                              div div .large{
+                                color: chartreuse;
+                              } 
+                              div div .h1{
+                                color: aqua;
+                              }   
+
+..................................................................
+
+                  #specificity calculations:
+
+                <div>
+                  <div class="textbox">
+                    <h1 id="heading" class="large">hyy we using specificity</h1>
+                  </div>
+                </div> 
+
+
+                selector        id      class&pseudo-class   type(tags) 
+
+                #heading         1              0                0
+                .textbox.large   0              2                0
+                div div .large   0              1                2
+                div div h1       0              0                3 
+
+    #lower priority (moving id -> class&pseudo -> type)
+      
+      *id is first priority* because its 1st comes 1st priority..
+       #heading-id-is highest priority...
+
+
+..................................................................
+
+                  #specificity guidance:
+                    *it is common to use the type selector for global styles and the class selector to override this for sepcific styles...
+..................................................................

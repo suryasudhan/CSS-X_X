@@ -1,0 +1,96 @@
+
+                              INTRODUCTION TO FLEXBOX :
+
+                                  * WHAT IS FLEXBOX
+
+                                  * FLEX CONTAINER & FLEX ITEMS
+
+                                  * MAIN AND CROSS AXIS 
+
+                                  * FLEX DIRECTION
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    WHAT IS FLEXBOX : (it MOVES in LEFT TO RIGHT]
+
+                @> FLEXBOX is a one-dimensional layout mobel making it simple to arrange items in rows or columns and distribute space        
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                          FLEX CONTAINER & FLEX ITEMS :
+
+                        @> FLEXBOX has two main components 
+
+                (
+                  basicaly -> on CONTAINER is known as FLEX CONTAINER(parent) and inside the CONTAINER is FLEX ITEMS(children)]   
+
+.........................................................................................
+
+                                    DISPLAY-FLEX :
+
+                          @> The DISPLAY property on a CONTAINER element will activate FLEXBOX's layout features on children element
+
+                   STEP : 1 -> DECLARED on FLEX container(parent)
+
+                               ( display : flex ;]-> apply should be in parent container
+
+                {values : block , inline , inline-block , flex , grid}                                  
+
+.........................................................................................
+
+                        display flex : no flex-box(no flex FLOW)
+
+                        =========ADDED IMG-no FLEXBOX ===========                     
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                              MAIN AND CROSS AXIS 
+
+               @> The main AXIS is the primary DIRECTION in which flex items are laid out & cross AXIS determines distribution on secondary AXIS                 
+
+                =========ADDED IMG-MAIN AND CROSS AXIS  ===========   
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                               
+                                 FLEX DIRECTION
+
+                    @> control orientation of the MAIN AXIS   
+
+
+                  (
+
+                        flex-direction : row ; -> DEFAULT
+                                   [1,2,3,4]
+
+                        flex-direction : row-reverse;
+                                   [4,3,2,1] 
+
+                        flex-direction : column;           
+                                   [
+                                    1
+                                    2
+                                    3
+                                    4
+                                   ]
+
+                        flex-direction : column-reverse;
+                                   [
+                                    4
+                                    3
+                                    2
+                                    1
+                                   ]  
+
+                    ]
+
+
+                  =========ADDED IMG-FLEX DIRECTION ===========               
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            FLEX DIRECTION GUIDANCE :
+
+              @> In most cases flex-direction is set to [ROW OR COLUMN]   
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

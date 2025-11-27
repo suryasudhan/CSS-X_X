@@ -1,0 +1,54 @@
+
+                         #PADDING:
+                          *What is PADDING
+                          *Longhand & shorthand padding properties
+                          *Padding design guidance
+
+.......................................................................
+
+                          #What is PADDING:
+                            *Padding is the space between the content of an element and its border to improve readablity and visual design...
+
+.......................................................................
+                          
+                          #Longhand & shorthand padding properties:
+                            
+
+              =>Longhand padding:
+                  *sets the padding on individual sides
+                  
+                ex:
+
+                  h1{
+                      padding-top: 5px;
+                      padding-right: 10px;
+                      padding-bottom: 5px;
+                      padding-left: 10px;
+                    }  
+
+              =>Shorthand padding:
+                  *sets the padding on all sides at once
+
+                  ex:
+
+      #COMMON : ( padding : 20px ) - ALL SIDES*
+      #COMMON : ( padding : 10px 20px)  - [vertical - top and bottom , horizontal - right and left ]*
+      #UNCOMMON : ( padding : 10px 20px 5px ;)  - [top , horizontal , bottom ]
+      #KIND OF COMMON : ( padding : 10px 20px 5px 15px ) - [ top , right , bottom , left ]-act as clockwisw direction ->EACH-SIDE*
+
+                { NOW WE CAN APPLY INLINE-LEVEL element             TOO ]                             
+
+                   
+                      a{
+                        padding: 20px 40px;
+                        background-color: teal;
+                      }
+
+.......................................................................
+
+              #Padding design guidance:
+                *commonly used in buttons and text callouts to improve readablity
+                *commonly used on cards too 
+                *commonly used on { INPUTS ] ex: creating form* so there is INPUTS(password,enter your name and so ....)
+                
+.......................................................................                          

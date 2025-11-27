@@ -1,0 +1,151 @@
+
+                       #INHERITANCE:
+                         *inhertiance
+                         *inhertiance & specificity
+                         *what gets inherited
+                         *inhertiance & text-align
+
+..................................................................
+                          
+              #INHERITANCE:
+                *properties set on parent elements are passed to their children by-default...   
+                       
+
+                  ex:
+
+                     <div class="hero-section">
+                      <h1>hyyy how been doing</h1>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                      </p>
+                    </div>    
+
+
+                    div{
+                          color: teal;
+                        } 
+
+
+             #HERE,parent element passed to their children by-default...           
+..................................................................
+
+                #inhertiance & specificity
+                     *sepcific selectors will override* inherited styles as inherited styles have a very low specificity
+
+                     ex:
+
+                <div class="hero-section">
+                  <h1>hyyy how been doing</h1>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                  </p>
+                </div>
+
+
+                div{
+                      color: teal;
+                    }
+                    p{
+                      color: rgb(44, 11, 230);
+                    }
+
+
+               # HERE, sepcific selector will override inherited..     
+..................................................................
+
+              #what gets inherited:
+                *it is mainly text properties that are inherited form parent to child....
+
+                          *color 
+                          *font-family
+                          *font-size
+                          *font-weight
+                          *font-style
+                          *letter-spacing
+                          *line-height
+                          *text-align
+                          *text-transform
+
+..................................................................
+ 
+             #INHERITANCE-guidance:
+               *global font style are set on the body element so that all child text elements inherit styles by-default
+
+                ex:
+
+                  <body>
+                    <section>
+                      <h1>hyyy you nigga</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </section>
+                    <footer>
+                      <p>learning</p>
+                      <a href="www.google.com">google</a>
+                    </footer>
+                  </body>
+       
+
+               body{
+                    color: turquoise;
+                    font-weight: 400;
+                    font-family: Arial, Helvetica, sans-serif;
+                  }
+            
+          #HERE,set default-text properties and color is't apply too for child properties and all properties are inherited inside the body*...
+
+              
+..................................................................
+                 
+
+                 #inhertiance & text-align:
+                   *we've already seen text-align affects BOLCK-LEVEL elements but has no impact on INLINE-elements 
+
+                   ex:
+
+                <h1>Inheritance & text-align</h1>
+                <p>Lorem sit amet consectetur </p>
+                <a >google</a>
+
+                 #HERE, h1 and p are BOLCK-LEVEL elements,and a-tag is INLINE element 
+
+                  *text-align:center - for h1-tag
+                  *text-align:center - for p-tag 
+                  *text-align:center - for a-tag
+ 
+      #when we applying these styles , the content inside box gets centered...(in BOLCK-LEVEL but not for INLINE element ]-because of no space to the center text*
+
+                      h1{
+                        text-align: center;
+                        }
+                        p{
+                        text-align: center;
+                        }
+                        a{
+                        text-align: center;
+                        }
+
+        #HERE, everthing moves to center expect a-tag (INLINE element)        
+
+                  
+
+               ( #NOW,inhertiance WITH text-align]
+
+                 EX:
+
+                     <div class="hero-section">
+                      <h1>Inheritance & text-align</h1>
+                      <p>Lorem sit amet consectetur</p>
+                      <a>google</a>
+                    </div>
+
+
+                    .hero-section{
+                        text-align: center;
+                      }
+
+    (#NOW,the a-tag(INLINE) gose to center because of inherited...parent properties apply to child ] 
+
+            #both , INLINE and BOLCK elements got centered
+
+..................................................................
+                          

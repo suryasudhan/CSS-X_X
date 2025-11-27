@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title></title>
+    <style>
+      body {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!---------------------------------------------------------------------------------->
+
+    <!-- Width -->
+    <!-- https://tailwindcss.com/docs/width -->
+    <h1>1 . Widht all around</h1>
+    <div class="bg-blue-300 p-5">
+      <div class="bg-red-600 w-0">0</div>
+      <!-- [w-1] - W is width | width of 1 is {4px} & 0.25rem; -->
+      <div class="bg-red-600 w-1">1</div>
+      <!-- [w-1.5] - width of {6px} & 0.375rem; -->
+      <div class="bg-red-600 m-1 w-1.5">1.5</div>
+      <div class="bg-red-600 m-1 w-2">2</div>
+      <div class="bg-red-600 m-1 w-3">3</div>
+      <div class="bg-red-600 m-1 w-4">4</div>
+      <div class="bg-red-600 m-1 w-5">5</div>
+      <div class="bg-red-600 m-1 w-6">6</div>
+      <div class="bg-red-600 m-1 w-7">7</div>
+      <div class="bg-red-600 m-1 w-8">8</div>
+      <div class="bg-red-600 m-1 w-9">9</div>
+      <div class="bg-red-600 m-1 w-10">10</div>
+      <div class="bg-red-600 m-1 w-11">11</div>
+      <div class="bg-red-600 m-1 w-12">12</div>
+      <div class="bg-red-600 m-1 w-14">14</div>
+      <div class="bg-red-600 m-1 w-16">16</div>
+      <div class="bg-red-600 m-1 w-20">20</div>
+      <div class="bg-red-600 m-1 w-24">24</div>
+      <div class="bg-red-600 m-1 w-28">28</div>
+      <div class="bg-red-600 m-1 w-32">32</div>
+      <div class="bg-red-600 m-1 w-36">36</div>
+      <div class="bg-red-600 m-1 w-64">64</div>
+      <div class="bg-red-600 m-1 w-80">80</div>
+      <div class="bg-red-600 m-1 w-96">96</div>
+    </div>
+
+
+    <!---------------------------------------------------------------------------------->
+
+
+    <!-- Percentages -->
+    <h1 class="mt-5">2 . Percentages</h1>
+    <div class="bg-indigo-400 mb-5 p-5">
+      <div class="bg-green-400 p-2 mb-4 w-1/2">1/2</div>
+      <div class="bg-green-400 p-2 mb-4 w-1/3">1/3</div>
+      <div class="bg-green-400 p-2 mb-4 w-1/4">1/4</div>
+      <div class="bg-green-400 p-2 mb-4 w-2/4">2/4</div>
+      <div class="bg-green-400 p-2 mb-4 w-3/4">3/4</div>
+      <div class="bg-green-400 p-2 mb-4 w-1/5">1/5</div>
+    </div>
+
+
+    <!---------------------------------------------------------------------------------->
+
+
+
+    <!-- Max Width -->
+    <!-- https://tailwindcss.com/docs/max-width -->
+    <h1 class="mt-5">3 . Max-Width</h1>
+    <!-- to activate MAX-WIDTH -use to added infront of->{width = "max-w-0"} -->
+    <!-- lorem 100 -->
+    <div class="bg-yellow-100 p-10 mb-10 max-w-xs">
+      <strong>XS</strong>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      laboriosam explicabo, reiciendis recusandae est dolor illum molestias
+      numquam quo eligendi animi, a perspiciatis ab ut quaerat ad blanditiis
+      nostrum tempora enim beatae. Facere eos quod dicta temporibus ullam ea
+      fugit est. Sint ut, natus officia ea iusto sequi sit accusantium atque
+      exercitationem nesciunt optio corrupti minus dicta at similique quaerat
+      saepe illo temporibus iste consequuntur repellendus accusamus beatae.
+      Ipsum nihil nam dolorem aut ab sit reiciendis voluptates, totam
+      praesentium reprehenderit repellendus aliquid maiores rem, nesciunt
+      ratione, consequatur amet ipsa velit optio iusto ducimus sunt consectetur
+      placeat? Pariatur animi iste corrupti.
+    </div>
+    <br />
+    <div class="bg-yellow-100 p-10 mb-10 max-w-sm">
+      <strong>SM</strong>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      laboriosam explicabo, reiciendis recusandae est dolor illum molestias
+      numquam quo eligendi animi, a perspiciatis ab ut quaerat ad blanditiis
+      nostrum tempora enim beatae. Facere eos quod dicta temporibus ullam ea
+      fugit est. Sint ut, natus officia ea iusto sequi sit accusantium atque
+      exercitationem nesciunt optio corrupti minus dicta at similique quaerat
+      saepe illo temporibus iste consequuntur repellendus accusamus beatae.
+      Ipsum nihil nam dolorem aut ab sit reiciendis voluptates, totam
+      praesentium reprehenderit repellendus aliquid maiores rem, nesciunt
+      ratione, consequatur amet ipsa velit optio iusto ducimus sunt consectetur
+      placeat? Pariatur animi iste corrupti.
+    </div>
+    <br />
+    <div class="bg-yellow-100 p-10 mb-10 max-w-md">
+      <strong>MD</strong>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      laboriosam explicabo, reiciendis recusandae est dolor illum molestias
+      numquam quo eligendi animi, a perspiciatis ab ut quaerat ad blanditiis
+      nostrum tempora enim beatae. Facere eos quod dicta temporibus ullam ea
+      fugit est. Sint ut, natus officia ea iusto sequi sit accusantium atque
+      exercitationem nesciunt optio corrupti minus dicta at similique quaerat
+      saepe illo temporibus iste consequuntur repellendus accusamus beatae.
+      Ipsum nihil nam dolorem aut ab sit reiciendis voluptates, totam
+      praesentium reprehenderit repellendus aliquid maiores rem, nesciunt
+      ratione, consequatur amet ipsa velit optio iusto ducimus sunt consectetur
+      placeat? Pariatur animi iste corrupti.
+    </div>
+    <br />
+    <div class="bg-yellow-100 p-10 mb-10 max-w-lg">
+      <strong>LG</strong>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      laboriosam explicabo, reiciendis recusandae est dolor illum molestias
+      numquam quo eligendi animi, a perspiciatis ab ut quaerat ad blanditiis
+      nostrum tempora enim beatae. Facere eos quod dicta temporibus ullam ea
+      fugit est. Sint ut, natus officia ea iusto sequi sit accusantium atque
+      exercitationem nesciunt optio corrupti minus dicta at similique quaerat
+      saepe illo temporibus iste consequuntur repellendus accusamus beatae.
+      Ipsum nihil nam dolorem aut ab sit reiciendis voluptates, totam
+      praesentium reprehenderit repellendus aliquid maiores rem, nesciunt
+      ratione, consequatur amet ipsa velit optio iusto ducimus sunt consectetur
+      placeat? Pariatur animi iste corrupti.
+    </div>
+    <br />
+    <div class="bg-yellow-100 p-10 mb-10 max-w-screen">
+      <strong>SCREEN</strong>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      laboriosam explicabo, reiciendis recusandae est dolor illum molestias
+      numquam quo eligendi animi, a perspiciatis ab ut quaerat ad blanditiis
+      nostrum tempora enim beatae. Facere eos quod dicta temporibus ullam ea
+      fugit est. Sint ut, natus officia ea iusto sequi sit accusantium atque
+      exercitationem nesciunt optio corrupti minus dicta at similique quaerat
+      saepe illo temporibus iste consequuntur repellendus accusamus beatae.
+      Ipsum nihil nam dolorem aut ab sit reiciendis voluptates, totam
+      praesentium reprehenderit repellendus aliquid maiores rem, nesciunt
+      ratione, consequatur amet ipsa velit optio iusto ducimus sunt consectetur
+      placeat? Pariatur animi iste corrupti.
+    </div>
+    <br />
+    <div class="bg-yellow-100 p-10 mb-10 max-w-full">
+      <strong>FULL</strong>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      laboriosam explicabo, reiciendis recusandae est dolor illum molestias
+      numquam quo eligendi animi, a perspiciatis ab ut quaerat ad blanditiis
+      nostrum tempora enim beatae. Facere eos quod dicta temporibus ullam ea
+      fugit est. Sint ut, natus officia ea iusto sequi sit accusantium atque
+      exercitationem nesciunt optio corrupti minus dicta at similique quaerat
+      saepe illo temporibus iste consequuntur repellendus accusamus beatae.
+      Ipsum nihil nam dolorem aut ab sit reiciendis voluptates, totam
+      praesentium reprehenderit repellendus aliquid maiores rem, nesciunt
+      ratione, consequatur amet ipsa velit optio iusto ducimus sunt consectetur
+      placeat? Pariatur animi iste corrupti.
+    </div>
+    <br />
+    <div class="bg-yellow-100 p-10 mb-10 max-w-fit">
+      <strong>FIT</strong>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      laboriosam explicabo, reiciendis recusandae est dolor illum molestias
+      numquam quo eligendi animi, a perspiciatis ab ut quaerat ad blanditiis
+      nostrum tempora enim beatae. Facere eos quod dicta temporibus ullam ea
+      fugit est. Sint ut, natus officia ea iusto sequi sit accusantium atque
+      exercitationem nesciunt optio corrupti minus dicta at similique quaerat
+      saepe illo temporibus iste consequuntur repellendus accusamus beatae.
+      Ipsum nihil nam dolorem aut ab sit reiciendis voluptates, totam
+      praesentium reprehenderit repellendus aliquid maiores rem, nesciunt
+      ratione, consequatur amet ipsa velit optio iusto ducimus sunt consectetur
+      placeat? Pariatur animi iste corrupti.
+    </div>
+
+
+
+    <!---------------------------------------------------------------------------------->
+
+
+
+    <!-- Width of the viewport -->
+    <h1 class="mt-5">4 .VW & Width 100%</h1>
+    <!-- w-screen => sets the width to 100vw(viewport width) , always equals the full width of the browser window , ignores parent size -->
+    <div class="bg-green-400 my-2 p-5 w-screen">(VW-viewport width) screen</div>
+    <!-- w-full => sets the width to 100% of the parent container , if the parent is smaller than the screen...it matches the parent , NOT the viewport width -->
+    <div class="bg-green-400 my-2 p-5 w-full">(Width of 100%) w-full</div>
+
+
+    <!---------------------------------------------------------------------------------->
+
+
+
+    <!-- Arbitrary Width -->
+    <h1 class="mt-5">5 . Arbitrary Width</h1>
+    <div class="bg-teal-300 text-white my-2 w-[100px]">Arbitrary Width</div>
+    <div class="bg-teal-300 text-white my-2 w-[200px]">Arbitrary Width</div>
+    <div class="bg-teal-300 text-white my-2 w-[300px]">Arbitrary Width</div>
+    <div class="bg-teal-300 text-white my-2 w-[400px]">Arbitrary Width</div>
+    <div class="bg-teal-300 text-white my-2 w-[500px]">Arbitrary Width</div>
+
+
+    <!---------------------------------------------------------------------------------->
+
+
+
+    <!-- Height (Most of the same options as widths) -->
+    <!-- https://tailwindcss.com/docs/height -->
+    <!-- using HEIGHT ->[h-0] is enough -->
+    <h1 class="mt-5">6 . Height</h1>
+    <div class="flex item-end mt-5 mb-10">
+      <div class="bg-indigo-400 ml-5 h-24">Height 24</div>
+      <div class="bg-indigo-400 ml-5 h-32">Height 32</div>
+      <div class="bg-indigo-400 ml-5 h-40">Height 40</div>
+      <div class="bg-indigo-400 ml-5 h-48">Height 48</div>
+      <div class="bg-indigo-400 ml-5 h-64">Height 64</div>
+      <div class="bg-indigo-400 ml-5 h-80">Height 80</div>
+    </div>
+
+
+
+    <!---------------------------------------------------------------------------------->
+
+
+
+    <!-- Arbitrary Height -->
+    <h1 class="mt-5">7 . Arbitrary Height</h1>
+    <div class="flex item-end mt-5 mb-10">
+      <div class="bg-indigo-400 ml-5 h-[400px]">Height-400px</div>
+    </div>
+
+
+    <!---------------------------------------------------------------------------------->
+
+
+    <!-- Min Height -->
+    <!-- https://tailwindcss.com/docs/min-height -->
+
+    <!--✌️ What’s happening? 
+       # The parent has height : 400px
+       # The child has min-height : 100%*
+
+       so , the inner div basically says: “Bro, no matter what, I’m not going below the height of my parent.”
+
+       Meaning:
+       # If content is small → child still grows to full height of parent.
+       # If content grows big → child can grow beyond 400px.
+
+      🔥 In short
+
+       👉 min-height sets the minimum, but can grow bigger if needed.
+        -->
+    <h1 class="mt-5">8 . Min Height</h1>
+    <div class="p-5 h-[400px] bg-green-200 mb-5">
+      <!-- added padding [p-5] so, makes diff on the edges -->
+      <div class="min-h-full bg-teal-400">Take Full Height</div>
+    </div>
+
+
+    <!---------------------------------------------------------------------------------->
+
+
+
+    <!-- Max Height -->
+    <!-- https://tailwindcss.com/docs/max-height -->
+
+    <!-- ✌️ What’s happening?
+
+       # The parent has height: 150px.
+       # The child’s default height (h-48) = 192px.
+
+       so , But then you added max-h-full → “Don’t go bigger than parent.”
+
+       # So child tries to be 192px tall, but max-height is 150px,
+       # so the browser slaps it down like:
+
+       “Nope. You stay inside your parent.”
+
+     🔥 In short
+
+      👉 max-height sets the maximum, it cannot grow bigger than that.
+       # Even if the content wants more space. -->
+    <h1 class="mt-5">9 . Max Height</h1>
+    <div class="bg-orange-300 mb-5 h-[150px]">
+      <div class="m-20 bg-orange-600 h-48 max-h-full">Max Height Full</div>
+    </div>
+
+
+    <!---------------------------------------------------------------------------------->
+
+
+    <!-- Full screen height -->
+     <!-- h-screen = 100vh = 100% of the viewport height
+      @> So your element becomes as tall as the entire visible screen, no scrolling needed to see the bottom (unless you add padding/margins). -->
+     <h1 class="mb-2">10 . Full screen height</h1>
+     <div class="bg-pink-300 mb-4 h-screen">Hello</div>
+
+    <!---------------------------------------------------------------------------------->
+
+    <!-- Width Auto -->
+     <!-- 💡 w-auto = width is determined by the content (the browser just uses the element’s natural size). -->
+     <h1 class="mb-2">11 . Width Auto</h1>
+     <div class="bg-green-600 p-5 w-auto">AUTO</div>
+
+
+    <!---------------------------------------------------------------------------------->
+    
+    
+    <!-- Class	Meaning
+      w-auto	    Size based on content
+      w-full	    Takes 100% width of parent
+      w-screen  	Takes 100% of viewport width
+      w-fit	      Shrinks to the smallest possible size to fit content
+      w-max	      Widens up to its max-content width      -->
+
+
+    <!---------------------------------------------------------------------------------->
+
+  </body>
+</html>

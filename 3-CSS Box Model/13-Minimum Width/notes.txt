@@ -1,0 +1,101 @@
+
+                  #MIN-WIDTH:
+                      *Min width property
+                      *Min width block & inline elements
+                      *Min width design guidance
+
+...................................................................
+
+                       #Min width property:
+                          
+                      {
+                        In previous topic max-width:
+                          
+                          @>width:
+                             *sets a fixed width
+                              ( width : 300px; )
+                              
+                          @>max-width:
+                              *sets an elements width that it won't exceed-WON'T GO ABOVE 500PX
+                                  ]  
+
+                  @>min-width:
+                      *sets an elements width that it won't shrink below 
+                        ( min-width : 500px; )          
+...................................................................
+
+                       #Min width block & inline elements:
+                          *max-width & min-width behaves differently depending on the display property of the HTML...
+
+                   {
+                    
+                    @MIN-WIDTH ON BLOCK ELEMENTS:
+                        *Sets the minimum width an element can be while it can still go wider*
+#so basicaly in min-width , the block-element extented beyond the browser ...like if we set ( min-width : 1200px; ) at the screen px is = 1800px* [the 1st part it extented to full screen when we use the min-with],[ now the real part is - now scrink the screen to 800px but the min-width : 1200px; dosen't end with 800px it gose beyond the browser* ]
+                ************** ADDED IMGAGE *************
+
+                    ex:
+
+                       .card {
+                              height: 200px;
+                              min-width:  800px;
+                              background-color: springgreen;
+                            }
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      
+                #MIN-WIDTH BLOCK ELEMENT GUIDANCE:
+                   
+             *Useful for maintaining a section width in a grid layout* so it does not become too narrow  
+
+                   @MIN-WIDTH ON INLINE ELEMENTS:
+                       *Sets the minimum width an element can while it can still go wider...
+
+                     EX: NO WIDTH:
+                        *width determined by content
+                         (using span-tag , => short text / some longer text )-takes full width of the content
+                     
+                     EX: width : 300px;
+                        (using span-tag , => short text / some longer text )-Text wraps = at some longer text
+                      
+                     EX: min-width : 300px;
+                         *sets at minimum width 
+                         (usnig span-tag , => short text / some longer text ) - it dosen't scrink at below 300px 
+
+             **********ADDED IMG *************** 
+
+                    ]       
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+                       @MIN-WIDTH ON INLINE ELEMENTS:
+                          *Sets the minimum width an element can be while it can still go wider*
+
+                       {
+                        
+                        @NO WIDTH:
+                          *(using span-tag , ex: short text and some longer text)-width determined by content 
+
+                        @WIDTH : 300PX;
+                          *(using span-tag , ex: short text and some longer text)-occuip the text under 300px event its some longer text-it will wraps
+
+                        @min-width : 300px;
+                          *(using span-tag , ex: short text and some longer text)-the short text occuip the content as much and longer text expent as much it is - sets a minimum width  
+
+               ********** ADDED IMG ***************  
+                   
+                        ]   
+...................................................................
+
+                       #Min width design guidance:
+                          * SOMETIMES Useful for maintaining a section width in a grid layout so it does not become too narrow 
+                          @>won't go below a certain width to remain user friendly
+...................................................................                      
+
+              [ MAX-WIDTH IS MORE IMPORTEN THEN MIN-WIDTH)
+
+               * focus on more in MAX-WIDTH
+...................................................................                      
+
+                  >>>>>>>>>>>>>ADDED IMG<<<<<<<<<<<<<<<<<< 
+
+                  * WIDHT SUMMARY !     

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FLEX</title>
+    <style>
+      body {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- https://tailwindcss.com/docs/flex -->
+    <div class="border m-10">
+      <ul class="flex">
+        <li class="bg-rose-100 m-5 p-5">01</li>
+        <li class="bg-rose-200 m-5 p-5">02</li>
+        <li class="bg-rose-300 m-5 p-5">03</li>
+        <li class="bg-rose-400 m-5 p-5">04</li>
+        <li class="bg-rose-500 m-5 p-5">05</li>
+      </ul>
+    </div>
+
+    <!-- https://tailwindcss.com/docs/flex-direction#column -->
+    <div class="border m-10">
+      <ul class="flex flex-row">
+        <li class="bg-teal-100 m-5 p-5">01</li>
+        <li class="bg-teal-200 m-5 p-5">02</li>
+        <li class="bg-teal-300 m-5 p-5">03</li>
+        <li class="bg-teal-400 m-5 p-5">04</li>
+        <li class="bg-teal-500 m-5 p-5">05</li>
+      </ul>
+    </div>
+    <div class="border m-10">
+      <ul class="flex flex-row-reverse">
+        <li class="bg-teal-100 m-5 p-5">01</li>
+        <li class="bg-teal-200 m-5 p-5">02</li>
+        <li class="bg-teal-300 m-5 p-5">03</li>
+        <li class="bg-teal-400 m-5 p-5">04</li>
+        <li class="bg-teal-500 m-5 p-5">05</li>
+      </ul>
+    </div>
+    <div class="border m-10">
+      <ul class="flex flex-col">
+        <li class="bg-teal-100 m-5 p-5">01</li>
+        <li class="bg-teal-200 m-5 p-5">02</li>
+        <li class="bg-teal-300 m-5 p-5">03</li>
+        <li class="bg-teal-400 m-5 p-5">04</li>
+        <li class="bg-teal-500 m-5 p-5">05</li>
+      </ul>
+    </div>
+    <div class="border m-10">
+      <ul class="flex flex-col-reverse">
+        <li class="bg-teal-100 m-5 p-5">01</li>
+        <li class="bg-teal-200 m-5 p-5">02</li>
+        <li class="bg-teal-300 m-5 p-5">03</li>
+        <li class="bg-teal-400 m-5 p-5">04</li>
+        <li class="bg-teal-500 m-5 p-5">05</li>
+      </ul>
+    </div>
+
+    <!-- https://tailwindcss.com/docs/justify-items -->
+    <!-- CSS only allows:
+            flex-start
+
+            flex-end
+
+            center
+
+            space-between
+
+            space-around
+
+            space-evenly
+
+            start
+
+            end
+
+            left
+
+            right
+            
+          ✔️ These are the flexbox kings:
+
+            justify-start
+
+            justify-center
+
+            justify-end
+
+            justify-between
+
+            justify-around
+
+            justify-evenly-->
+    <div class="border m-10">
+      <ul class="flex justify-start">
+        <li class="bg-red-100 m-5 p-5">01</li>
+        <li class="bg-red-200 m-5 p-5">02</li>
+        <li class="bg-red-300 m-5 p-5">03</li>
+        <li class="bg-red-400 m-5 p-5">04</li>
+        <li class="bg-red-500 m-5 p-5">05</li>
+      </ul>
+    </div>
+    <div class="border m-10">
+      <ul class="flex justify-end">
+        <li class="bg-red-100 m-5 p-5">01</li>
+        <li class="bg-red-200 m-5 p-5">02</li>
+        <li class="bg-red-300 m-5 p-5">03</li>
+        <li class="bg-red-400 m-5 p-5">04</li>
+        <li class="bg-red-500 m-5 p-5">05</li>
+      </ul>
+    </div>
+
+    <div class="border m-10">
+      <ul class="flex justify-center">
+        <li class="bg-red-100 m-5 p-5">01</li>
+        <li class="bg-red-200 m-5 p-5">02</li>
+        <li class="bg-red-300 m-5 p-5">03</li>
+        <li class="bg-red-400 m-5 p-5">04</li>
+        <li class="bg-red-500 m-5 p-5">05</li>
+      </ul>
+    </div>
+    <div class="border m-10">
+      <ul class="flex justify-between">
+        <li class="bg-red-100 m-5 p-5">01</li>
+        <li class="bg-red-200 m-5 p-5">02</li>
+        <li class="bg-red-300 m-5 p-5">03</li>
+        <li class="bg-red-400 m-5 p-5">04</li>
+        <li class="bg-red-500 m-5 p-5">05</li>
+      </ul>
+    </div>
+    <div class="border m-10">
+      <ul class="flex justify-around">
+        <li class="bg-red-100 m-5 p-5">01</li>
+        <li class="bg-red-200 m-5 p-5">02</li>
+        <li class="bg-red-300 m-5 p-5">03</li>
+        <li class="bg-red-400 m-5 p-5">04</li>
+        <li class="bg-red-500 m-5 p-5">05</li>
+      </ul>
+    </div>
+    <div class="border m-10">
+      <ul class="flex justify-evenly">
+        <li class="bg-red-100 m-5 p-5">01</li>
+        <li class="bg-red-200 m-5 p-5">02</li>
+        <li class="bg-red-300 m-5 p-5">03</li>
+        <li class="bg-red-400 m-5 p-5">04</li>
+        <li class="bg-red-500 m-5 p-5">05</li>
+      </ul>
+    </div>
+
+    <!-- https://tailwindcss.com/docs/order -->
+    <div class="border m-10">
+      <ul class="flex w-100">
+        <li class="bg-gray-300 m-5 p-5 order-5">01</li>
+        <li class="bg-gray-400 m-5 p-5 order-4">02</li>
+        <li class="bg-gray-500 m-5 p-5 order-3">03</li>
+        <li class="bg-gray-600 m-5 p-5 order-1">04</li>
+        <li class="bg-gray-700 m-5 p-5 order-2">05</li>
+      </ul>
+    </div>
+
+    <!-- Grow and shrink -->
+    <!-- https://tailwindcss.com/docs/flex-shrink -->
+    <div class="border m-10">
+      <ul class="flex w-100">
+        <li class="bg-gray-300 m-5 p-5 w-64 flex-none">01</li>
+        <li class="bg-gray-400 m-5 p-5 w-64 flex-initial">02</li>
+        <li class="bg-gray-500 m-5 p-5 w-64 flex-auto">03</li>
+        <li class="bg-gray-600 m-5 p-5 w-64 flex-1">04</li>
+        <li class="bg-gray-700 m-5 p-5 w-64">05</li>
+        <li class="bg-gray-300 m-5 p-5 w-64">06</li>
+        <li class="bg-gray-300 m-5 p-5 w-64">07</li>
+      </ul>
+    </div>
+
+    <!-- flex-none: Prevent item from growing or shrinking |Stays exactly same size always.-->
+
+    <!-- flex-initial:  Allow item to shrink but not grow, taking into account its initial size  -->
+
+    <!-- flex-auto: Allow item to grow and shrink, taking into account its initial size -->
+
+    <!-- flex-1: Allow item to grow and shrink as needed, ignoring its initial size -->
+  </body>
+</html>

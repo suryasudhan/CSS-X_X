@@ -1,0 +1,27 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+/* 
+/* .red-font {
+  color: red;
+}
+
+h1 {
+  color: yellow;
+} */ */
+
+
+#heading {
+  color: blueviolet;
+}
+.textbox {
+  color: violet;
+}
+div div .h1{
+  color: aqua;
+}
+div div .large{
+  color: chartreuse;
+}

@@ -1,0 +1,66 @@
+
+
+                                    BOOTSTRAP  
+
+                            * WHAT IS BOOTSTRAP
+
+                            * WHY IS BOOTSTRAP HELPFUL
+
+                            * BOOTSTRAP WALKTHROUGH
+
+                            * BOOTSTRAP HOMEPAGE-PROJECT
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                 WHAT IS BOOTSTRAP
+
+          @> A component-based(CORE PHILOSOPHY] css framework for building-responsive(ALL DEVICES] websites with pre-designed component(BUTTONS , CARDS , NAVBAR ETC...] and utilities(SIMPLE CALSSES]  
+
+                  ##used by small & large companies => BOOTSTRAP ##
+
+                        ====ADDED IMG-WHAT IS BOOTSTRAP====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   
+                             WHY IS BOOTSTRAP HELPFUL
+
+          @> BOOTSTRAP was initially developed in response to major limitations in css layout features ->{developed at twitter}
+
+          # 2017 - flexbox & css grid fully implemented => {layouts were very difficult before 2017]
+
+          # 2018 - utility CALSSES embraced in BOOTSTRAP while retaining component based structure 
+
+          # 2011 - BOOTSTRAP released with grid system & components => {continually improved by making more responsive and adding more components ]                   
+
+                     ====ADDED IMG-WHY IS BOOTSTRAP HELPFUL====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+      
+                              WHAT WE WILL LEARN
+
+                                1 . installation
+
+                                2 . layout
+
+                                3 . components
+
+                                4 . utility CALSSES
+
+                                5 . icons
+
+                                6 . adding custom css
+
+                                7 . responsive
+
+                                8 . adjusting visual theam
+        
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    
+
+                             BOOTSTRAP WALKTHROUGH
+
+                    ====ADDED IMG-BOOTSTRAP WALKTHROUGH====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+                            BOOTSTRAP HOMEPAGE-PROJECT
+
+                  ====ADDED IMG-BOOTSTRAP HOMEPAGE-PROJECT====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                     
+                          ====ADDED IMG-====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                     

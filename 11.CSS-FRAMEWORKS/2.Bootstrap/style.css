@@ -1,0 +1,54 @@
+/* changine the root of body color */
+:root {
+  --bs-body-color: #5e5959;
+  /* --bs-primary it dose't work on button due to some issue so we have to be seperate usees */
+  --bs-primary: #b2273e;
+}
+
+/* changing button coloor */
+.btn-primary{
+  background-color: var(--bs-primary);
+  border: 1px solid var(--bs-primary);
+}
+/* .vh-75 {
+  height: 75vh;
+} */
+
+.min-height-feature-img {
+  height: 300px;
+}
+
+.mb-6 {
+  /* which means 4 times 16 pixels = 64px */
+  margin-bottom: 64px;
+}
+
+.mb-7 {
+  /* which is 5 times 16 pixels = 80px */
+  margin-bottom: 80px;
+}
+
+.mb-8 {
+  /* 16px x 6 */
+  margin-bottom: 96px;
+}
+
+.mb-9 {
+  /* 16px x 7 */
+  margin-bottom: 112px;
+}
+
+.mb-10 {
+  /* 16px x 8 */
+  margin-bottom: 128px;
+}
+
+.mb-11 {
+  /* 16px x 9 */
+  margin-bottom: 144px;
+}
+
+.mb-12 {
+  /* 16px x 10 */
+  margin-bottom: 160px;
+}

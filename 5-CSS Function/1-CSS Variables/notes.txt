@@ -1,0 +1,79 @@
+ 
+                                  CSS VARIABLES :
+
+                            * HOW TO SET CSS VARIABLES
+
+                            * THE ROOT PSEUDO-CLASS   
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                           
+                               HOW TO SET CSS VARIABLES :  
+
+
+                    CSS VARIABLES : also known as CUSTOM PROPERTIES        
+
+            @> Allows us to store values to make it easier to maintain consistency and more easily make global style changes...
+
+            (
+              
+              DEFINING A VARIABLE :
+
+ {VARIABLE SET USING DOUBLE DASHES + VARIABLE NAME + STORED VALUE}={--primary:#339af0;}
+              
+
+              USING A VARIABLE    :
+
+ { var function(VARIABLE) } = { background-color : var(--primary); } 
+
+              ]                  
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                              
+                              THE ROOT PSEUDO-CLASS :
+
+                *  CSS VARIABLES are set on the ROOT PSEUDO-CLASS
+
+                {ROOT PSEUDO-CLASS}={VARIABLE}
+
+                 (
+                        :root{
+                        --primary:#339af0;
+                       }
+                   
+
+                    .btn-primary:link,
+                    .btn-primary:visited {
+                      background-color: var(--primary);
+                      color: antiquewhite;
+                      border: 2px solid var(--primary);
+                    }
+
+                    .highlight-primary {
+                      background-color: var(--primary);
+                    }   
+
+                }             
+
+.........................................................................................
+
+                       WHAT IS THE ROOT PSEUDO-CLASS :
+
+          * A special PSEUDO-CLASS selector that matches the root element in a doucment's hierarchy   
+
+
+          (
+            
+                                @  BASICALLY THE SAME THING :
+
+                                      html{
+                                        --primary:339af0;
+                                      }
+
+
+           @  BEST PRACTICE :
+
+             :root{
+              --primary:339af0;
+             } 
+            
+            ]          
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

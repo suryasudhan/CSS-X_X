@@ -1,0 +1,199 @@
+
+
+                              FLEX WRAP & ALIGN CONTENT:
+
+                              * FLEX ITMES SHRINKING BEHAVIOR 
+
+                              * FLEX WRAP PROPERTY
+
+                              * ALIGN CONTENT PROPERTY
+
+                              * ALIGN CONTENT VALUES
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                          FLEX ITMES SHRINKING BEHAVIOR 
+
+
+         @> If FLEX ITMES are larger then their container , by default they will shrink to fit inside 
+
+                        (we saw the topic previous chapter]   
+
+                        {
+
+                            flex-shrink:1; -> default VALUE
+                            flex-shrink:0; -> removes shrinking BEHAVIOR
+
+                        }        
+
+ [
+
+
+.flex-container {
+  background-color: rgb(234, 155, 145);
+  height: 500px;
+  width: 1000px;
+  display: flex;
+}
+
+.flex-item-1 {
+  width: 300px;
+  height: 100px;
+  background-color: blue;
+  flex-shrink: 0;
+}
+
+.flex-item-2 {
+  width: 300px;
+  height: 100px;
+  background-color: blueviolet;
+  flex-shrink: 0;
+}
+
+.flex-item-3 {
+  width: 300px;
+  height: 100px;
+  background-color: red;
+  flex-shrink: 0;
+}
+
+.flex-item-4 {
+  width: 300px;
+  height: 100px;
+  background-color: steelblue;
+  flex-shrink: 0;
+}
+
+ ]                             
+
+                    ====ADDED IMG-FLEX ITMES SHRINKING BEHAVIOR====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                FLEX WRAP PROPERTY :(over come of shrinking BEHAVIOR or overflow | using flex wrap]
+
+         @> pushes flex-items onto multiple lines instead of being forced to fit on a single line when they exceed the container
+
+              (flex-wrap:wrap;] -> set on the flex-container(parent)
+ 
+                    [VALUES : no wrap , wrap , wrap-reverse]   
+
+.........................................................................................
+
+
+                        FLEX WRAP : (only work's on exceed of CONTENT]
+
+                # there are 2 type 
+
+                        * general block container (no height)
+
+                        * container with a set height                       
+
+
+{
+
+.flex-container {
+  background-color: rgb(234, 155, 145);
+  height: 500px;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item-1 {
+  width: 300px;
+  height: 100px;
+  background-color: blue;
+}
+
+.flex-item-2 {
+  width: 300px;
+  height: 100px;
+  background-color: blueviolet;
+}
+
+.flex-item-3 {
+  width: 300px;
+  height: 100px;
+  background-color: red;
+}
+
+.flex-item-4 {
+  width: 300px;
+  height: 100px;
+  background-color: steelblue;
+}
+
+}
+                      ====ADDED IMG-FLEX WRAP PROPERTY====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                  ALIGN CONTENT PROPERTY : (DO NOT CONFUSED WITH ALIGN-ITMES]
+
+         @> controls the alignment of flex-items along the cross-axis when there multiple rows of flex-items
+
+      (ONLY USE WEHN THE  flex-wrap: wrap; OPTION ON THAT TIME - TO USE align-content:flex-start] 
+
+                          (align-content:flex-start;]
+
+
+                       ====ADDED IMG-ALIGN CONTENT PROPERTY====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                              ALIGN CONTENT VALUES :
+
+                 {
+
+                              * align-content: stretch; -> default VALUE
+                              * align-content: flex-start;
+                              * align-content: flex-end;
+                              * align-content: center;
+                              * align-content: space-between;
+                              * align-content: space-around;
+
+                 }  
+
+
+
+[
+
+
+.flex-container {
+  background-color: rgb(234, 155, 145);
+  height: 500px;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.flex-item-1 {
+  width: 300px;
+  background-color: blue;
+}
+
+.flex-item-2 {
+  width: 300px;
+  background-color: blueviolet;
+}
+
+.flex-item-3 {
+  width: 300px;
+  background-color: red;
+}
+
+.flex-item-4 {
+  width: 300px;
+  background-color: steelblue;
+}
+
+]
+
+                       ====ADDED IMG-ALIGN CONTENT VALUES====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 
+                  FLEX-WRAP GUIDANCE : (not often required | rare to USE]
+
+             @> wrapping is useful for simple llinear layouts when elements need to wrap onto multiple lines
+             
+                        ====ADDED IMG- FLEX-WRAP GUIDANCE====
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

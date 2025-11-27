@@ -1,0 +1,47 @@
+.flex-container {
+  /* width: 800px; */
+  /* height: 900px; */
+  background-color: lightblue;
+  display: flex;
+  color: white;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+/* we can use to create a gap by unsing margin-right:50px on flex-items not in flex-container */
+
+.flex-item-1 {
+  /* width: 200px;
+  height: 100px; */
+  background-color: yellow;
+  font-size: 90px;
+  /* margin-right: 50px; */
+}
+
+.flex-item-2 {
+  /* width: 50px;
+  height: 300px; */
+  background-color: purple;
+  font-size: 200px;
+  /* margin-right: 50px; */
+
+}
+
+.flex-item-3 {
+  /* width: 100px;
+  height: 150px; */
+  background-color: red;
+  font-size: 150px;
+  /* margin-right: 50px; */
+
+}
+
+.flex-item-4 {
+  /* width: 150px;
+  height: 50px; */
+  background-color: aqua;
+  margin-right: 50px;
+  font-size: 120px;
+}

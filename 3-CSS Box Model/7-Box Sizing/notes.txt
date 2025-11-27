@@ -1,0 +1,84 @@
+
+                          #BOX SIZING:
+                             *Default box dimensions
+                             *Box sizing property
+                             *Border Box
+                             *Box sizing design guidance
+
+........................................................................
+
+                           #Default box dimensions:
+                             
+                         {
+                          
+                          #TOTAL BOX dimensions:
+  *By Default the total width and height of a box will be the sum of the content width and height , padding and Border...
+
+
+                  ex:
+
+                  .box{
+                        width: 500px;
+                        height: 200px;
+                        padding: 50px;
+                        border: 10px solid red;
+                      }
+                        
+                      
+  #total width = 10px + 50px + 500px + 50px + 10px => 620px
+  #total height = 10px + 50px + 200px + 50px + 10px =>320px           
+                      *both konwn as calculated values...
+                      
+                          
+                          ]
+........................................................................
+                          
+                           #Box sizing property:
+          *The box-sizing property modifies how the total width and height of an element are calculated...
+
+            [ box-sizing : border-box; ]-( property : value )
+
+ { VALUES : content-box(Default value) , border-box(commonly used) ]
+
+               #content-box:
+                *the total dimensions is sum of content , padding and border
+                =>the set width & height will be smaller than the total width & height of the box 
+                @=>CONTENT DIMENSIONS ARE UNCHAGED...
+
+               #border-box:
+                *the total dimensions include content , padding and border
+                =>the set width & height will match the total width & height of the box*
+                @=>CONTENT DIMENSIONS NEED TO REDUCE... 
+
+........................................................................
+
+              #Border Box: basicaly we use top of the {css file] 
+                        *{SHARED IN SCREEN-SHOT FORMATE]
+
+        *the total dimensions include content , padding and border
+        =>the set width & height will match the total width & height of the box*
+        @=>CONTENT DIMENSIONS NEED TO REDUCE... 
+
+                ex: DIFFRENCE WITH AND WITHOUT-Border-BOX
+
+                          .box {
+                                width: 500px;
+                                height: 200px;
+                                padding: 50px;
+                                border: 10px solid red;
+                              }
+
+                          .box1 {
+                                width: 500px;
+                                height: 200px;
+                                padding: 50px;
+                                border: 10px solid red;
+                                box-sizing: border-box;
+                              }
+........................................................................
+
+                       #Box sizing design guidance:
+              *set the border-box on the universal selector
+              @=>one of the first things to do in a new css document
+                  
+........................................................................

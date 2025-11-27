@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title></title>
+  <style>
+    body {
+      padding: 5rem;
+    }
+  </style>
+</head>
+
+<body class="p-10">
+  <!-- 1. https://tailwindcss.com/docs/transition-property -->
+  <!-- 2. https://tailwindcss.com/docs/transition-duration -->
+  <!-- 3. https://tailwindcss.com/docs/transition-timing-function -->
+  <!-- 4. https://tailwindcss.com/docs/transition-delay -->
+  <!-- 5. https://tailwindcss.com/docs/animation -->
+
+  <!-- No Transition -->
+  <button class="p-5 text-white bg-blue-300 hover:bg-blue-800">click</button>
+
+ 
+
+  <!-- Transition -->
+  <button class="ml-5 p-5 bg-blue-900 transition hover:bg-teal-400 duration-300 ease-in-out dealy-150 text-white">
+    With Transition
+  </button>
+
+  <!-- ............................................................................ -->
+
+  <!-- Transition & Transform -->
+   <!-- 🏃‍♂️ hover:translate-y-1
+   -> When you hover, the button moves downward by 0.25rem (4px-ish). -->
+  <button
+    class="ml-5 p-5 bg-blue-500 transition hover:bg-teal-600 ease-in-out delay-150 duration-1000 hover:translate-y-1 hover:scale-110 hover:bg-rose-900">
+    Transformation
+  </button>
+
+  <!-- Animation -->
+   <div class="flex justify-center">
+    <div class="p-20 ml-20 mt-20 w-20 bg-rose-700 animate-spin">SPIN</div>
+    <div class="p-20 ml-20 mt-20 w-20 bg-rose-700 animate-ping">PING</div>
+    <div class="p-20 ml-20 mt-20 w-20 bg-rose-700 animate-pulse">PULSE</div>
+    <div class="p-20 ml-20 mt-20 w-20 bg-rose-700 animate-bounce">BOUNCE</div>
+   </div>
+</body>
+
+</html>

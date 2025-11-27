@@ -1,0 +1,107 @@
+
+                      #PSEUDO-CLASSES
+                        *pseudo-classes
+                        *state pseudo-classes
+                        *conditional pseudo-classes
+
+...............................................................
+
+              #pseudo-classes
+                
+                *defines styles for a specific state or confition of an HTML elements
+
+                  ->state-ex:button (when over on button its change the color )
+
+                  ->condition-ex:how to act a button(to write a condition)
+                
+    ( # A keyword with a colon-: added to the end of a selector
+    
+      [selector-colon-pseudo-class name{ a:hover } ] ]
+
+
+                 
+...............................................................
+                      
+                      #state pseudo-classes
+
+                       (#importent one ]
+
+    *dynamic styling based on user interaction & commonly used for hyperlink*  
+
+                 -> a:link = targets anchor-tags that have not yet been visited
+
+                 -> a:visited = targets anchor-tags that have been visited
+
+                 -> a:hover = targets an elements when the cursor is placed over-IT
+
+                 ->a:active = targets an elements when it is being clicked
+ 
+                     
+                     ex:
+
+                  a:link{
+                            color: blue;
+                            text-decoration: none;
+                          }
+                          a:visited{
+                            color: tomato;
+                          }
+                          a:hover{
+                            color: teal;
+                          }
+                          a:active{
+                            color: steelblue;
+                          }
+
+
+  #state pseudo-classes guidance
+    *it is best practice to style the pseudo-classes of anchor tags instead of styling the anchor element directly
+      
+      ex:it is bad* practice
+         a{
+            color: aqua;
+          }
+
+      ex:this is good practice
+        
+                  a:link,a:visited{
+                    color: blue;
+                  }
+                  a:hover,a:active{
+                    color: red;
+                  }
+
+        (its even apply for button also***]                              
+...............................................................
+
+                 #conditional pseudo-classes
+                  *styling based on a elements position in relation to other elements
+
+                    ex:
+                      * li:first-child
+                      * li:last-child
+                      * li:nth-child(n)
+             
+          ....      li:first-child {
+                      color: yellow;
+                    }
+
+                    li:last-child {
+                      color: blueviolet;
+                    }
+
+                    li:nth-child(2) {
+                      color: cadetblue;
+                    }
+
+                    li:nth-child(2n + 1) {
+                      color: cadetblue;
+                    } 
+                .......(2n + 1)->(2x0 + 1)=apply 1 in color*
+
+
+
+...............................................................
+
+
+...............................................................

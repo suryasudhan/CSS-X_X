@@ -1,0 +1,103 @@
+                 
+                  #text-spacing:
+                      *text-align
+                      *line-height
+                      *letter-spacing
+
+      #text-align
+
+      *specifies the horizontal alignment of text within an element
+
+        [text-align:center]
+
+        values:
+        *left(default value is left-edge of the page)
+        *right(considered easier to read for paragraph of the text)
+        *center(often used for headings)
+        *justify(everty line in a paragraph takes of full width of containing box)
+
+
+#diff bw in text-spacing under in block-element and inline-element,
+
+  *in block-element[it takes full space in the window and we can apply the text-align and text can move* (values-like right, left,and ...)]
+  *but in inline-element[it dosent take full space in window so its not move like block-elements*]
+
+        ex:
+
+            a {
+                text-decoration: none;
+                  text-align: center;
+                 /a-tag is inline it dosent take space/
+              }
+              h2 {
+                text-align: left;
+              }
+              h3 {
+                text-align: right;
+              }
+              h4 {
+                text-align: center; 
+              }
+              p {
+                text-align: justify;
+              }
+
+
+              #text-align guidance:
+                *don't justify text,long blocs of text should be left-alignment and do not center large block of text
+
+............................................................
+             
+             #line-height:
+
+             *sets the height of text and is commonly used to set distance between multiple lines of text
+
+             [line-height:1.5;]
+
+             values:
+
+                   *unitless-just a number that multiple the font size (commonly-used[1,2,3,4..])
+                   *pixels 
+                   *ems
+                   *percentage  
+
+
+              #line-height guidance:
+                 *headings should be <1.5 and regular text 1.5-2 to improve readablity*
+
+                 ex:
+                    h1{
+                    line-height:3;
+                    }
+                    p{
+                    line-height:9;
+                    }
+
+............................................................
+   
+               #letter-spacing:
+
+                *sets the horizontal space between characters
+    
+                [letter-spacing:8px;]
+
+                values:
+                   *pixels-commonly used
+                   *ems
+                   *percentage
+                   #there is no unitless values(1,2,3)
+
+               #letter-spacing guidance:
+                 *we often apply a small negative px values to headings to improve readablity
+
+                 ex:
+                   h1{
+                      letter-spacing: -3px;
+                      }
+                      p{
+                      letter-spacing: 4px;
+                      }
+
+............................................................
+
+

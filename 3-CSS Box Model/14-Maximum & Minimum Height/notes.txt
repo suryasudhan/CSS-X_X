@@ -1,0 +1,103 @@
+
+
+                     MAX & MIN HEIGHT :
+
+                     * MAX & MIN HEIGHT property
+
+                     * MAX & MIN HEIGHT design guidance
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        1 . MAX & MIN HEIGHT property:
+
+
+                         @> HEIGHT :
+                [hight : 500px]
+                *sets a fixed HEIGHT - fixed at 500px
+
+                         @> MAX HEIGHT :
+                [max-height : 500px;]
+                *sets an elements height that it won't exceed - won't go above 500px
+    
+                         @> MIN HEIGHT : (however the height can expand beyond 500px )
+                [min-height:500px;]
+                *sets an elements height that it won't shrink below - won't go below 500px         
+
+          ..................ADDED IMG..........................
+
+                     2 . MAX & MIN HEIGHT property:
+
+                     @> MAX & MIN width are more commonly used compared to MAX & MIN HEIGHT due to their role in creatain responsive layouts....   
+                     
+                     {
+                        max-height = least frequent USAGE
+                        
+                        min-height
+                        
+                        min-width
+                        
+                        max-width = most frequent USAGE
+
+         ..................ADDED IMG..........................          
+                        )
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                      
+                      MAX WIDTH vs MAX HEIGHT :
+
+                      @> MAX WIDTH and MAX HEIGHT behave in fundamentally different ways 
+
+                      => MAX WIDTH : Based on it's container , so it applies even without content 
+
+                      => MAX HEIGHT : only applies when content exceeds the limit!
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 
+                            MAX-HEIGHT :
+
+            .box-2 {
+                  width: 1000px;
+                  max-height: 400px; (inside the box the content is overflowing]
+                  background-color: rgb(19, 65, 156);
+                  }   
+
+                              OVERFLOW :  
+
+                  * controls what happens to content that overflows an elements box
+
+                         [overflow:hidden] =[property:value]    
+
+            (      VALUES : have 4 property....
+                  
+                  VISIBLE : default-ly happed
+                  
+                  SCROLL  : clips content - cut the remaing content
+                  
+                  HIDDEN  : scrollbar alway's present - even there is no overflow
+                  
+                  AUTO    : scrollbar only when nessery - when it's come to overflow
+                  
+                  ]
+
+
+                            MIN-HEIGHT : 
+
+            ..................ADDED IMG - minheight.......................... 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                      
+                        max & MIN modal window :
+
+              * used when you want to ensure elements do not exceed a creatain height     
+
+..................ADDED IMG - modal window [using for to avoiding popup the more comments among the window , if we don't use that the comments makes the window large ]..........................  
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                     MAX & MIN HEIGHT design guidance:
+
+                 * used when you want to ensure elements maintain a minimum height regardless of the amount of content ...     
+
+
+..................ADDED IMG - HEIGHT SUMMARY.........................
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

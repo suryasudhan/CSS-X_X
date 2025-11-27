@@ -1,0 +1,88 @@
+
+
+                                    JUSTIFY CONTENT :
+
+                                * FLEX CONTAINER SIZE
+
+                                * JUSTIFY CONTAINER PROPERTY
+
+                                * JUSTIFY CONTENT VALUES
+
+                                * JUSTIFY CONTENT & SHIFTING MAIN AXIS  
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+                                   ALIGNING AND SPACING :
+
+                    @> FLEXbox offers a powerful way to space and align CONTENT               
+
+                  =========ADDED IMG - ALIGNING AND SPACING==========
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                  FLEX CONTAINER SIZE :
+
+                     @> understanding a FLEX-CONTAINER's dimensions is essential for visualising how flex items will be positioned 
+
+                                    THERE ARE 2 TYPES 
+
+                                       * General block container
+
+                                       * Container with a set width or height   
+
+                         ======ADDED IMG-flex container SIZE=====   
+                         
+                                              
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                 JUSTIFY CONTENT 
+
+                @> Set how flex items are positioned along the main AXIS
+
+                        ====ADDED IMG-JUSTIFY CONTENT=====
+
+.........................................................................................
+
+                              JUSTIFY CONTENT VALUES 
+
+                             (
+                              * justify-content : flex-start;
+                              * justify-content : flex-end;
+                              * justify-content : center;
+                              * justify-content : space-between;
+                              * justify-content : space-around;
+                              * justify-content : space-evenly;
+                             ]   
+
+                      ======ADDED IMG - JUSTIFY CONTENT VALUES ======
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            JUSTIFY CONTENT & SHIFTING MAIN AXIS  
+
+                  
+                    SPACING ON THE SHIFTED MAIN AXIS(there are 2 types)
+
+                              * General block container
+                        justify-content:center;
+                                > differnt values will have no effect in placement of FLEX items as no space
+
+                              * Container with a set height
+                        justify-content:center;
+                                > differnt values will have an effect in placement of FLEX items as space
+
+                  =====ADDED IMG- SPACING ON THE SHIFTED MAIN AXIS =====          
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            JUSTIFY CONTENT GUIDANCE :
+
+                   * Often used to align and space navigation bars (using space-between on navigation bars)    
+
+                   * Can be used to align entier sections[full container with 2 flex items]  
+
+                   * Often used for SPACING and alignment of simple one-dimensional components (like one container with icon and title)  
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
